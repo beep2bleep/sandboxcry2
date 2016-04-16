@@ -23,21 +23,23 @@ namespace CryEngine.SandboxInteraction
 
 		public void OnAwake ()
 		{
-			//_canvas = SceneObject.Instantiate<Canvas>(Root);
-			//_log = _canvas.AddComponent<Text> ();
-			//_log.Alignment = Alignment.TopLeft;
+            //_canvas = SceneObject.Instantiate<Canvas>(Root);
+            //_log = _canvas.AddComponent<Text> ();
+            //_log.Alignment = Alignment.TopLeft;
 
-			//Camera.Current = Owner.AddComponent<Camera> ();
-			//Camera.Current.OnPlayerEntityAssigned += InitCamera;
+            //Camera.Current = Owner.AddComponent<Camera> ();
+            //Camera.Current.OnPlayerEntityAssigned += InitCamera;
 
-			//SystemHandler.EditorGameStart += () => 
-			//{
-			//	Debug.Log ("Editor Game Started");
-			//	InitCamera (Camera.Current);
-			//};
-			//SystemHandler.EditorGameEnded += EditorGameEnded;
+            //SystemHandler.EditorGameStart += () => 
+            //{
+            //	Debug.Log ("Editor Game Started");
+            //	InitCamera (Camera.Current);
+            //};
+            //SystemHandler.EditorGameEnded += EditorGameEnded;
 
-			Program.OnSignal += OnFlowNodeSignal;
+            var actor = Env.Game.GetIGameFramework().GetIActorSystem().GetActor(spawnedEntity.GetId());
+
+            Program.OnSignal += OnFlowNodeSignal;
 		}
 
 		void InitCamera(Camera cam)
