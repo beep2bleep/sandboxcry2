@@ -1,0 +1,257 @@
+<ObjectLayer>
+ <Layer Name="AI_09_SETUP" GUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{4930E66C-D463-49FA-83E0-8F42AF1A7910}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{2CD81A13-AD7A-44FD-AEF2-5D32F29C553E}" Name="AI_09_LIGHT" Pos="406,559.44537,48" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="24.4" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="30" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="125" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{9AEDAA1C-2105-4EFD-8FC5-0F021D0A7C21}" Name="AI_09_MARKER" Pos="386.35031,557.23907,40.75" FloorNumber="-1" Rotate="-0.5,0.5,-0.5,0.50000006" Scale="4.2200003,4.2200003,4.2200003" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/nine.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{15406B2C-C469-4F34-908B-02A779EDFE14}" Name="AI_09_TRIGGER" Pos="386.60031,557.29993,43.391754" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{ECD4016E-2525-4930-A589-7C8C9637EE57}" Name="AI_09_LIGHT2" Pos="406,588.32037,48" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="24.4" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="30" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="125" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{A37EF66E-1C47-4475-9E74-771459C95963}" Name="AI_09_HUMAN_01" Pos="394.29474,558.58374,34.242199" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="1" EntityClass="Human">
+    <Properties aicharacter_character="" awarenessOfPlayer="0" esBehaviorSelection="HumanGrunt" esBehaviorSelectionTree="" aibehavior_behaviour="" eiColliderMode="0" esCommConfig="Human" commrange="15" bEnableHitReaction="1" equip_EquipmentPack="AI_Rifle" esFaction="Grunts" bFactionHostility="1" fFmodCharacterTypeParam="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_SDKGrunt.xml" bInvulnerable="0" fileModel="objects/characters/human/sdk_player/sdk_player_red.cdf" nModelVariations="0" esModularBehaviorTree="SDK_Grunt_07" esNavigationType="MediumSizedCharacters" bOverrideAllowLookAimStrafing="1" physicMassMult="1" soclasses_SmartObjectClass="Human, Actor" SpawnedEntityName="" bSpawner="0" TagList="" bUsable="0" bUseFacialFrameRateLimiting="1" UseMessage="" useSpecialMovementTransitions="1" esVoice="AI_01">
+     <AI bPlayDeathSound="0" sndDeathSound="" bUseRadioChatter="1"/>
+     <CharacterSounds foleyEffect="foley_player" footstepEffect="footstep_grunt" bFootstepGearEffect="0" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+     <Damage fileBodyDamage="Libs/BodyDamage/BodyDamage_Default.xml" fileBodyDamageParts="Libs/BodyDamage/Bodyparts_HumanMaleShared.xml" fileBodyDestructibility="Libs/BodyDamage/BodyDestructibility_HumanMaleShared.xml" CanFall="1" FallSleepTime="1" health="500" heatAbsobsion="0.5" heatDissipation="200" bLogDamages="0" minHeatDamage="100"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+     <LipSync bEnabled="1" esLipSyncType="LipSync_TransitionQueue">
+      <TransitionQueueSettings nAnimLayer="11" nCharacterSlot="0" sDefaultAnimName="facial_chewing_01"/>
+     </LipSync>
+     <Perception audioScale="1" cloakMaxDistCrouchedAndMoving="1.5" cloakMaxDistCrouchedAndStill="1.3" cloakMaxDistMoving="3" cloakMaxDistStill="2" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" bIsAffectedByLight="0" minAlarmLevel="0" minDistanceToSpotDeadBodies="20" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3">
+      <TargetTracks classThreat="1" targetLimit="0"/>
+     </Perception>
+     <Physics>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+     <PlayerInteractions bCanBeGrabbed="1" esGrabType="Human" bStealthKill="1"/>
+     <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+     <Rendering bWrinkleMap="0"/>
+    </Properties>
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="Designer" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{F0C48572-65D2-4C02-9E62-778458063BC8}" Name="AI_09_PLAQUE" Pos="389.10031,560.29993,39.875" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16777215" Material="Objects/default/editorprimitive" RndFlags="1073741832" StaticObjFlags="0" ViewDistRatio="100">
+    <Brush DesignerModeFlags="0" SubdivisionLevel="0" SubdivisionSmoothingGroup="0" MirrorPlaneNormal="0,0,0" MirrorPlaneDistance="0">
+     <Polygon GUID="{B2B281AE-2E6B-4470-B61A-AAFE8DDC7185}" BinaryData="BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwAAAAAAAAAAAAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8AAAAAAADwvwAAAAAAAAAAAACgQAAAAAAAAKBAAADAwAAAAAAAAMDA"/>
+     <Polygon GUID="{D63957A7-6DAA-4A09-8E13-11BFB31E1CD5}" BinaryData="BAAAAAAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAwMAAAAAAAAAAAAAAAAAAAAAAAACAvwAAwMAAAIC/"/>
+     <Polygon GUID="{C49D0D67-8F07-4635-95E0-FCA520F26ADD}" BinaryData="BAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAAAAAADwPwAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAYwAAAoMAAAAAAAAAAAAAAAAAAAAAAAACAvwAAoMAAAIC/"/>
+     <Polygon GUID="{389E1320-C093-4CAE-AA54-789E9A79FE9E}" BinaryData="BAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUwAAAAAAAAAAAAADAQAAAAAAAAMBAAACAvwAAAAAAAIC/"/>
+     <Polygon GUID="{24BFEDDF-A3EF-45D2-963E-0CC24C2A6712}" BinaryData="BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAACgQAAAAAAAAKBAAACAvwAAAAAAAIC/"/>
+     <Polygon GUID="{B7F89D18-57AA-4B3C-80F4-0E9AA85A55B0}" BinaryData="BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAA8L8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAwEAAAKDAAADAQAAAoMAAAAAA"/>
+     <SmoothingGroups />
+     <SemiSharpCrease />
+     <UVIslands />
+    </Brush>
+    <Mesh Version="2" BinaryData="AAAAAAAAAAAYAAAAGAAAACQAAAAYAAAAAQAAAAAAAAAAAAAAAACAPwAAoEAAAAAAAACAPwAAoEAAAMBAAACAPwAAAAAAAMBAAACAPwAAAAAAAMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAMBAAACAPwAAoEAAAMBAAAAAAAAAAAAAAMBAAAAAAAAAAAAAAMBAAACAPwAAoEAAAMBAAACAPwAAoEAAAAAAAAAAAAAAoEAAAMBAAAAAAAAAoEAAAMBAAACAPwAAoEAAAAAAAACAPwAAAAAAAAAAAAAAAAAAoEAAAAAAAAAAAAAAoEAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAoEAAAMBAAAAAAAAAoEAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAAAAAAAAAACgQAAAAAAAAKBAAADAwAAAAAAAAMDAAADAwAAAAAAAAAAAAAAAAAAAAAAAAIC/AADAwAAAgL8AAKDAAAAAAAAAAAAAAAAAAAAAAAAAgL8AAKDAAACAvwAAAAAAAAAAAADAQAAAAAAAAMBAAACAvwAAAAAAAIC/AAAAAAAAAAAAAKBAAAAAAAAAoEAAAIC/AAAAAAAAgL8AAAAAAAAAAAAAAAAAAMBAAACgwAAAwEAAAKDAAAAAAAAAAQACAAAAAgADAAQABQAGAAQABgAHAAgACQAKAAgACgALAAwADQAOAAwADgAPABAAEQASABAAEgATABQAFQAWABQAFgAXAP5/AAAAAAGAAAACgAAAAYD/fwAAAAABgAAAAYAAAAGA/n8AAAAAAYAAAAKAAAABgP9/AAAAAAGAAAABgAAAAYAAAAKAAAABgAAAAAACgAGAAAACgAAAAYAAAAAAAoABgAAAAoAAAAGAAAAAAAKAAYAAAAKAAAABgAAAAAACgAGAAoAAAAAAAYAAAAAAAoABgAKAAAAAAAGAAAAAAAKAAYACgAAAAAABgAAAAAACgAGAAoAAAAAAAYAAAAAAAoABgAAA/n8AAAGAAAAAAAKAAYAAAP5/AAABgAAAAAACgAGAAAD+fwAAAYAAAAAAAoABgAAA/n8AAAGAAAAAAAKAAYD+fwAAAAABgAAAAAACgAGA/n8AAAAAAYAAAAAAAoABgP5/AAAAAAGAAAAAAAKAAYD+fwAAAAABgAAAAAACgAGAAoAAAAAA/38AAP5/AAD/fwGAAAAAAP9/AAD/fwAA/38CgAAAAAD/fwAA/n8AAP9/AYAAAAAA/38AAP9/AAD/fwAAIEAAAEBAAAAAP9/3e0AAAAAAAAAAACQAAAAAAAAAGAAAAAAAAAAAAAAAABAAAA=="/>
+   </Object>
+   <Object Type="Group" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Name="AI_09_TEXT_ALONGPATH" Pos="382.85031,557.25031,40.668026" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{B53C9FB8-278E-4B14-99B6-E89A98D8C72E}" Name="a120" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,2.5514526,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/a.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{D8CACF25-BC36-42D7-8492-B78888A9FA62}" Name="a119" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,1.9279785,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/l.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{9EDCC807-BBC5-4639-A235-3D30FFB6CCFB}" Name="a118" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,1.3533936,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/o.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{0895B4EB-0F77-49B8-9167-81C45F4403CB}" Name="a117" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,0.72821045,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/n.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{27D416AE-1502-451F-852F-8A35BC535CD0}" Name="a116" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,0.090454102,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/g.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{42065A5D-228B-40F1-801B-10555D780108}" Name="a115" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,-0.84246826,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/p.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{AA41B3F1-4A52-4D6C-AB4A-073314E0D51C}" Name="a114" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,-1.3771362,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/a.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{36CD597A-4841-40A9-8797-29F78B0CA0FE}" Name="a139" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,-1.90448,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/t.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{E7E9C464-CDCE-483A-A07E-62CD85ACA017}" Name="a140" Parent="{8EBBFC8E-4F81-4ECB-B0E1-AE164ADAFB3C}" Pos="0,-2.52771,-3.8146973e-006" FloorNumber="-1" Rotate="-0.5,0.49999994,-0.49999994,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/h.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Group" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{F770C395-A4F3-44E7-84BE-9E9FDD46AAE6}" Name="AI_09_TEXT_AI" Pos="383.47458,557.0874,40.668018" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{380117B1-E385-48E6-B5B0-8A1003FE7700}" Name="a137" Parent="{F770C395-A4F3-44E7-84BE-9E9FDD46AAE6}" Pos="0,0.24127197,0" FloorNumber="-1" Rotate="-0.49999994,0.49999994,-0.5,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/a.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{E6B4A514-6ECE-450F-AC30-03D0A239BAC9}" Name="a138" Parent="{F770C395-A4F3-44E7-84BE-9E9FDD46AAE6}" Pos="0,-0.24127197,0" FloorNumber="-1" Rotate="-0.49999994,0.49999994,-0.5,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/i.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Designer" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{73C412B7-DCC0-40A6-9828-8856E0683FE1}" Name="AI_09_PIT" Pos="406,558.56976,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.11,1.11,1.11" ColorRGB="16777215" Material="Objects/default/editorprimitive" RndFlags="1073741832" StaticObjFlags="0" ViewDistRatio="100">
+    <Brush DesignerModeFlags="0" SubdivisionLevel="0" SubdivisionSmoothingGroup="0" MirrorPlaneNormal="0,0,0" MirrorPlaneDistance="0">
+     <Polygon GUID="{078258D8-37E7-47BB-89AB-12344455FF02}" BinaryData="BAAAAAAAAGA3mC7AAAAAAAAAJkAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJsAAAADA9SggQAAAAGA3mC7AAAAAAAAAJkAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAAAAAAAAAABgN5guwAAAMMEAAAAnAAAwQQAAACcAADBBAAAAwQAAMMEAAADB"/>
+     <Polygon GUID="{A1B22C7F-D6E0-4F31-ADAF-F6A21D8566A8}" BinaryData="BAAAAAAAAGA3mC5AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC5AAAAAAAAAJkAAAADA9SjgvAAAAGA3mC5AAAAAAAAAJkAAAADA9SggQAAAAGA3mC5AAAAAAAAAJsAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAABgN5guwAAAMMEAAAAnAAAwQQAAACcAADBBAAAAwQAAMMEAAADB"/>
+     <Polygon GUID="{387E9F4B-F069-4285-8F30-490304FF6D72}" BinaryData="BAAAAAAAAGA3mC7AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC5AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC5AAAAAAAAAJsAAAADA9SggQAAAAGA3mC7AAAAAAAAAJsAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAmwLvBdMEAAAAnu8F0QQAAACe7wXRBAAAAwbvBdMEAAADB"/>
+     <Polygon GUID="{78C7C6B4-4C9D-4E39-89B0-A20BD07CC274}" BinaryData="BAAAAAAAAGA3mC5AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJsAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJkAAAADA9SjgvAAAAGA3mC5AAAAAAAAAJkAAAADA9SjgvAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAADA9SjgvLvBdMEAADDBu8F0QQAAMMG7wXRBAAAwQbvBdMEAADBB"/>
+     <Polygon GUID="{CD830B7A-7B19-4F2C-A396-DF24E081AD0B}" BinaryData="CAAAAAAAAGA3mC5AAAAAAAAAJsAAAADA9SggQAAAAGA3mC5AAAAAAAAAJkAAAADA9SggQAAAAGA3mC7AAAAAAAAAJkAAAADA9SggQAAAAGA3mC7AAAAAAAAAJsAAAADA9SggQAAAAGA3mCxAAAAAAAAAJEAAAADA9SggQAAAAGA3mCxAAAAAAAAAJMAAAADA9SggQAAAAGA3mCzAAAAAAAAAJEAAAADA9SggQAAAAGA3mCzAAAAAAAAAJMAAAADA9SggQAgAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAQAAAAFAAAABgAAAAQAAAAHAAAABgAAAAUAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAMD1KCDAu8F0QQAAMEG7wXRBAAAwwbvBdMEAADDBu8F0wQAAMEG7wWRBAAAgwbvBZEEAACBBu8FkwQAAIMG7wWTBAAAgQQ=="/>
+     <Polygon GUID="{8E974976-3079-4737-B17D-B2B7BB316A1E}" BinaryData="BAAAAAAAAGA3mC5AAAAAAAAAJkAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJkAAAADA9SjgvAAAAGA3mC7AAAAAAAAAJkAAAADA9SggQAAAAGA3mC5AAAAAAAAAJkAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAmwLvBdMEAAAAnu8F0QQAAACe7wXRBAAAAwbvBdMEAAADB"/>
+     <Polygon GUID="{392656F0-2D34-4B4F-BD1D-D5037ABE6DF6}" BinaryData="BAAAAAAAAGA3mCzAAAAAAAAAJMAAAADA9SggQAAAAGA3mCzAAAAAAAAAJMCoTY8v6+3LPwAAAGA3mCzA4P//////I0CoTY8v6+3LPwAAAGA3mCzA4P//////I0AAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAABgN5gsQAAAIMGuRwHBAAAgwVlvX74AACBBWW9fvgAAIEGuRwHB"/>
+     <Polygon GUID="{33522FCD-3B82-4EE6-B86C-B6ED2C0241C8}" BinaryData="BAAAAAAAAGA3mCxAAAAAAAAAJEAAAADA9SggQAAAAGA3mCxAAAAAAAAAJECoTY8v6+3LPwAAAGA3mCxAIAAAAAAAJMCoTY8v6+3LPwAAAGA3mCxAIAAAAAAAJMAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAAAAAAAAAABgN5gsQAAAIMGuRwHBAAAgwVlvX74AACBBWW9fvgAAIEGuRwHB"/>
+     <Polygon GUID="{A2A7CE10-C1AA-4D5D-98F7-2DFDF2F94346}" BinaryData="BAAAAOD//183mCxAIAAAAAAAJMCoTY8v6+3LP+D//183mCxA4P//////I0CoTY8v6+3LPyAAAGA3mCzA4P//////I0CoTY8v6+3LPyAAAGA3mCzAIAAAAAAAJMCoTY8v6+3LPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D+oTY8v6+3Lv7vBZEEAACBBu8FkQQAAIMG7wWTBAAAgwbvBZMEAACBB"/>
+     <Polygon GUID="{D405525D-047A-4A52-9869-05DE4BA30304}" BinaryData="BAAAAAAAAGA3mCzAAAAAAAAAJEAAAADA9SggQAAAAGA3mCzAAAAAAAAAJECoTY8v6+3LP+D//183mCxAAAAAAAAAJECoTY8v6+3LP+D//183mCxAAAAAAAAAJEAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAkQLvBZMGuRwHBu8FkwVlvX767wWRBWW9fvrvBZEGuRwHB"/>
+     <Polygon GUID="{769258F9-7C38-497C-9A81-F6D34436303A}" BinaryData="BAAAAAAAAGA3mCxAAAAAAAAAJMAAAADA9SggQAAAAGA3mCxAAAAAAAAAJMCoTY8v6+3LPyAAAGA3mCzAAAAAAAAAJMCoTY8v6+3LPyAAAGA3mCzAAAAAAAAAJMAAAADA9SggQAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAkQLvBZMGuRwHBu8FkwVlvX767wWRBWW9fvrvBZEGuRwHB"/>
+     <SmoothingGroups />
+     <SemiSharpCrease />
+     <UVIslands />
+    </Brush>
+    <Mesh Version="2" BinaryData="AAAAAAAAAAAwAAAAMAAAAFQAAAAwAAAAAQAAALvBdMEAADBBrkcBp7vBdMEAADDBrkcBp7vBdMEAADDBrkcBQbvBdMEAADBBrkcBQbvBdEEAADDBrkcBp7vBdEEAADBBrkcBp7vBdEEAADBBrkcBQbvBdEEAADDBrkcBQbvBdMEAADDBrkcBp7vBdEEAADDBrkcBp7vBdEEAADDBrkcBQbvBdMEAADDBrkcBQbvBdEEAADDBrkcBp7vBdMEAADDBrkcBp7vBdMEAADBBrkcBp7vBdEEAADBBrkcBp7vBdEEAADBBrkcBQbvBdMEAADBBrkcBQbvBZMEAACBBrkcBQbvBZEEAACBBrkcBQbvBZMEAACDBrkcBQbvBZEEAACDBrkcBQbvBdMEAADDBrkcBQbvBdEEAADDBrkcBQbvBdEEAADBBrkcBp7vBdMEAADBBrkcBp7vBdMEAADBBrkcBQbvBdEEAADBBrkcBQbvBZMEAACDBrkcBQbvBZMEAACDBWW9fPrvBZMEAACBBWW9fPrvBZMEAACBBrkcBQbvBZEEAACBBrkcBQbvBZEEAACBBWW9fPrvBZEEAACDBWW9fPrvBZEEAACDBrkcBQbvBZEEAACDBWW9fPrvBZEEAACBBWW9fPrvBZMEAACBBWW9fPrvBZMEAACDBWW9fPrvBZMEAACBBrkcBQbvBZMEAACBBWW9fPrvBZEEAACBBWW9fPrvBZEEAACBBrkcBQbvBZEEAACDBrkcBQbvBZEEAACDBWW9fPrvBZMEAACDBWW9fPrvBZMEAACDBrkcBQQAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAMMEAAAAAAAAwQQAAAAAAADBBAAAAwQAAMMEAAADBAAAwwQAAAAAAADBBAAAAAAAAMEEAAADBAAAwwQAAAMG7wXTBAAAAALvBdEEAAAAAu8F0QQAAAMG7wXTBAAAAwbvBdMEAADDBu8F0QQAAMMG7wXRBAAAwQbvBdMEAADBBu8F0QQAAMMG7wXTBAAAwwbvBZMEAACDBu8FkQQAAIMG7wWTBAAAgQbvBZEEAACBBu8F0wQAAMEG7wXRBAAAwQbvBdMEAAAAAu8F0QQAAAAC7wXRBAAAAwbvBdMEAAADBAAAgwa5HAcEAACDBYG9fvgAAIEFgb1++AAAgQa5HAcEAACDBrkcBwQAAIMFgb1++AAAgQWBvX74AACBBrkcBwbvBZEEAACBBu8FkQQAAIMG7wWTBAAAgwbvBZMEAACBBu8Fkwa5HAcG7wWTBYG9fvrvBZEFgb1++u8FkQa5HAcG7wWTBrkcBwbvBZMFgb1++u8FkQWBvX767wWRBrkcBwQAAAQACAAAAAgADAAQABQAGAAQABgAHAAgACQAKAAgACgALAAwADQAOAAwADgAPABAAEQASABMAEAASABQAEgARABUAEAATABYAFAARABUAFAAWABcAEAAVABcAFQAWABgAGQAaABgAGgAbABwAHQAeABwAHgAfACAAIQAiACAAIgAjACQAJQAmACQAJgAnACgAKQAqACgAKgArACwALQAuACwALgAvAAAAAoAAAAGAAAAAAAGAAYAAAAGAAAABgAAAAAACgAGAAAACgAAAAYAAAAAAAYABgAAAAYAAAAGAAAAAAAKAAYAAAP5/AAABgAAAAAABgAGAAAD/fwAAAYAAAAAAAoABgAAA/n8AAAGAAAAAAAGAAYAAAP9/AAABgAAAAAACgAGA/38AAAAAAYAAAAAAAoABgP9/AAAAAAGAAAAAAAKAAYD/fwAAAAABgAAAAAACgAGA/38AAAAAAYAAAAAAAoABgAGAAAAAAP9/AAD/fwAA/38BgAAAAAD/fwAA/38AAP9/AYAAAAAA/38AAP9/AAD/fwGAAAAAAP9/AAD/fwAA/3//fwAAAAABgAAAAYAAAAGA/38AAAAAAYAAAAGAAAABgP5/AAAAAAGAAAACgAAAAYD+fwAAAAABgAAAAoAAAAGA/n8AAAAAAYAAAAKAAAABgP5/AAAAAAGAAAACgAAAAYD/fwAAAAABgAAAAYAAAAGA/n8AAAAAAYAAAAKAAAABgAGAAAAAAAGAAAAAAAKAAYABgAAAAAABgAAAAAACgAGAAYAAAAAAAYAAAAAAAoABgAGAAAAAAAGAAAAAAAKAAYAAAP5/AAABgAAAAAACgAGAAAD+fwAAAYAAAAAAAoABgAAA/n8AAAGAAAAAAAKAAYAAAP5/AAABgAAAAAACgAGAAAACgAAAAYAAAAAAAoABgAAAAoAAAAGAAAAAAAKAAYAAAAKAAAABgAAAAAACgAGAAAACgAAAAYAAAAAAAoABgP9/AAAAAAGAAAABgAAAAYD/fwAAAAABgAAAAYAAAAGA/38AAAAAAYAAAAGAAAABgP9/AAAAAAGAAAABgAAAAYD/fwAAAAABgAAAAAABgAGA/38AAAAAAYAAAAAAAYABgP9/AAAAAAGAAAAAAAGAAYD/fwAAAAABgAAAAAABgAGAAYAAAAAAAYAAAAAAAYABgAGAAAAAAAGAAAAAAAGAAYABgAAAAAABgAAAAAABgAGAAYAAAAAAAYAAAAAAAYABgAAAAAAAAAAArkeBQMAomkEAAAAAAAAAAFQAAAAAAAAAMAAAAAAAAAAAAAAAABAAAA=="/>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{2826E8BE-7CE9-4015-A345-A7BAA6A23662}" Name="AI_09_LIGHT4" Pos="406,647.07037,48" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="24.4" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="30" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="125" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{DF95D4C4-47B2-45A2-BA93-0BAC918A8A22}" Name="AI_09_ALONGPATH_FG" Pos="389.5,557.69537,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="AI SEQUENCE - AI PATH" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="AISequence:Start" pos="-210,-70,0" flags="0">
+       <Inputs entityId="0" Interruptible="1" ResumeAfterInterruption="1"/>
+      </Node>
+      <Node Id="2" Class="Game:Start" pos="-550,-70,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="4" Class="Entity:EntityId" pos="-550,-170,0" flags="0" EntityGUID="{A37EF66E-1C47-4475-9E74-771459C95963}" EntityGUID_64="44751C47A37EF66E">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="5" Class="AISequence:MoveAlongPath" pos="90,-70,0" flags="0">
+       <Inputs entityId="0" Speed="0" Stance="2" PathName="AIPATH"/>
+      </Node>
+      <Node Id="7" Class="Logic:Any" pos="-350,-70,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="8" Class="AISequence:End" pos="340,-70,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="9" Name="AI_SEQUENCE_-_AI_PATH_FOLLOW" Class="_commentbox" pos="-600,-248.88022,0" flags="0">
+       <Inputs TextSize="2" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1220" Height="390"/>
+       <NodeSize Width="1220" Height="426.52081"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="5" nodeOut="1" portIn="Start" portOut="Link" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="2" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="4" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="4" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="4" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="5" portIn="End" portOut="Done" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="7" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="in2" portOut="Done" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="NavigationArea" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{3D95B7D2-5A45-4FFF-8042-ED8390317AD4}" Name="AI_09_NAVMESH" Pos="390.49478,569.06213,32.250164" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.90788895,0.81044823,0.89889997" ColorRGB="16743936" Height="17" Exclusion="0" DisplayFilled="0">
+    <AffectedAgentTypes MediumSizedCharacters="1" VehicleMedium="0"/>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.16119385,-26.302338,0"/>
+     <Point Pos="33.831451,-25.86441,0"/>
+     <Point Pos="33.831451,0.1355896,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="AIPath" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{2CADF2D7-191B-49D8-AED3-1C47349FD3AB}" Name="AI_09_PATH" Pos="394,557.94537,32.599998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="11842740" Road="0" PathNavType="1" AnchorType="" ValidatePath="0" Width="0" Height="0" AreaId="0" GroupId="0" Priority="0" Closed="0" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="6.25,8.5,0"/>
+     <Point Pos="16,9,0"/>
+     <Point Pos="25.25,6.5,0"/>
+     <Point Pos="27.25,0,0"/>
+     <Point Pos="25.75,-6,0"/>
+     <Point Pos="16.25,-8.25,0"/>
+     <Point Pos="7,-8,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0" Side7="0" Side8="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="AI_09_SETUP" LayerGUID="{452F6F43-A8B7-451D-A991-183BA74C5BC7}" Id="{78D34FF0-17F4-45E6-87F0-D904AEBE04EB}" Name="AI_09_LIGHT3" Pos="406,617.69537,48" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="24.4" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="30" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="125" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

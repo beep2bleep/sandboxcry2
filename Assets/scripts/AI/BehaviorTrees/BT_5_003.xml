@@ -1,0 +1,32 @@
+<BehaviorTree>
+
+	<!--
+	pick a cover-positin from a TPS query and move into that cover
+	-->
+
+	<Variables>
+		<!-- these variables are not used in this BT, but need to be present to prevent a warning caused by BasicAI:OnReset() -->
+		<Variable name="ExecuteSequence" />
+		<Variable name="ExecuteInterruptibleSequence" />
+	</Variables>
+
+	<SignalVariables>
+	</SignalVariables>
+
+	<Timestamps>
+	</Timestamps>
+
+	<Root>
+
+		<Loop>
+			<Sequence>
+				<WaitForEvent name="OnNewAttentionTarget"/>
+				<QueryTPS name="GDC_2016_randomCoverFromEnemy" register="Cover"/>
+				<Move to="Cover" speed="Run" stance="Alerted" fireMode="Off"/>
+				<Wait duration="2.0"/>
+			</Sequence>
+		</Loop>
+
+	</Root>
+
+</BehaviorTree>

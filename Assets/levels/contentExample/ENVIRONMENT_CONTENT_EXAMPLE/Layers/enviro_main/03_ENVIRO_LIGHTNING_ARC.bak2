@@ -1,0 +1,70 @@
+<ObjectLayer>
+ <Layer Name="03_ENVIRO_LIGHTNING_ARC" GUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="TagPoint" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{D38D0513-8027-4FC7-AA3F-01E4D49290C1}" Name="03_ENVIRO_RIGHT_FRONT_TAGPOINT" Pos="531,370.5,42" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="TagPoint" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{F2929829-271B-44B5-AE16-712EAD4019D2}" Name="03_ENVIRO_MIDDLE_TAGPOINT" Pos="517.5,363.5,41.87431" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="Entity" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{D0D4F77D-3FCC-470B-BA4A-1E5E41B407BC}" Name="03_ENVIRO_LIGHT" Pos="519,363.5,56" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="50" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="74.6" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{70103983-9149-46CE-AA41-84158467E45F}" Name="03_ENVIRO_RIGHT_BACK_TAGPOINT" Pos="508,370.5,42" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="Entity" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{032DB6A5-8A21-40AF-8700-5308D9069716}" Name="03_LIGHTNING_ENTITY_FG" Pos="535.5,364,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="03_LIGHTNING_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:LightningArc" pos="120,-120,0" flags="0" EntityGUID="{2AE432FE-7B0C-4A65-BDF6-5C1F1FA853F1}" EntityGUID_64="4A657B0C2AE432FE">
+       <Inputs entityId="0" Disable="0" Enable="0" Strike="0"/>
+      </Node>
+      <Node Id="4" Class="entity:ProximityTrigger" pos="-340,-120,0" flags="0" EntityGUID="{0225A6CC-12D3-43EB-8EAE-E6B9CD7B1AAC}" EntityGUID_64="43EB12D30225A6CC">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="5" Class="Game:Start" pos="-570,-120,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="6" Class="Logic:Any" pos="-50,-120,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="7" Name="LIGHTNING_TOGGLE" Class="_commentbox" pos="-610,-180,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="950" Height="230"/>
+       <NodeSize Width="950" Height="257.64063"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="4" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="4" portIn="in1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="5" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="5" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="6" portIn="Disable" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{0225A6CC-12D3-43EB-8EAE-E6B9CD7B1AAC}" Name="03_ENVIRO_TRIGGER" Pos="538.75,364,38.711807" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{2B9DC4F2-B769-4242-9875-10494F0C4622}" Name="03_ENVIRO_LEFT_BACK_TAGPOINT" Pos="508,356,42" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="TagPoint" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{A769D8F5-25E7-409E-ABCA-88369D3049F6}" Name="03_ENVIRO_LEFT_FRONT_TAGPOINT" Pos="531,356,42" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="Entity" Layer="03_ENVIRO_LIGHTNING_ARC" LayerGUID="{E1E1DEFF-90A3-4929-9ECB-32D720A77C0A}" Id="{2AE432FE-7B0C-4A65-BDF6-5C1F1FA853F1}" Name="03_LIGHTNING_ARC_ENT" Pos="517.5,363.5,44.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="Materials/effects/lightning_red" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="LightningArc" HasEntity="1">
+    <Properties bActive="1">
+     <Render ArcPreset="Default"/>
+     <Timing fDelay="0" fDelayVariation="0.5"/>
+    </Properties>
+    <EntityLinks>
+     <Link TargetId="{D38D0513-8027-4FC7-AA3F-01E4D49290C1}" Name="Target" Version="1"/>
+     <Link TargetId="{70103983-9149-46CE-AA41-84158467E45F}" Name="Target" Version="1"/>
+     <Link TargetId="{2B9DC4F2-B769-4242-9875-10494F0C4622}" Name="Target" Version="1"/>
+     <Link TargetId="{A769D8F5-25E7-409E-ABCA-88369D3049F6}" Name="Target" Version="1"/>
+     <Link TargetId="{F2929829-271B-44B5-AE16-712EAD4019D2}" Name="Target" Version="1"/>
+    </EntityLinks>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

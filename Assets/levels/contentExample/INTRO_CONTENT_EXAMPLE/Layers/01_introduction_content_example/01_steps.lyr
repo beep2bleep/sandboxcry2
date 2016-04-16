@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="01_STEPS" GUID="{BA5707A7-0573-4E6C-A3C1-D848F3B2D2D4}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{FAD95CB6-0364-4B72-BA98-892AD751CCFD}"/>
+</ObjectLayer>

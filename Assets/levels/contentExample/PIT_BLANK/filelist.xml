@@ -1,0 +1,6 @@
+<download name="TRIGGER_CONTENT_EXAMPLE" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="426764" md5="c459fda51d2b797b60fab73d0a63b818"/>
+ </files>
+</download>

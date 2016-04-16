@@ -1,0 +1,120 @@
+<Graph isModule="1" moduleName="GlobalAssetList_Get" Description="" Group="render" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="AssetPath" Type="5" Input="1"/>
+  <Port Name="Offset" Type="4" Input="0"/>
+  <Port Name="Rotation" Type="4" Input="0"/>
+  <Port Name="Scale" Type="2" Input="0"/>
+  <Port Name="Distance" Type="2" Input="0"/>
+  <Port Name="PivotAlign" Type="6" Input="0"/>
+  <Port Name="FileNotFound" Type="6" Input="0"/>
+  <Port Name="XMLError" Type="6" Input="0"/>
+  <Port Name="AssetNotInList" Type="6" Input="0"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_GlobalAssetList_Get" pos="-340,20,0" flags="0"/>
+  <Node Id="2" Class="Module:End_GlobalAssetList_Get" pos="3060,40,0" flags="0">
+   <Inputs Offset="0,0,0" Rotation="0,0,0" Scale="0" Distance="0" PivotAlign="0" FileNotFound="0" XMLError="0" AssetNotInList="0"/>
+  </Node>
+  <Node Id="319" Class="Xml:GetRoot" pos="490,140,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="327" Class="Xml:OpenDocument" pos="40,-10,0" flags="0">
+   <Inputs File="rendersetup/global_asset_list" Location="0"/>
+  </Node>
+  <Node Id="337" Class="Xml:GetAttribute" pos="1800,470,0" flags="0">
+   <Inputs Name="path"/>
+  </Node>
+  <Node Id="338" Class="String:Compare" pos="2110,280,0" flags="0">
+   <Inputs A="" B="" IgnoreCase="1"/>
+  </Node>
+  <Node Id="339" Class="Xml:GetChildCount" pos="700,250,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="341" Class="Math:Counter" pos="1220,360,0" flags="0">
+   <Inputs max="0"/>
+  </Node>
+  <Node Id="342" Class="Xml:GetChildAt" pos="1580,520,0" flags="0">
+   <Inputs Name="asset" Index="1"/>
+  </Node>
+  <Node Id="344" Class="Logic:Any" pos="1080,290,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="354" Class="Time:FrameDelay" pos="930,290,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="359" Class="Math:Add" pos="1070,450,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="361" Class="Math:Equal" pos="1420,360,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="362" Class="Math:Equal" pos="940,210,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="367" Class="Xml:GetRoot" pos="1580,440,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="370" Class="Xml:GetAttribute" pos="2390,280,0" flags="0">
+   <Inputs Name="offset"/>
+  </Node>
+  <Node Id="374" Class="Xml:GetAttribute" pos="2390,370,0" flags="0">
+   <Inputs Name="rotation"/>
+  </Node>
+  <Node Id="375" Class="Xml:GetAttribute" pos="2390,460,0" flags="0">
+   <Inputs Name="scale"/>
+  </Node>
+  <Node Id="376" Class="Xml:GetAttribute" pos="2390,550,0" flags="0">
+   <Inputs Name="distance"/>
+  </Node>
+  <Node Id="377" Class="Xml:GetAttribute" pos="2390,640,0" flags="0">
+   <Inputs Name="pivot_align"/>
+  </Node>
+  <Node Id="379" Class="Logic:Any" pos="2880,-20,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="380" Class="Logic:Any" pos="1660,240,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Cancel" portOut="Cancel" enabled="1"/>
+  <Edge nodeIn="327" nodeOut="1" portIn="Execute" portOut="Start" enabled="1"/>
+  <Edge nodeIn="338" nodeOut="1" portIn="A" portOut="AssetPath" enabled="1"/>
+  <Edge nodeIn="341" nodeOut="1" portIn="reset" portOut="Start" enabled="1"/>
+  <Edge nodeIn="339" nodeOut="319" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="327" portIn="FileNotFound" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="319" nodeOut="327" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="379" nodeOut="327" portIn="in1" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="338" nodeOut="337" portIn="B" portOut="Value" enabled="1"/>
+  <Edge nodeIn="338" nodeOut="337" portIn="Compare" portOut="Value" enabled="1"/>
+  <Edge nodeIn="344" nodeOut="338" portIn="in1" portOut="False" enabled="1"/>
+  <Edge nodeIn="370" nodeOut="338" portIn="Execute" portOut="True" enabled="1"/>
+  <Edge nodeIn="359" nodeOut="339" portIn="A" portOut="Count" enabled="1"/>
+  <Edge nodeIn="362" nodeOut="339" portIn="A" portOut="Count" enabled="1"/>
+  <Edge nodeIn="342" nodeOut="341" portIn="Index" portOut="count" enabled="1"/>
+  <Edge nodeIn="361" nodeOut="341" portIn="A" portOut="count" enabled="1"/>
+  <Edge nodeIn="337" nodeOut="342" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="341" nodeOut="344" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="344" nodeOut="354" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="341" nodeOut="359" portIn="max" portOut="out" enabled="1"/>
+  <Edge nodeIn="367" nodeOut="361" portIn="Execute" portOut="false" enabled="1"/>
+  <Edge nodeIn="380" nodeOut="361" portIn="in2" portOut="true" enabled="1"/>
+  <Edge nodeIn="354" nodeOut="362" portIn="in" portOut="false" enabled="1"/>
+  <Edge nodeIn="380" nodeOut="362" portIn="in1" portOut="true" enabled="1"/>
+  <Edge nodeIn="342" nodeOut="367" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="370" portIn="Offset" portOut="Value" enabled="1"/>
+  <Edge nodeIn="374" nodeOut="370" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="374" portIn="Rotation" portOut="Value" enabled="1"/>
+  <Edge nodeIn="375" nodeOut="374" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="375" portIn="Scale" portOut="Value" enabled="1"/>
+  <Edge nodeIn="376" nodeOut="375" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="376" portIn="Distance" portOut="Value" enabled="1"/>
+  <Edge nodeIn="377" nodeOut="376" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="377" portIn="PivotAlign" portOut="Value" enabled="1"/>
+  <Edge nodeIn="379" nodeOut="377" portIn="in3" portOut="Success" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="379" portIn="Success" portOut="out" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="380" portIn="AssetNotInList" portOut="out" enabled="1"/>
+  <Edge nodeIn="379" nodeOut="380" portIn="in2" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

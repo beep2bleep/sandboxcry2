@@ -1,0 +1,8 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="LogicDoor.KeyHeld" Type="Bool" Value="true" LocalOnly="1"/>
+   <GameToken Name="LogicDoor.SwitchActive" Type="Bool" Value="true" LocalOnly="1"/>
+  </LevelLibrary>
+ </GameTokensLibrary>
+</GameTokens>

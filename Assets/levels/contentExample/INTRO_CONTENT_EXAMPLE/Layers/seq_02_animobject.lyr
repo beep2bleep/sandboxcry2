@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="SEQ_02_ANIMOBJECT" GUID="{5C4CFF6D-85AB-4B0E-98D4-A3C4358A2440}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="32768" ParentGUID="{F42B5365-F342-472E-B7EB-2A938A9129B7}"/>
+</ObjectLayer>

@@ -1,0 +1,22 @@
+<asset_list>
+ <asset path="gamesdk\objects\natural\bushes\bush_round_leaf\bush_round_leaf_b.cgf" offset="0,0,0" rotation="0,0,165" scale="0.52" distance="0" pivot_align="true"/>
+ <asset path="none" offset="0,0,0" rotation="0,0,0" scale="1" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\default\asset_preview\shader_preview.cgf" offset="0,0,0" rotation="0,0,0" scale="0.56" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\vehicles\swat_van\swat_van.cga" offset="0.22,-0.62,0" rotation="0,0,0" scale="1.16" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\vehicles\hmmwv\hmmwv.cga" offset="0,-0.1,0" rotation="0,0,-70" scale="0.54" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\vehicles\abrams\m1a1_abrams.cga" offset="0,-0.1,0" rotation="0,0,-75" scale="1.2" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\vehicles\mh60_blackhawk\mh60.cga" offset="-0.12,0.6,0.36" rotation="-15,0,-70" scale="1.12" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\industrial\junk\junk_pile\junk_b.cgf" offset="0,0,0" rotation="0,0,0" scale="0" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\furniture\shelves\standing_a\shelf_standing_b.cgf" offset="0,0,0" rotation="0,0,15" scale="0.06" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\natural\trees\pine\pine_lights.cgf" offset="0,0.72,0" rotation="0,0,-130" scale="0.04" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\natural\ground\bullrush\bullrush.cgf" offset="0,0.58,0" rotation="0,0,0" scale="0.12" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\natural\bushes\cliffbush\cliff_bush_yellow_mini.cgf" offset="0,0,0" rotation="0,0,50" scale="1.1" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\natural\snow\snowman\snowman.cgf" offset="0,0,0" rotation="0,0,110" scale="0" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\furniture\beds\pillow.cgf" offset="0,-0.16,0" rotation="-45,0,-95" scale="0.58" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\industrial\boxes\cardboard_box\cardboard_box80cm.cgf" offset="0,0,0" rotation="0,0,115" scale="0" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\natural\trees\dead_tree\dead_tree_root_c.cgf" offset="0,0.06,0" rotation="0,0,-50" scale="0.22" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\industrial\drain\drain.cgf" offset="0,0,0" rotation="-60,0,-55" scale="0.3" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\industrial\electrical\panels\panel_c.cgf" offset="0.02,0.74,0" rotation="0,0,-180" scale="1.78" distance="0" pivot_align="false"/>
+ <asset path="gamesdk\objects\props\furniture\beds\bed_wooden.cgf" offset="0.04,0.42,0" rotation="-60,0,-70" scale="0" distance="0" pivot_align="false"/>
+ <asset path="objects\default\asset_preview\shader_preview.cgf" offset="0,0,0" rotation="0,0,0" scale="0.52" distance="0" pivot_align="false"/>
+</asset_list>

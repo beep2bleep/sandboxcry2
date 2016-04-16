@@ -1,0 +1,6 @@
+<download name="BeginnersGuide" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="144015" md5="ad578efe4b30c798123c346ea7a11d14"/>
+ </files>
+</download>

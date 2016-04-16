@@ -1,0 +1,90 @@
+<ObjectLayer>
+ <Layer Name="AI_01_SETUP" GUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{4930E66C-D463-49FA-83E0-8F42AF1A7910}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{A949B721-7177-4FB4-A376-6CE615BE74E7}" Name="AI_01_HUMAN" Pos="412.29474,321.38837,34.242199" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="1" EntityClass="Human">
+    <Properties aicharacter_character="" awarenessOfPlayer="0" esBehaviorSelection="HumanGrunt" esBehaviorSelectionTree="" aibehavior_behaviour="" eiColliderMode="0" esCommConfig="Human" commrange="15" bEnableHitReaction="1" equip_EquipmentPack="AI_Rifle" esFaction="Civilians" bFactionHostility="1" fFmodCharacterTypeParam="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_SDKGrunt.xml" bInvulnerable="0" fileModel="objects/characters/human/sdk_player/sdk_player_red.cdf" nModelVariations="0" esModularBehaviorTree="SDK_Grunt_07" esNavigationType="MediumSizedCharacters" bOverrideAllowLookAimStrafing="1" physicMassMult="1" soclasses_SmartObjectClass="Human, Actor" SpawnedEntityName="" bSpawner="0" TagList="" bUsable="0" bUseFacialFrameRateLimiting="1" UseMessage="" useSpecialMovementTransitions="1" esVoice="AI_01">
+     <AI bPlayDeathSound="0" sndDeathSound="" bUseRadioChatter="1"/>
+     <CharacterSounds foleyEffect="foley_player" footstepEffect="footstep_grunt" bFootstepGearEffect="0" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+     <Damage fileBodyDamage="Libs/BodyDamage/BodyDamage_Default.xml" fileBodyDamageParts="Libs/BodyDamage/Bodyparts_HumanMaleShared.xml" fileBodyDestructibility="Libs/BodyDamage/BodyDestructibility_HumanMaleShared.xml" CanFall="1" FallSleepTime="1" health="500" heatAbsobsion="0.5" heatDissipation="200" bLogDamages="0" minHeatDamage="100"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+     <LipSync bEnabled="1" esLipSyncType="LipSync_TransitionQueue">
+      <TransitionQueueSettings nAnimLayer="11" nCharacterSlot="0" sDefaultAnimName="facial_chewing_01"/>
+     </LipSync>
+     <Perception audioScale="1" cloakMaxDistCrouchedAndMoving="1.5" cloakMaxDistCrouchedAndStill="1.3" cloakMaxDistMoving="3" cloakMaxDistStill="2" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" bIsAffectedByLight="0" minAlarmLevel="0" minDistanceToSpotDeadBodies="20" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3">
+      <TargetTracks classThreat="1" targetLimit="0"/>
+     </Perception>
+     <Physics>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+     <PlayerInteractions bCanBeGrabbed="1" esGrabType="Human" bStealthKill="1"/>
+     <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+     <Rendering bWrinkleMap="0"/>
+    </Properties>
+    <Properties2 bAlarmed="0" bAutoDisable="0" aibehavior_behaviour="" groupid="0" soclasses_SmartObjectClass="" nVariation="0" esVoice="">
+     <AI bGoBackToStartOnIdle="0" bGunner="0" bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="AI_01_TERRITORY" aiwave_Wave="&lt;None&gt;"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0" bOverrideArchetype="0"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0" bOverrideArchetype="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="NavigationArea" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{D791FE2D-EB4F-4703-BFA2-8AA3A76D7336}" Name="SECTION_1_NAVMESH" Pos="391.24478,331.18762,34.288513" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.87,0.75999999,1" ColorRGB="16743936" Height="15" Exclusion="0" DisplayFilled="0">
+    <AffectedAgentTypes MediumSizedCharacters="1" VehicleMedium="0"/>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0.16119385,-26.302338,0"/>
+     <Point Pos="33.831451,-25.86441,0"/>
+     <Point Pos="33.831451,0.1355896,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{35CF2E3F-01AF-463E-92FD-BAEE0AD77C05}" Name="AI_01_TERRITORY" Pos="404.25,321.5,34.349998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="15161880" Height="0" DisplayFilled="1" EntityClass="AITerritory">
+    <Points>
+     <Point Pos="0,0,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{D524EDB4-83F8-4726-8443-9A4D947C07B1}"/>
+    </Entities>
+    <SoundData Side1="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{0FA4C56D-1FC3-4FEC-AFAB-AF4BDAF8B2C8}" Name="AI_SECTION_1_TRIGGER" Pos="386.60031,321.54996,43.391754" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Group" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{EE567578-623F-4DE9-A784-C0C2C38EA55E}" Name="AI_01_TEXT_WAVES" Pos="382.76758,321.23959,40.668018" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0"/>
+   <Object Type="SequenceObject" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{CD663E7E-5C39-4CF3-AD5A-5C3E5F1C15F7}" Name="Gate_Open" Pos="391.29474,304.05087,40.677399" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="3" Name="Gate_Open" Flags="0" StartTime="0" EndTime="0" ID="1">
+     <Nodes>
+      <Node Id="4" Type="Entity" Name="AI_06_GATE_ENTITY" Flags="0" paramIdVersion="8" EntityGUID="4E046D71691EC51B">
+       <Track paramType="Position" Type="4" Flags="0" HasCustomColor="0" ValueType="1">
+        <NewSubTrack Flags="0" defaultValue="0,0.5" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,0" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,-6" HasCustomColor="0">
+         <Key time="0" value="0,0" ds="0,0" dd="0,0"/>
+         <Key time="0" value="0,0" ds="0,0" dd="0,0"/>
+        </NewSubTrack>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
+    <ID value="1"/>
+   </Object>
+   <Object Type="Group" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{56515D95-0E58-4505-B1E4-1B53BDA4D926}" Name="AI_01_TEXT_AI" Pos="383.47458,321.23959,40.668018" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0"/>
+   <Object Type="Entity" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{D524EDB4-83F8-4726-8443-9A4D947C07B1}" Name="AI_01_Wave" Pos="402.5,321.5,34.25" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" EntityClass="AIWave"/>
+   <Object Type="SequenceObject" Layer="AI_01_SETUP" LayerGUID="{DDE9CF62-296E-4F9B-9F9B-BC178F5C6313}" Id="{AB7D0CE6-4BDD-40BD-96C4-BDBC87BB7393}" Name="erwrer" Pos="391.29474,304.05087,40.677399" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="3" Name="erwrer" Flags="0" StartTime="0" EndTime="0" ID="2">
+     <Nodes />
+     <Events />
+    </Sequence>
+    <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
+    <ID value="2"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

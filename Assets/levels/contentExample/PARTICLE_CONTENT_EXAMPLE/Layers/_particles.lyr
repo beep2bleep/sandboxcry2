@@ -1,0 +1,80 @@
+<ObjectLayer>
+ <Layer Name="_PARTICLES" GUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{BD9B461C-27AB-4A74-83F3-01DFD88A89E6}" Name="ParticleEffect4" Pos="519,441,47.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/gpu_curl.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{09B2DB20-6B45-439E-8063-B2B607E046B2}" Name="ParticleEffect8" Parent="{10C05764-8618-418D-9A01-91EC3C248C43}" Pos="517,323,47" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.36231884,0.36231884,0.36231884" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/gdc/example_surfacespawn.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{96A33E48-7E1E-4544-AD27-65D2DDD2DB19}" Name="ParticleEffect2" Pos="519,501,63.001911" FloorNumber="-1" Rotate="0.70710671,-0.70710683,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/forked_lightning.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{22A6885E-A593-465C-AAFA-208090934557}" Name="primitive_sphere1" Pos="521,472,52" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.89,1.89,1.89" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GeomEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{10C05764-8618-418D-9A01-91EC3C248C43}" Name="primitive_sphere4" Pos="517,323,47" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.76,2.76,2.76" ColorRGB="65535" MatLayersMask="0" Geometry="objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity" HasEntity="1">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{39695D65-82F5-43FE-8947-AC748E45976B}" Name="primitive_sphere2" Pos="518,469,48" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.89,1.89,1.89" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{7E89F997-0B65-4969-AB53-40569261AEF4}" Name="ParticleEffect3" Pos="519,471,55.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/gpu_collision.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{8D80729D-70AC-4248-B1CF-3B6A641467DE}" Name="ParticleEffect1" Pos="519,531,41.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/fireworks.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{F0884BA2-CA74-4A95-A6C1-31E9750D54DB}" Name="ParticleEffect7" Pos="519,352,41.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/spiral.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{0137FBA6-9A1F-4983-B3F7-0AED53219C13}" Name="ParticleEffect6" Pos="519,382,41.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/ribbons.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{9A8F7ADB-24B9-4A7D-9208-BE4956DD8C06}" Name="ParticleEffect5" Pos="519,412,48.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/point_gravity.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{B2FC0DDC-3675-4B04-8834-B952732B4FB6}" Name="primitive_sphere5" Pos="520,472,46" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.89,1.89,1.89" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/default/primitive_sphere.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{532CACE0-742E-44F1-ACE3-9976FA21D9E5}" Name="ParticleEffect11" Pos="519,558.32288,42.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="materials/references/matref_grey064" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/lights.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="_PARTICLES" LayerGUID="{CD69CAEB-C4C0-4745-B770-91AEA59637D7}" Id="{C63AB9F5-EE6D-4048-B59A-26A526F70443}" Name="ParticleEffect9" Pos="519,296,47.001911" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="">
+    <Properties bActive="1" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/3d_rotation.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="1"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

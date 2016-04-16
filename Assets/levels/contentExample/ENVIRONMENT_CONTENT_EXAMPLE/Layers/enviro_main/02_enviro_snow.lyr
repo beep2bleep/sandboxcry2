@@ -1,0 +1,27 @@
+<ObjectLayer>
+ <Layer Name="02_ENVIRO_SNOW" GUID="{EE26DE93-2DDD-412D-9C8A-F349E07AA21D}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="02_ENVIRO_SNOW" LayerGUID="{EE26DE93-2DDD-412D-9C8A-F349E07AA21D}" Id="{F707054D-A3E9-498E-B16D-27597924948F}" Name="02_ENVIRO_TRIGGER" Pos="538.75,393,38.624699" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="02_ENVIRO_SNOW" LayerGUID="{EE26DE93-2DDD-412D-9C8A-F349E07AA21D}" Id="{AD82BB58-5A54-4E1C-A055-01296A75C8F4}" Name="02_ENVIRO_LIGHT" Pos="519,392.25848,56" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="50" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="74.6" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="02_ENVIRO_SNOW" LayerGUID="{EE26DE93-2DDD-412D-9C8A-F349E07AA21D}" Id="{E85C13C3-C5B8-4AFA-80F9-FB1E07CCD4E0}" Name="Snow1" Pos="516.76288,391.17258,47.171627" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Snow" HasEntity="1">
+    <Properties bEnabled="1" fRadius="50">
+     <SnowFall fBrightness="1" fGravityScale="0.1" nSnowFlakeCount="100" fSnowFlakeSize="1" fTurbulenceFreq="0.1" fTurbulenceStrength="0.5" fWindScale="0.1"/>
+     <Surface fFrostAmount="1" fSnowAmount="10" fSurfaceFreezing="1"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,6 @@
+<download name="gdc_2016_flowgraph_content" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="432129" md5="ea3417a1652c8eefc615cce1cbb8be7c"/>
+ </files>
+</download>

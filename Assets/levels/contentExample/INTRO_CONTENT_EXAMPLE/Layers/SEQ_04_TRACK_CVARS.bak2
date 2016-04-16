@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="SEQ_04_TRACK_CVARS" GUID="{A10136A2-2698-4E6C-9083-8F649097BB2C}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="8388736" ParentGUID="{F42B5365-F342-472E-B7EB-2A938A9129B7}"/>
+</ObjectLayer>

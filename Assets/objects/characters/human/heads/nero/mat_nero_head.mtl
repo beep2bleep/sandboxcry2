@@ -1,0 +1,88 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="mat_nero_head_face" MtlFlags="524418" Shader="Humanskin" GenMask="8110400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN%WRINKLE_BLENDING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/heads/nero/textures/nero_head_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/heads/nero/textures/nero_head_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/heads/nero/textures/nero_head_spec.tif"/>
+    <Texture Map="Custom" File="objects/characters/human/heads/nero/textures/wrinkles/nero_head_wrinkle_atlas.tif"/>
+    <Texture Map="[1] Custom" File="objects/characters/human/heads/nero/textures/wrinkles/nero_head_wrinkle_mask.tif"/>
+    <Texture Map="Opacity" File="objects/characters/human/heads/nero/textures/generic_head_sss.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.4" TranslucencyMultiplier="0.69999999" WrinklesBlend="1"/>
+  </Material>
+  <Material Name="mat_nero_head_teeth" MtlFlags="2621570" Shader="Illum" GenMask="30400200" StringGenMask="%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.71569365,0.66538745,0.63759702" Specular="0.057805438,0.057805438,0.057805438" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/heads/nero/textures/nero_teeth_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/heads/nero/textures/nero_teeth_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/heads/nero/textures/nero_teeth_spec.tif"/>
+    <Texture Map="Detail" File="objects/characters/human/heads/nero/textures/nero_teeth_dmap.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.71200001" SSSIndex="2.6329999" DetailBumpScale="0" DetailGlossScale="0"/>
+  </Material>
+  <Material Name="mat_nero_head_eyeball_iris" MtlFlags="2621568" Shader="Eye" GenMask="2080410000" StringGenMask="%ENVIRONMENT_MAP%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.080219828,0.080219828,0.080219828" Specular="0.049433462,0.049433462,0.049433462" Opacity="0.99000001" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/eyes/generic_eyeball_iris_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/eyes/generic_eyeball_iris_ddn.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Heightmap" File="objects/characters/human/eyes/generic_eyeball_iris_displ.tif"/>
+    <Texture Map="Custom" File="objects/characters/human/eyes/generic_eyeball_cornea_ddn.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.0099999998" IrisColor="0.5,0.5,0.5" IrisShadowing="2.266" CorneaSmoothness="1" ScleraSSS="0.15000001" IrisSSS="0.40000001"/>
+  </Material>
+  <Material Name="mat_nero_head_eyeball_tearduct" MtlFlags="2621568" Shader="Illum" GenMask="20400000" StringGenMask="%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.61720657,0.61720657,0.61720657" Specular="0.028991185,0.028991185,0.028991185" Opacity="1" Shininess="203" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/eyes/generic_eyeball_iris_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/eyes/generic_eyeball_iris_ddn.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+  <Material Name="mat_nero_head_eyeball_water" MtlFlags="524448" Shader="Eye" GenMask="2080020000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0.12477182,0.12477182,0.12477182" Opacity="1" Shininess="166" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/heads/nero/textures/nero_eyeball_water_spec.tif"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1"/>
+  </Material>
+  <Material Name="mat_nero_head_eyeball_overlay" MtlFlags="524416" Shader="Eye" GenMask="2080008000" StringGenMask="%EYE_AO_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.038472746,0.011126082,0.0045597549" Specular="0,0,0" Opacity="1" Shininess="68" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/eyes/generic_eyeball_overlay_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/eyes/generic_eyeball_overlay_spec.tif"/>
+   </Textures>
+   <PublicParams DiffOccStrength="1" SpecOccStrength="0.99800003"/>
+  </Material>
+  <Material Name="mat_nero_head_eyeball_lashes" MtlFlags="2623618" Shader="Hair" GenMask="10000504008" StringGenMask="%ANISO_SPECULAR%ENFORCE_TILED_SHADING%HAIR_PASS%NORMAL_MAP%VIEW_ALIGNED_STRANDS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.21223079,0.21223079,0.21223079" Specular="0.28744087,0.28744087,0.28744087" Opacity="0.94999999" Shininess="169" AlphaTest="0.93000001" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/heads/nero/textures/nero_eyelash_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/heads/nero/textures/nero_eyelash_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/heads/nero/textures/nero_eyelash_spec.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.131" SoftIntersection="0.662" ShiftVariation="1.046" DiffuseWrap="0" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" StrandWidth="0.0052" SecondaryHighlightWidth="2.615" AlphaBlendMultiplier="1"/>
+  </Material>
+  <Material Name="mat_nero_head_hair" MtlFlags="2623618" Shader="Hair" GenMask="4000500408" StringGenMask="%ANISO_SPECULAR%DIRECTION_MAP%HAIR_PASS%NORMAL_MAP%WIND_BENDING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.58407855,0.58407855,0.58407855" Specular="0.37626216,0.37626216,0.37626216" Opacity="0.99000001" Shininess="255" AlphaTest="0.5" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/heads/nero/textures/nero_hair_plate_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/heads/nero/textures/nero_hair_plate_ddn.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/heads/nero/textures/nero_hair_plate_spec.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Detail" File="objects/characters/human/heads/nero/textures/nero_hair_plate_dir_ddn.tif"/>
+   </Textures>
+   <PublicParams AnimAmplitudeWav0="0.2" SecondaryHighlightShiftAmount="-0.5" SoftIntersection="0.56300002" ShiftVariation="0.68099999" DiffuseWrap="0.163" SecondaryHighlightColor="0.33716366,0.33716366,0.33716366" SecondaryHighlightWidth="1" AlphaBlendMultiplier="1.222" AnimFrequency="0" AnimAmplitudeWav2="0.1" AnimPhase="1"/>
+  </Material>
+  <Material Name="mat_nero_head_hair_vac" MtlFlags="2622626" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0.33716366,0.33716366,0.33716366" Opacity="0.99000001" Shininess="123" AlphaTest="0.36000001" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Environment" File="nearest_cubemap"/>
+   </Textures>
+  </Material>
+  <Material Name="mat_nero_head_beard" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="mat_nero_head_beard_vac" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="mat_nero_head_beard_braid" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+</Material>

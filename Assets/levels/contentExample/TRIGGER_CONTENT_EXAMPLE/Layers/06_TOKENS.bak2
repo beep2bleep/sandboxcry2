@@ -1,0 +1,79 @@
+<ObjectLayer>
+ <Layer Name="06_TOKENS" GUID="{3B119D50-BF51-435B-B37F-42187EB6B780}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="06_TOKENS" LayerGUID="{3B119D50-BF51-435B-B37F-42187EB6B780}" Id="{1D6A62C4-75E0-4922-8DEA-77D9AF62D0F2}" Name="Light10" Pos="528.26874,268.50687,46.772217" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="11.28" _nVersion="0">
+     <Color clrDiffuse="0.0241576,0.53948,0.371238" fDiffuseMultiplier="42.2" fSpecularMultiplier="0"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="36.8" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="06_TOKENS" LayerGUID="{3B119D50-BF51-435B-B37F-42187EB6B780}" Id="{5CC894E0-0791-433A-B03A-8C61C3D547A7}" Name="06_TOKENS_FG" Pos="535.5,277,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="06_TOKENS_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="19" Class="entity:BasicEntity" pos="-120,1110,0" flags="0" EntityGUID="{E989F5B7-1732-416D-B9BB-478EF0046C7D}" EntityGUID_64="416D1732E989F5B7">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="20" Class="Mission:GameTokenSet" pos="160,1110,0" flags="0">
+       <Inputs gametoken_Token="Level.LogicDoor.KeyHeld" Value="true"/>
+      </Node>
+      <Node Id="21" Class="Mission:GameToken" pos="-440,1110,0" flags="0">
+       <Inputs gametoken_Token="Level.LogicDoor.KeyHeld" compare_Value="true"/>
+      </Node>
+      <Node Id="23" Name="Keycard_Input" Class="_commentbox" pos="-460,1060.3051,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="940" Height="290"/>
+       <NodeSize Width="940" Height="317.64063"/>
+      </Node>
+      <Node Id="25" Class="entity:Switch" pos="-100,1430,0" flags="0" EntityGUID="{9312B1D6-87C4-4BCD-8A33-2475756C049F}" EntityGUID_64="4BCD87C49312B1D6">
+       <Inputs entityId="0" Destroyed="0" Disable="1" Enable="0" Hide="0" Hit="0" Switch="0" TurnedOff="0" TurnedOn="0" Unhide="0"/>
+      </Node>
+      <Node Id="27" Class="entity:AdvancedDoor" pos="-60,1720,0" flags="0" EntityGUID="{CF45A59A-6CC4-44A2-9AD9-7BB61D0D2C5F}" EntityGUID_64="44A26CC4CF45A59A">
+       <Inputs entityId="0" Close="0" Destroyed="0" Lock="1" Open="0" Unlock="0"/>
+      </Node>
+      <Node Id="28" Class="Mission:GameToken" pos="-450,1430,0" flags="0">
+       <Inputs gametoken_Token="Level.LogicDoor.KeyHeld" compare_Value="true"/>
+      </Node>
+      <Node Id="29" Class="Mission:GameTokenSet" pos="140,1430,0" flags="0">
+       <Inputs gametoken_Token="Level.LogicDoor.SwitchActive" Value="true"/>
+      </Node>
+      <Node Id="30" Class="Mission:GameToken" pos="-450,1720,0" flags="0">
+       <Inputs gametoken_Token="Level.LogicDoor.SwitchActive" compare_Value="true"/>
+      </Node>
+      <Node Id="31" Name="Door_Logic" Class="_commentbox" pos="-460,1384.5311,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="939" Height="463"/>
+       <NodeSize Width="939" Height="490.64063"/>
+      </Node>
+      <Node Id="32" Class="Game:Start" pos="-450,1540,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="20" nodeOut="19" portIn="Trigger" portOut="Used" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="21" portIn="Hide" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="29" nodeOut="25" portIn="Trigger" portOut="UsedBy" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="28" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="30" portIn="Unlock" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="32" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="32" portIn="Lock" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="06_TOKENS" LayerGUID="{3B119D50-BF51-435B-B37F-42187EB6B780}" Id="{EB82D2E1-4953-4A6D-A242-351A7327287B}" Name="Light15" Pos="519,275.91794,56" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="235.5" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="80.5" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

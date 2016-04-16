@@ -1,0 +1,53 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="Head" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/head_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/head_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/head_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Legs front" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/legsfront_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/legsfront_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/legsfront_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Legs back" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/legsback_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/legsback_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/legsback_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Body" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="254" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/body_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/body_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/body_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lod01_body" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/lod01_body_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/lod01_body_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/lod01_body_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lod02_body" MtlFlags="524416" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/animals/elephant/textures/lod02_body_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/animals/elephant/textures/lod02_body_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/animals/elephant/textures/lod02_body_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

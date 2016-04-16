@@ -1,0 +1,12 @@
+<ObjectLayer>
+ <Layer Name="ENVIRO_STEPS" GUID="{8934A772-D0D6-4D7F-95C1-08A1DBE804FF}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{AF512CC8-FAFB-495D-8961-A0A53B051163}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="ENVIRO_STEPS" LayerGUID="{8934A772-D0D6-4D7F-95C1-08A1DBE804FF}" Id="{E85C13C3-C5B8-4AFA-80F9-FB1E07CCD4E0}" Name="Snow1" Pos="516.76288,391.17258,47.171627" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Snow">
+    <Properties bEnabled="1" fRadius="50">
+     <SnowFall fBrightness="1" fGravityScale="0.1" nSnowFlakeCount="100" fSnowFlakeSize="1" fTurbulenceFreq="0.1" fTurbulenceStrength="0.5" fWindScale="0.1"/>
+     <Surface fFrostAmount="1" fSnowAmount="10" fSurfaceFreezing="1"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,126 @@
+<Vehicle name="racecar">
+ <Physics pushable="1">
+  <Buoyancy waterDensity="0" waterResistance="0"/>
+ </Physics>
+ <Components>
+  <Component name="wheel_1" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="wheel_2" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="wheel_3" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="wheel_4" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="hull" damageMax="500" major="1" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
+   <DamageBehaviors />
+  </Component>
+ </Components>
+ <Parts>
+  <Part name="hull" class="Animated" component="hull" mass="8547" disableCollision="0">
+   <Parts>
+    <Part name="steeringWheel" class="AnimatedJoint" mass="0" useOption="0"/>
+    <Part name="dials_speedometer" class="AnimatedJoint" component="" mass="0">
+     <AnimatedJoint>
+      <Dials rotationMax="105" ofs="-24"/>
+     </AnimatedJoint>
+    </Part>
+    <Part name="dials_revometer" class="AnimatedJoint" component="" mass="0">
+     <AnimatedJoint>
+      <Dials rotationMax="220"/>
+     </AnimatedJoint>
+    </Part>
+    <Part name="wheel_2" class="SubPartWheel" component="wheel_2" mass="80">
+     <SubPartWheel axle="1" density="0" damping="-0.5" driving="1" lenMax="0.4" maxFriction="0.89999998" minFriction="0.89999998" stiffness="0" suspLength="0.25"/>
+    </Part>
+    <Part name="wheel_3" class="SubPartWheel" component="wheel_3" mass="80">
+     <SubPartWheel axle="0" density="0" damping="-0.5" driving="1" lenMax="0.4" maxFriction="0.89999998" minFriction="0.89999998" stiffness="0" suspLength="0.25"/>
+    </Part>
+    <Part name="wheel_4" class="SubPartWheel" component="wheel_4" mass="80">
+     <SubPartWheel axle="1" density="0" damping="-0.5" driving="1" lenMax="0.4" maxFriction="0.89999998" minFriction="0.89999998" stiffness="0" suspLength="0.25"/>
+    </Part>
+    <Part name="wheel_1" class="SubPartWheel" component="wheel_1" mass="80">
+     <SubPartWheel axle="0" density="0" damping="-0.5" driving="1" lenMax="0.4" maxFriction="0.89999998" minFriction="0.89999998" stiffness="0" suspLength="0.25"/>
+    </Part>
+   </Parts>
+   <Animated filename="objects/vehicles/racecar/racecar.cga" filenameDestroyed="objects/vehicles/racecar/racecar.cga"/>
+  </Part>
+ </Parts>
+ <Helpers>
+  <Helper name="Driver_seat" position="-0.3279,-3.2709,-0.0588" direction="0.0372,0.9972,0.065" part="hull"/>
+ </Helpers>
+ <Seats>
+  <Seat name="driver" part="hull" enterHelper="driver_enter" sitHelper="driver_seat" isDriver="1" AimPart="hull" seatGroupIndex="1" actionMap="vehicle_driver">
+   <Views>
+    <View class="ActionThirdPerson">
+     <SteerThirdPerson />
+    </View>
+    <View class="FirstPerson" canRotate="1">
+     <FirstPerson />
+    </View>
+    <View class="ThirdPerson" canRotate="1">
+     <ThirdPerson distance="20" heightOffset="1.5" speed="5"/>
+    </View>
+   </Views>
+   <SeatActions>
+    <SeatAction class="SteeringWheel">
+     <SteeringWheel fragmentID="IdleDriver" >
+      <Car wheelRotationMax="0.050000001"/>
+     </SteeringWheel>
+    </SeatAction>
+   </SeatActions>
+   <Animations />
+  </Seat>
+ </Seats>
+ <MovementParams>
+  <ArcadeWheeled steerSpeed="90" steerSpeedMin="110" kvSteerMax="27" v0SteerMax="40" steerRelaxation="110" vMaxSteerMax="22" pedalLimitMax="0" rpmGearShiftSpeed="2">
+   <Handling>
+    <Power acceleration="8" decceleration="2" topSpeed="50" reverseSpeed="10" id="idHandlingPower"/>
+    <WheelSpin grip1="0.75" grip2="1" gripRecoverSpeed="2" accelMultiplier1="1.7" accelMultiplier2="0.5"/>
+    <HandBrake decceleration="20" deccelerationPowerLock="6" lockBack="1" lockFront="0" frontFrictionScale="3.2" backFrictionScale="0.1" angCorrectionScale="6" id="idHandBrake"/>
+    <SpeedReduction reductionAmount="0.2" reductionRate="0.2"/>
+    <Friction back="3" front="2.2" offset="-1.3"/>
+    <Correction lateralSpring="0" angSpring="2"/>
+    <Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
+    <Inertia radius="6"/>
+   </Handling>
+   <FakeGears minChangeUpTime="0.69999999" minChangeDownTime="0.5">
+    <Ratios>
+     <Ratio value="0.5"/>
+     <Ratio value="0.8"/>
+     <Ratio value="0.95"/>
+    </Ratios>
+   </FakeGears>
+   <WheeledLegacy damping="0.11" engineIdleRPM="1000" engineMaxRPM="5000" engineMinRPM="1000" stabilizer="0" maxTimeStep="0.050000001" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>
+   <Boost endurance="8" regeneration="8" strength="10" id="idBoost"/>
+   <SoundParams eventGroup="hmmwv" engineSoundPosition="engine" runSoundDelay="1" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.30000001" maxSlipSpeed="11" id="idSound"/>
+  </ArcadeWheeled>
+ </MovementParams>
+ <Particles>
+  <Exhaust insideWater="0" outsideWater="1">
+   <Helpers />
+   <EngineStart effect=""/>
+   <EngineStop effect=""/>
+   <EngineRunning effect="" boostEffect="" baseSizeScale="1" minSpeed="0" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="20" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1" minPower="0" minPowerSizeScale="1" minPowerCountScale="1" minPowerSpeedScale="1" maxPower="1" maxPowerSizeScale="1" maxPowerCountScale="1" maxPowerSpeedScale="1"/>
+  </Exhaust>
+  <DamageEffects />
+  <EnvironmentLayers>
+   <EnvironmentLayer minSpeed="1" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+    <Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+    <Emitters />
+   </EnvironmentLayer>
+  </EnvironmentLayers>
+ </Particles>
+ <Animations>
+  <Animation name="steeringWheel" part="hull">
+   <States>
+    <State name="" animation="default" isLooped="1" speedDefault="1" speedMin="1" speedMax="1"/>
+   </States>
+  </Animation>
+ </Animations>
+ <Modifications />
+ <Mannequin tag="buggy" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/racecar.adb" passengerADB="Animations/Mannequin/ADB/humanVehicleAnims.adb"/>
+</Vehicle>

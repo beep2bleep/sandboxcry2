@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Params>
+	<AnimationList>
+		<Animation name="$TracksDatabase" path="animations/animals/elephant/elephant.dba"/>
+		<Animation name="$AnimEventDatabase" path="Objects/characters/animals/elephant/elephant_base.animevents"/>
+		<Animation name="#filepath" path="animations/animals/elephant"/>
+		<Animation name="*" path="*/*.caf"/>
+		<Animation name="*" path="*/*.i_caf"/>
+	</AnimationList>
+</Params>

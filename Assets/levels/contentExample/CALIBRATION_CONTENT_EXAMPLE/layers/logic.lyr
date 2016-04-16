@@ -1,0 +1,2860 @@
+<ObjectLayer>
+ <Layer Name="LOGIC" GUID="{76457624-C860-47FF-8CEA-F76413513695}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{7E52E809-CADD-47B2-8865-D4782C18737E}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{AA3D1037-9D78-4BFB-BC34-DFFCDC866B8F}" Name="Render_Logic" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="Render" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="14" Class="Entity:GetBounds" pos="2980,1920,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="19" Class="Vec3:SubVec3" pos="3220,1920,0" flags="0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="23" Class="Vec3:FromVec3" pos="3220,1980,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="28" Class="Math:Less" pos="3420,1500,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="29" Class="Math:Less" pos="3420,1660,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="30" Class="Math:Less" pos="3420,1580,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="33" Class="Logic:All" pos="3750,1840,0" flags="0" InHideMask="127" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="35" Name="z_is_largest" Class="_comment" pos="3750,1740,0" flags="0"/>
+      <Node Id="36" Class="Logic:All" pos="3750,1400,0" flags="0" InHideMask="127" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="37" Name="x_is_largest" Class="_comment" pos="3750,1300,0" flags="0"/>
+      <Node Id="38" Class="Logic:All" pos="3750,1630,0" flags="0" InHideMask="127" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="39" Name="y_is_largest" Class="_comment" pos="3750,1530,0" flags="0"/>
+      <Node Id="45" Class="Entity:GetPos" pos="4770,1650,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="49" Class="Math:SetNumber" pos="4090,1770,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="50" Class="Math:SetNumber" pos="4090,1830,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="51" Class="Math:SetNumber" pos="4090,1890,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="56" Class="Logic:Any" pos="4300,1810,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="57" Class="Math:Calculate" pos="4550,1730,0" flags="0">
+       <Inputs Op="3" A="0" B="0"/>
+      </Node>
+      <Node Id="87" Class="Logic:Any" pos="3750,1330,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="88" Class="Logic:Any" pos="3750,1560,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="89" Class="Logic:Any" pos="3750,1770,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="140" Class="Entity:EntityPos" pos="8180,1480,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="141" Class="Entity:GetPos" pos="6370,1720,0" flags="0" EntityGUID="{CE74FF35-20BF-463D-9C22-E0D661F2AE8B}" EntityGUID_64="463D20BFCE74FF35">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="145" Class="Vec3:Calculate" pos="6070,1530,0" flags="0">
+       <Inputs Op="1" A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="146" Class="Vec3:Calculate" pos="6070,1680,0" flags="0">
+       <Inputs Op="0" A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="148" Class="Debug:Draw:AABB" pos="7910,1830,0" flags="0">
+       <Inputs MinPos="0,0,0" MaxPos="0,0,0" Color="0,0,0" Time="2"/>
+      </Node>
+      <Node Id="151" Class="Vec3:Calculate" pos="6660,1640,0" flags="0">
+       <Inputs Op="1" A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="153" Class="Vec3:Calculate" pos="6900,1640,0" flags="0">
+       <Inputs Op="1" A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="157" Class="Entity:GetPos" pos="6370,1870,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="164" Class="Entity:PropertySet" pos="-30,-4200,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" entityProperties_Property="Properties:object_Model" Value="" perArchetype="1"/>
+      </Node>
+      <Node Id="175" Name="Reset_Tokens" Class="_commentbox" pos="-4530,-4162.6465,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="850" Height="930"/>
+       <NodeSize Width="1123.8221" Height="1169.8337"/>
+      </Node>
+      <Node Id="176" Class="Mission:GameTokenSet" pos="-4130,-3260,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" Value="false"/>
+      </Node>
+      <Node Id="177" Class="Game:Start" pos="-4490,-3430,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="178" Class="Mission:GameTokenSet" pos="-4130,-3780,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_ID" Value="0"/>
+      </Node>
+      <Node Id="179" Class="Mission:GameTokenSet" pos="-4130,-3700,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_model" Value="none"/>
+      </Node>
+      <Node Id="180" Class="Mission:GameTokenSet" pos="-4130,-3620,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" Value="0,0,0"/>
+      </Node>
+      <Node Id="181" Class="Mission:GameTokenSet" pos="-4130,-3540,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" Value="0,0,0"/>
+      </Node>
+      <Node Id="182" Class="Mission:GameTokenSet" pos="-4130,-3460,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" Value="1"/>
+      </Node>
+      <Node Id="183" Class="Mission:GameTokenSet" pos="-4130,-3180,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_saveImage" Value="false"/>
+      </Node>
+      <Node Id="195" Class="Math:Mul" pos="4210,2030,0" flags="0">
+       <Inputs A="0" B="2"/>
+      </Node>
+      <Node Id="240" Class="Mission:GameToken" pos="-3460,-3700,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="243" Class="Animations:PlaySequence" pos="-2950,-3700,0" flags="0">
+       <Inputs seq_Sequence_File="rendering" BreakOnStop="0" BlendPosSpeed="0" BlendRotSpeed="0" PerformBlendOut="0" StartTime="0" PlaySpeed="1" JumpToTime="0" seqid_SequenceId="0"/>
+      </Node>
+      <Node Id="245" Class="Logic:Any" pos="-3110,-3640,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="250" Class="Game:Start" pos="-3390,-3580,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="251" Class="Debug:DisplayMessage" pos="970,-1940,0" flags="0">
+       <Inputs entityId="0" message="Left/Right : Rotate Yaw" DisplayTime="0" posX="100" posY="90" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="256" Class="Mission:GameToken" pos="490,-2380,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_text" compare_Value="true"/>
+      </Node>
+      <Node Id="257" Class="Mission:GameTokenSet" pos="-4130,-3100,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_text" Value="false"/>
+      </Node>
+      <Node Id="258" Class="Mission:GameTokenSet" pos="-2950,-3800,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_text" Value="true"/>
+      </Node>
+      <Node Id="259" Class="Debug:DisplayMessage" pos="970,-1740,0" flags="0">
+       <Inputs entityId="0" message="Up/Down  : Scale" DisplayTime="0" posX="100" posY="110" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="261" Class="Input:ActionMaps:ActionFilter" pos="-2950,-3890,0" flags="0">
+       <Inputs actionFilter_Filter="cutscene_no_player"/>
+      </Node>
+      <Node Id="262" Class="Debug:DisplayMessage" pos="970,-1540,0" flags="0">
+       <Inputs entityId="0" message="Page Up/Down : Offset Vertical" DisplayTime="0" posX="100" posY="130" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="266" Class="Debug:InputKey" pos="-3760,1510,0" flags="0">
+       <Inputs entityId="0" Key="right" NonDevMode="0"/>
+      </Node>
+      <Node Id="270" Class="Mission:GameTokenSet" pos="-4130,-3860,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_distance" Value="0"/>
+      </Node>
+      <Node Id="272" Class="entity:TagPoint" pos="-4410,-4130,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{CE74FF35-20BF-463D-9C22-E0D661F2AE8B}" EntityGUID_64="463D20BFCE74FF35">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="274" Class="entity:TagPoint" pos="-4510,-4230,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{BA24C34A-2178-4E5A-B1F1-0AE1CE0DF5A3}" EntityGUID_64="4E5A2178BA24C34A">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="276" Class="entity:AnimObject" pos="-4360,-4080,0" flags="0" InHideMask="8191" OutHideMask="4095" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" ModelLoad="0" ModelUnload="0" Ragdollize="0" Remove="0" ResetAnimation="0" ResetHealth="0" StartAnimation="0" StopAnimation="0" UnHide="0"/>
+      </Node>
+      <Node Id="284" Class="entity:TagPoint" pos="-4460,-4180,0" flags="0" InHideMask="31" OutHideMask="63" EntityGUID="{4CC0B2E9-A8B9-4526-99C2-3A3DF95C653D}" EntityGUID_64="4526A8B94CC0B2E9">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="285" Name="hirarchie_Setup" Class="_commentbox" pos="-4530,-4484.54,0" flags="0">
+       <Inputs TextSize="1" Color="0,0,0" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="320" Height="230"/>
+       <NodeSize Width="1253.145" Height="469.83374"/>
+      </Node>
+      <Node Id="286" Name="Idle_loop" Class="_commentbox" pos="-3490,-4166.8833,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="910" Height="580"/>
+       <NodeSize Width="910" Height="819.83374"/>
+      </Node>
+      <Node Id="287" Name="Menu_Text" Class="_commentbox" pos="-480,-2676.1228,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2290" Height="2730"/>
+       <NodeSize Width="2290" Height="2969.8337"/>
+      </Node>
+      <Node Id="289" Class="Mission:GameToken" pos="-620,-4140,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_modelChange" compare_Value=""/>
+      </Node>
+      <Node Id="294" Class="Math:UpDownCounter" pos="-1900,-3270,0" flags="0">
+       <Inputs Preset="1" HighLimit="0" LowLimit="1" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="296" Class="Debug:DisplayMessage" pos="970,-410,0" flags="0">
+       <Inputs entityId="0" message="[ M ] / [ N ] : Next/Prev Asset" DisplayTime="0" posX="50" posY="320" fontSize="1.75" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="297" Class="Debug:InputKey" pos="-2420,-3180,0" flags="0">
+       <Inputs entityId="0" Key="a" NonDevMode="0"/>
+      </Node>
+      <Node Id="298" Class="Debug:InputKey" pos="-2420,-3070,0" flags="0">
+       <Inputs entityId="0" Key="d" NonDevMode="0"/>
+      </Node>
+      <Node Id="327" Name="resize_Asset" Class="_commentbox" pos="2300,772.62592,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="8"/>
+       <ResizeBorder X="0" Y="0" Width="6210" Height="1170"/>
+       <NodeSize Width="6210" Height="1409.8337"/>
+      </Node>
+      <Node Id="328" Class="Xml:OpenDocument" pos="-2420,-3270,0" flags="0">
+       <Inputs File="rendersetup/render_current" Location="0"/>
+      </Node>
+      <Node Id="330" Class="Debug:DisplayMessage" pos="-2080,-3370,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Can&apos;t find todo list" DisplayTime="0" posX="0.5" posY="0.5" fontSize="3" clr_Color="1,0.00121411,0.00121411" centered="1"/>
+      </Node>
+      <Node Id="334" Class="Xml:GetChildCount" pos="-2080,-3270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="336" Class="Logic:Any" pos="-1690,-3270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="340" Class="Xml:GetChildAt" pos="-1520,-3190,0" flags="0">
+       <Inputs Name="asset" Index="1"/>
+      </Node>
+      <Node Id="343" Class="Debug:DisplayMessage" pos="-970,-3080,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="30" fontSize="1.5" clr_Color="0.0497066,0.445201,1" centered="0"/>
+      </Node>
+      <Node Id="344" Class="String:Concat" pos="-1290,-3050,0" flags="0">
+       <Inputs String1="Current Asset: " String2=""/>
+      </Node>
+      <Node Id="345" Class="Xml:GetAttribute" pos="-1520,-3110,0" flags="0">
+       <Inputs Name="path"/>
+      </Node>
+      <Node Id="346" Class="Xml:GetRoot" pos="-1520,-3270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="347" Class="Mission:GameTokenSet" pos="-840,-3470,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_modelChange" Value="true"/>
+      </Node>
+      <Node Id="348" Class="Mission:GameTokenSet" pos="-1290,-3200,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_model" Value=""/>
+      </Node>
+      <Node Id="350" Class="Entity:GetBounds" pos="5780,1580,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="352" Class="Vec3:MulVec3" pos="6070,1620,0" flags="0">
+       <Inputs A="0,0,0" B="0.5,0.5,0"/>
+      </Node>
+      <Node Id="356" Class="Entity:BeamEntity" pos="5430,1580,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0" Memo=""/>
+      </Node>
+      <Node Id="357" Class="Vec3:Calculate" pos="4940,1670,0" flags="0">
+       <Inputs Op="2" A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="358" Class="Vec3:ToVec3" pos="4770,1730,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="359" Class="Entity:GetBounds" pos="7650,1820,0" flags="0" EntityGUID="{A64A1257-59B4-453C-B442-FA7372F369D5}" EntityGUID_64="453C59B4A64A1257">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="368" Class="Movement:RotateEntityToEx" pos="-1610,1510,0" flags="0" EntityGUID="{CE74FF35-20BF-463D-9C22-E0D661F2AE8B}" EntityGUID_64="463D20BFCE74FF35">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Value="0" CoordSys="0"/>
+      </Node>
+      <Node Id="371" Class="Vec3:ToVec3" pos="-1800,1560,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="372" Class="Math:UpDownCounter" pos="-2440,1290,0" flags="0">
+       <Inputs Preset="0" HighLimit="35" LowLimit="-36" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="374" Class="Math:Mul" pos="-2250,1290,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="379" Class="Time:Delay" pos="-3480,1470,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="381" Class="Time:Timer" pos="-2880,1560,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="383" Class="Logic:Any" pos="-2700,1530,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="385" Class="Math:BooleanTo" pos="-3060,1600,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="387" Class="Logic:Any" pos="-3220,1630,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="389" Class="Logic:Gate" pos="-3230,1520,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="391" Class="Game:Start" pos="-3480,1410,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="392" Class="Debug:InputKey" pos="-3750,1160,0" flags="0">
+       <Inputs entityId="0" Key="left" NonDevMode="0"/>
+      </Node>
+      <Node Id="393" Class="Time:Delay" pos="-3480,1130,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="394" Class="Time:Timer" pos="-2870,1210,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="395" Class="Logic:Any" pos="-2690,1180,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="396" Class="Math:BooleanTo" pos="-3050,1250,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="397" Class="Logic:Any" pos="-3210,1280,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="398" Class="Logic:Gate" pos="-3220,1170,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="401" Class="Mission:GameToken" pos="-4130,650,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_rotate" compare_Value=""/>
+      </Node>
+      <Node Id="404" Class="Vec3:FromVec3" pos="-3280,650,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="405" Class="Math:Div" pos="-3110,700,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="406" Class="Math:Round" pos="-2980,700,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="408" Class="Debug:InputKey" pos="-40,2440,0" flags="0">
+       <Inputs entityId="0" Key="up" NonDevMode="0"/>
+      </Node>
+      <Node Id="412" Class="Math:UpDownCounter" pos="1280,2210,0" flags="0">
+       <Inputs Preset="0" HighLimit="100" LowLimit="-30" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="413" Class="Math:Mul" pos="1480,2210,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="415" Class="Time:Delay" pos="240,2400,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="416" Class="Time:Timer" pos="840,2490,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="417" Class="Logic:Any" pos="1020,2460,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="418" Class="Math:BooleanTo" pos="660,2530,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="419" Class="Logic:Any" pos="500,2560,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="420" Class="Logic:Gate" pos="490,2450,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="421" Class="Game:Start" pos="230,2310,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="422" Class="Debug:InputKey" pos="-30,2090,0" flags="0">
+       <Inputs entityId="0" Key="down" NonDevMode="0"/>
+      </Node>
+      <Node Id="423" Class="Time:Delay" pos="240,2060,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="424" Class="Time:Timer" pos="850,2140,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="425" Class="Logic:Any" pos="1030,2110,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="426" Class="Math:BooleanTo" pos="670,2180,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="427" Class="Logic:Any" pos="510,2210,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="428" Class="Logic:Gate" pos="500,2100,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="430" Class="Mission:GameToken" pos="-450,1730,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_scale" compare_Value=""/>
+      </Node>
+      <Node Id="435" Class="Mission:GameTokenSet" pos="1700,2280,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" Value="true"/>
+      </Node>
+      <Node Id="440" Class="Vec3:ToVec3" pos="-1580,-980,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="441" Class="Math:UpDownCounter" pos="-2240,-220,0" flags="0">
+       <Inputs Preset="0" HighLimit="100" LowLimit="-100" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="442" Class="Math:Mul" pos="-1820,-950,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="444" Class="Time:Delay" pos="-3300,-60,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="445" Class="Time:Timer" pos="-2690,30,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="446" Class="Logic:Any" pos="-2510,0,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="447" Class="Math:BooleanTo" pos="-2870,70,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="448" Class="Logic:Any" pos="-3030,100,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="449" Class="Logic:Gate" pos="-3040,-10,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="450" Class="Game:Start" pos="-3310,-150,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="452" Class="Time:Delay" pos="-3290,-400,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="453" Class="Time:Timer" pos="-2680,-320,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="454" Class="Logic:Any" pos="-2500,-350,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="455" Class="Math:BooleanTo" pos="-2860,-280,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="456" Class="Logic:Any" pos="-3020,-250,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="457" Class="Logic:Gate" pos="-3030,-360,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="459" Class="Mission:GameToken" pos="-3740,-2390,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_offset" compare_Value=""/>
+      </Node>
+      <Node Id="460" Class="Vec3:FromVec3" pos="-2960,-2390,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="461" Class="Math:Div" pos="-2660,-2210,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="464" Class="Movement:MoveEntityTo" pos="-1150,-1150,0" flags="0" EntityGUID="{4CC0B2E9-A8B9-4526-99C2-3A3DF95C653D}" EntityGUID_64="4526A8B94CC0B2E9">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="468" Class="Mission:GameTokenSet" pos="110,-3010,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_resetModifiers" Value=""/>
+      </Node>
+      <Node Id="472" Name="Custom_Scale" Class="_commentbox" pos="-840,1379.3201,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3070" Height="1090"/>
+       <NodeSize Width="3070" Height="1329.8337"/>
+      </Node>
+      <Node Id="474" Class="Mission:GameToken" pos="150,1930,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_resetModifiers" compare_Value="true"/>
+      </Node>
+      <Node Id="476" Class="Math:SetNumber" pos="690,1930,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="478" Class="Logic:Any" pos="1020,1870,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="486" Class="Mission:GameTokenSet" pos="-1150,-950,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" Value="0.0.0"/>
+      </Node>
+      <Node Id="487" Name="Custom_Rotation" Class="_commentbox" pos="-4640,195.51935,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="8"/>
+       <ResizeBorder X="0" Y="0" Width="3760" Height="2280"/>
+       <NodeSize Width="3760" Height="2519.8337"/>
+      </Node>
+      <Node Id="488" Class="Mission:GameTokenSet" pos="-1610,1710,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" Value="0.0.0"/>
+      </Node>
+      <Node Id="489" Class="Debug:DisplayMessage" pos="970,-200,0" flags="0">
+       <Inputs entityId="0" message="[ R ] : Reset Modifiers" DisplayTime="0" posX="50" posY="345" fontSize="1.75" clr_Color="0.863157,0.0185002,0.0185002" centered="0"/>
+      </Node>
+      <Node Id="490" Class="Debug:DisplayMessage" pos="970,10,0" flags="0">
+       <Inputs entityId="0" message="[ SPACE ] : Render Asset" DisplayTime="0" posX="50" posY="370" fontSize="1.75" clr_Color="0.0451862,0.991102,0.00749903" centered="0"/>
+      </Node>
+      <Node Id="497" Class="Debug:ConsoleVariable" pos="-3460,-3480,0" flags="0">
+       <Inputs CVar="r_MotionBlur" Value="0"/>
+      </Node>
+      <Node Id="499" Name="Custom_Offset" Class="_commentbox" pos="-4600,-2994.4729,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="8"/>
+       <ResizeBorder X="0" Y="0" Width="4000" Height="3040"/>
+       <NodeSize Width="4000" Height="3279.8337"/>
+      </Node>
+      <Node Id="500" Class="Mission:GameToken" pos="-3490,810,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_resetModifiers" compare_Value="true"/>
+      </Node>
+      <Node Id="502" Class="Logic:Any" pos="-2680,680,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="504" Class="Math:SetNumber" pos="-3000,810,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="505" Name="reset" Class="_comment" pos="-3490,780,0" flags="0"/>
+      <Node Id="506" Class="Mission:GameToken" pos="-3250,-2250,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_resetModifiers" compare_Value="true"/>
+      </Node>
+      <Node Id="507" Class="Logic:Any" pos="-2460,-2210,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="508" Class="Math:SetNumber" pos="-2660,-2150,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="509" Name="reset" Class="_comment" pos="-3250,-2280,0" flags="0"/>
+      <Node Id="510" Name="reset" Class="_comment" pos="150,1900,0" flags="0"/>
+      <Node Id="511" Class="Debug:InputKey" pos="-2100,-4240,0" flags="0">
+       <Inputs entityId="0" Key="r" NonDevMode="0"/>
+      </Node>
+      <Node Id="512" Class="Debug:InputKey" pos="-2900,-4240,0" flags="0">
+       <Inputs entityId="0" Key="space" NonDevMode="0"/>
+      </Node>
+      <Node Id="515" Class="Mission:GameTokenSet" pos="-1250,-4190,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_resetModifiers" Value=""/>
+      </Node>
+      <Node Id="519" Class="Math:Random" pos="-1480,-4190,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="520" Name="force_token_update" Class="_comment" pos="-1480,-4220,0" flags="0"/>
+      <Node Id="521" Class="Mission:GameTokenSet" pos="-2430,-4210,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_render" Value=""/>
+      </Node>
+      <Node Id="522" Class="Math:Random" pos="-2660,-4210,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="523" Name="force_token_update" Class="_comment" pos="-2660,-4240,0" flags="0"/>
+      <Node Id="524" Name="Start_Render_Output" Class="_commentbox" pos="-2910,-4506.877,0" flags="0">
+       <Inputs TextSize="1" Color="0,0.752942,0.00212469" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="760" Height="140"/>
+       <NodeSize Width="1659.9874" Height="379.83374"/>
+      </Node>
+      <Node Id="525" Name="Reset_Modifiers" Class="_commentbox" pos="-2110,-4506.8799,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1390" Height="240"/>
+       <NodeSize Width="1390" Height="479.83374"/>
+      </Node>
+      <Node Id="526" Name="Model_Selection" Class="_commentbox" pos="-2460,-3762.9626,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3400" Height="690"/>
+       <NodeSize Width="3400" Height="929.83374"/>
+      </Node>
+      <Node Id="527" Class="Mission:GameTokenSet" pos="-30,-4080,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_model" Value="true"/>
+      </Node>
+      <Node Id="528" Name="Model_Switch" Class="_commentbox" pos="-650,-4506.8047,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1030" Height="320"/>
+       <NodeSize Width="1104.7792" Height="559.83374"/>
+      </Node>
+      <Node Id="530" Class="Module:Call_GlobalAssetList_Set" pos="1800,-3860,0" flags="0">
+       <Inputs Instanced="1" InstanceID="-1" AssetPath="" Offset="0,0,0" Rotation="0,0,0" Scale="0" Distance="0" AlignPivot="0"/>
+      </Node>
+      <Node Id="532" Class="Mission:GameToken" pos="1360,-3930,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_model" compare_Value=""/>
+      </Node>
+      <Node Id="533" Class="Mission:GameToken" pos="1360,-3850,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" compare_Value=""/>
+      </Node>
+      <Node Id="534" Class="Mission:GameToken" pos="1360,-3760,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" compare_Value=""/>
+      </Node>
+      <Node Id="535" Class="Mission:GameToken" pos="1360,-3680,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" compare_Value=""/>
+      </Node>
+      <Node Id="537" Class="Debug:InputKey" pos="1460,-4090,0" flags="0">
+       <Inputs entityId="0" Key="space" NonDevMode="0"/>
+      </Node>
+      <Node Id="538" Class="Module:Call_GlobalAssetList_Get" pos="-840,-3370,0" flags="0">
+       <Inputs Instanced="1" InstanceID="-1" AssetPath=""/>
+      </Node>
+      <Node Id="549" Class="Debug:DisplayMessage" pos="2440,-4090,0" flags="0">
+       <Inputs entityId="0" message="IMAGE RENDERED" DisplayTime="1" posX="0.5" posY="0.9" fontSize="3" clr_Color="0.0497066,0.445201,1" centered="1"/>
+      </Node>
+      <Node Id="560" Class="Mission:GameTokenSet" pos="-160,-3420,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" Value=""/>
+      </Node>
+      <Node Id="563" Class="Mission:GameTokenSet" pos="-160,-3340,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" Value=""/>
+      </Node>
+      <Node Id="564" Class="Mission:GameTokenSet" pos="-160,-3260,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" Value=""/>
+      </Node>
+      <Node Id="566" Class="Math:Random" pos="-130,-3010,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="567" Class="Vec3:ToVec3" pos="-1790,1710,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="569" Class="Math:BooleanTo" pos="7380,1880,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="572" Class="Mission:GameToken" pos="-1680,1400,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" compare_Value=""/>
+      </Node>
+      <Node Id="581" Class="Math:Div" pos="690,1840,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="582" Class="Debug:InputKey" pos="-3590,-750,0" flags="0">
+       <Inputs entityId="0" Key="down" NonDevMode="0"/>
+      </Node>
+      <Node Id="584" Class="Math:UpDownCounter" pos="-2250,-990,0" flags="0">
+       <Inputs Preset="0" HighLimit="100" LowLimit="-100" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="586" Class="Time:Delay" pos="-3270,-820,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="587" Class="Time:Timer" pos="-2670,-730,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="588" Class="Logic:Any" pos="-2490,-760,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="589" Class="Math:BooleanTo" pos="-2850,-690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="590" Class="Logic:Any" pos="-3010,-660,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="591" Class="Logic:Gate" pos="-3020,-770,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="592" Class="Game:Start" pos="-3270,-910,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="593" Class="Debug:InputKey" pos="-3580,-1130,0" flags="0">
+       <Inputs entityId="0" Key="up" NonDevMode="0"/>
+      </Node>
+      <Node Id="594" Class="Time:Delay" pos="-3270,-1160,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="595" Class="Time:Timer" pos="-2660,-1080,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="596" Class="Logic:Any" pos="-2480,-1110,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="597" Class="Math:BooleanTo" pos="-2840,-1040,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="598" Class="Logic:Any" pos="-3000,-1010,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="599" Class="Logic:Gate" pos="-3010,-1120,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="602" Class="Math:Div" pos="-2660,-2340,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="607" Class="Logic:Any" pos="-2460,-2340,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="608" Class="Math:SetNumber" pos="-2660,-2280,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="612" Class="Mission:GameToken" pos="-4340,-950,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="614" Class="Debug:InputKey" pos="-3900,-1000,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="620" Class="Logic:Any" pos="-3800,-880,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="622" Class="Game:Start" pos="-4070,-790,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="625" Class="Mission:GameToken" pos="-820,2250,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="626" Class="Debug:InputKey" pos="-340,2260,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="627" Class="Logic:Any" pos="-230,2380,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="628" Class="Game:Start" pos="-510,2470,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="629" Class="Logic:Any" pos="-230,2180,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="637" Class="Vec3:SetVec3" pos="-1400,-1040,0" flags="0">
+       <Inputs In="0,0,0"/>
+      </Node>
+      <Node Id="639" Class="Logic:Any" pos="-1580,-1070,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="641" Class="Math:Mul" pos="-1820,-1010,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="662" Class="Logic:AND" pos="-480,-3140,0" flags="0">
+       <Inputs A="0" B="0" Always="0"/>
+      </Node>
+      <Node Id="663" Class="Logic:OR" pos="-480,-3060,0" flags="0">
+       <Inputs A="0" B="0" Always="1"/>
+      </Node>
+      <Node Id="665" Class="Math:Add" pos="2630,2030,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="667" Class="Logic:Any" pos="2150,1390,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="669" Class="Math:SetNumber" pos="-1250,1530,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="673" Name="Render_Shot" Class="_commentbox" pos="990,-4365.0879,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1750" Height="650"/>
+       <NodeSize Width="1750" Height="889.83374"/>
+      </Node>
+      <Node Id="674" Name="&gt;" Class="_comment" pos="-4510,-4180,0" flags="0"/>
+      <Node Id="675" Name="&gt;" Class="_comment" pos="-4460,-4130,0" flags="0"/>
+      <Node Id="676" Name="&gt;" Class="_comment" pos="-4410,-4080,0" flags="0"/>
+      <Node Id="680" Class="Logic:Condition" pos="-840,1390,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="682" Class="Logic:Any" pos="390,1710,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="683" Class="Mission:GameTokenSet" pos="490,-3260,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_scale" Value="true"/>
+      </Node>
+      <Node Id="684" Class="Mission:GameTokenSet" pos="490,-3340,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_rotate" Value="true"/>
+      </Node>
+      <Node Id="685" Class="Mission:GameTokenSet" pos="490,-3420,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_offset" Value="true"/>
+      </Node>
+      <Node Id="686" Class="Math:Random" pos="250,-3420,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="687" Class="Math:Random" pos="250,-3340,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="688" Class="Math:Random" pos="250,-3260,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="689" Class="Mission:GameTokenGet" pos="-3340,-2390,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset"/>
+      </Node>
+      <Node Id="690" Class="Mission:GameTokenGet" pos="-3710,650,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation"/>
+      </Node>
+      <Node Id="691" Class="Mission:GameTokenGet" pos="-30,1730,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale"/>
+      </Node>
+      <Node Id="696" Class="Logic:Condition" pos="7440,1480,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="697" Class="Mission:GameToken" pos="6900,1480,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" compare_Value="true"/>
+      </Node>
+      <Node Id="701" Class="Logic:Any" pos="8040,1480,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="702" Class="Vec3:FromVec3" pos="7670,1520,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="703" Class="Vec3:ToVec3" pos="7850,1540,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="705" Class="Mission:GameTokenSet" pos="-160,-3170,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" Value=""/>
+      </Node>
+      <Node Id="706" Class="Mission:GameTokenSet" pos="-1850,-4190,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" Value="false"/>
+      </Node>
+      <Node Id="707" Class="Mission:GameToken" pos="1360,-3590,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" compare_Value="true"/>
+      </Node>
+      <Node Id="708" Class="Math:UpDownCounter" pos="1750,-3020,0" flags="0">
+       <Inputs Preset="0" HighLimit="1" LowLimit="0" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="709" Class="Mission:GameTokenSet" pos="2150,-3090,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" Value=""/>
+      </Node>
+      <Node Id="710" Class="Mission:GameTokenSet" pos="2360,-2970,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.trigger_scale" Value="true"/>
+      </Node>
+      <Node Id="711" Class="Math:Random" pos="2150,-2970,0" flags="0">
+       <Inputs min="0" max="1"/>
+      </Node>
+      <Node Id="713" Class="Debug:InputKey" pos="1440,-3120,0" flags="0">
+       <Inputs entityId="0" Key="E" NonDevMode="0"/>
+      </Node>
+      <Node Id="716" Class="Mission:GameToken" pos="1320,-3230,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" compare_Value="true"/>
+      </Node>
+      <Node Id="720" Class="Math:SetNumber" pos="1980,-3090,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="723" Class="Vec3:FromVec3" pos="6660,1540,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="725" Class="Entity:GetPos" pos="6370,1510,0" flags="0" EntityGUID="{BA24C34A-2178-4E5A-B1F1-0AE1CE0DF5A3}" EntityGUID_64="4E5A2178BA24C34A">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="726" Name="Pivot_Align_Toggle" Class="_commentbox" pos="980,-3508.4963,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1770" Height="420"/>
+       <NodeSize Width="1770" Height="659.83374"/>
+      </Node>
+      <Node Id="727" Class="Mission:GameTokenSet" pos="-4130,-3380,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" Value="false"/>
+      </Node>
+      <Node Id="728" Name="align_to_pivot?" Class="_comment" pos="7440,1450,0" flags="0"/>
+      <Node Id="729" Class="Module:Call_RenderSetup" pos="1800,-4090,0" flags="0">
+       <Inputs Instanced="1" InstanceID="-1" On-Off="1" FolderName="Assets" NamePrefix="" fourK="0" renderSettings="render_default_jpg" Framerate="-1"/>
+      </Node>
+      <Node Id="730" Class="Module:Call_RenderSetup" pos="2180,-4090,0" flags="0">
+       <Inputs Instanced="1" InstanceID="-1" On-Off="0" FolderName="" NamePrefix="" fourK="0" renderSettings="" Framerate="0"/>
+      </Node>
+      <Node Id="731" Class="Debug:DisplayMessage" pos="650,-1940,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="90" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="732" Class="Debug:DisplayMessage" pos="650,-1740,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="110" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="733" Class="Debug:DisplayMessage" pos="650,-1540,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="130" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="734" Class="Debug:DisplayMessage" pos="650,-1340,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="150" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="738" Class="Mission:GameToken" pos="-190,-1540,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" compare_Value=""/>
+      </Node>
+      <Node Id="739" Class="Mission:GameToken" pos="-190,-1950,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" compare_Value=""/>
+      </Node>
+      <Node Id="740" Class="Mission:GameToken" pos="-190,-1750,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_scale" compare_Value=""/>
+      </Node>
+      <Node Id="742" Class="Vec3:FromVec3" pos="70,-1850,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="747" Class="Math:Add" pos="80,-1650,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="748" Class="Vec3:FromVec3" pos="50,-1430,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="749" Class="Debug:DisplayMessage" pos="970,-930,0" flags="0">
+       <Inputs entityId="0" message="Ctrl + Page Up/Down : Rotate Pitch" DisplayTime="0" posX="100" posY="190" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="750" Class="Mission:GameToken" pos="-180,-1350,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" compare_Value=""/>
+      </Node>
+      <Node Id="751" Class="Vec3:FromVec3" pos="60,-1240,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="753" Class="Debug:DisplayMessage" pos="970,-730,0" flags="0">
+       <Inputs entityId="0" message="E : Align pivot to ground" DisplayTime="0" posX="100" posY="210" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="754" Class="Debug:DisplayMessage" pos="650,-730,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="210" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="755" Class="Mission:GameToken" pos="-220,-670,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align" compare_Value="true"/>
+      </Node>
+      <Node Id="760" Class="Logic:Gate" pos="300,-730,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="761" Class="Mission:GameToken" pos="-170,-2150,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_text" compare_Value="true"/>
+      </Node>
+      <Node Id="762" Class="Logic:Gate" pos="310,-1340,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="763" Class="Logic:Gate" pos="300,-1530,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="764" Class="Logic:Gate" pos="310,-1740,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="765" Class="Logic:Gate" pos="320,-1940,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="767" Class="Logic:Any" pos="510,-1940,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="768" Class="Logic:Any" pos="510,-1730,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="769" Class="Logic:Any" pos="510,-1530,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="770" Class="Logic:Any" pos="520,-1340,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="771" Class="Logic:Any" pos="480,-730,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="772" Class="Mission:GameToken" pos="1020,-4080,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="773" Class="Debug:InputKey" pos="-3570,-20,0" flags="0">
+       <Inputs entityId="0" Key="pgup" NonDevMode="0"/>
+      </Node>
+      <Node Id="774" Class="Debug:InputKey" pos="-3560,-370,0" flags="0">
+       <Inputs entityId="0" Key="pgdn" NonDevMode="0"/>
+      </Node>
+      <Node Id="790" Class="Math:UpDownCounter" pos="-2440,2030,0" flags="0">
+       <Inputs Preset="0" HighLimit="35" LowLimit="-36" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="791" Class="Math:Mul" pos="-2250,2030,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="793" Class="Time:Delay" pos="-3460,2230,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="794" Class="Time:Timer" pos="-2860,2320,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="795" Class="Logic:Any" pos="-2680,2290,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="796" Class="Math:BooleanTo" pos="-3040,2360,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="797" Class="Logic:Any" pos="-3200,2390,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="798" Class="Logic:Gate" pos="-3210,2280,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="799" Class="Game:Start" pos="-3480,2060,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="801" Class="Time:Delay" pos="-3460,1890,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="802" Class="Time:Timer" pos="-2850,1970,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="803" Class="Logic:Any" pos="-2670,1940,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="804" Class="Math:BooleanTo" pos="-3030,2010,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="805" Class="Logic:Any" pos="-3190,2040,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="806" Class="Logic:Gate" pos="-3200,1930,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="809" Class="Math:Div" pos="-3110,640,0" flags="0">
+       <Inputs A="0" B="5"/>
+      </Node>
+      <Node Id="810" Class="Math:Round" pos="-2980,640,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="813" Class="Logic:Any" pos="-2680,750,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="828" Class="Math:Add" pos="-2040,1580,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="829" Name="add_starting_rotation" Class="_comment" pos="-2040,1550,0" flags="0"/>
+      <Node Id="838" Class="Logic:Any" pos="-1050,1410,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="839" Class="Debug:InputKey" pos="-3730,2280,0" flags="0">
+       <Inputs entityId="0" Key="pgup" NonDevMode="0"/>
+      </Node>
+      <Node Id="840" Class="Debug:InputKey" pos="-3720,1930,0" flags="0">
+       <Inputs entityId="0" Key="pgdn" NonDevMode="0"/>
+      </Node>
+      <Node Id="841" Class="Mission:GameToken" pos="-4490,2090,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="842" Class="Debug:InputKey" pos="-4050,2040,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="843" Class="Logic:Any" pos="-3950,2160,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="844" Class="Game:Start" pos="-4220,2250,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="848" Class="Mission:GameToken" pos="-4380,-220,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="849" Class="Debug:InputKey" pos="-3900,-210,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="850" Class="Logic:Any" pos="-3790,-90,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="851" Class="Game:Start" pos="-4070,0,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="852" Class="Logic:Any" pos="-3790,-290,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="854" Class="String:SetString" pos="20,-570,0" flags="0">
+       <Inputs In="ON"/>
+      </Node>
+      <Node Id="855" Class="String:SetString" pos="20,-510,0" flags="0">
+       <Inputs In="OFF"/>
+      </Node>
+      <Node Id="857" Class="Logic:Any" pos="170,-550,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="859" Class="Mission:GameTokenGet" pos="-220,-730,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_align"/>
+      </Node>
+      <Node Id="863" Class="Math:BooleanFrom" pos="-170,-550,0" flags="0">
+       <Inputs Value="0"/>
+      </Node>
+      <Node Id="865" Class="Logic:Any" pos="-280,-550,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="866" Class="Debug:InputKey" pos="-3660,-1460,0" flags="0">
+       <Inputs entityId="0" Key="left" NonDevMode="0"/>
+      </Node>
+      <Node Id="867" Class="Math:UpDownCounter" pos="-2270,-1700,0" flags="0">
+       <Inputs Preset="0" HighLimit="100" LowLimit="-100" Dec="0" Inc="0" Wrap="1"/>
+      </Node>
+      <Node Id="868" Class="Time:Delay" pos="-3280,-1530,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="869" Class="Time:Timer" pos="-2680,-1440,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="870" Class="Logic:Any" pos="-2500,-1470,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="871" Class="Math:BooleanTo" pos="-2860,-1400,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="872" Class="Logic:Any" pos="-3020,-1370,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="873" Class="Logic:Gate" pos="-3030,-1480,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="874" Class="Game:Start" pos="-3310,-1700,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="875" Class="Debug:InputKey" pos="-3590,-1840,0" flags="0">
+       <Inputs entityId="0" Key="right" NonDevMode="0"/>
+      </Node>
+      <Node Id="876" Class="Time:Delay" pos="-3280,-1870,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="877" Class="Time:Timer" pos="-2670,-1790,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="878" Class="Logic:Any" pos="-2490,-1820,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="879" Class="Math:BooleanTo" pos="-2850,-1750,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="880" Class="Logic:Any" pos="-3010,-1720,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="881" Class="Logic:Gate" pos="-3020,-1830,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="882" Class="Mission:GameToken" pos="-4350,-1660,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="883" Class="Debug:InputKey" pos="-3910,-1710,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="884" Class="Logic:Any" pos="-3810,-1590,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="885" Class="Game:Start" pos="-4080,-1500,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="886" Class="Math:Mul" pos="-1820,-1070,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="887" Class="Math:Div" pos="-2660,-2470,0" flags="0">
+       <Inputs A="0" B="0.02"/>
+      </Node>
+      <Node Id="889" Class="Logic:Any" pos="-2460,-2470,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="890" Class="Math:SetNumber" pos="-2660,-2410,0" flags="0">
+       <Inputs in="0"/>
+      </Node>
+      <Node Id="894" Class="Mission:GameToken" pos="-4540,1330,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="895" Class="Debug:InputKey" pos="-4060,1340,0" flags="0">
+       <Inputs entityId="0" Key="lctrl" NonDevMode="0"/>
+      </Node>
+      <Node Id="896" Class="Logic:Any" pos="-3950,1460,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="897" Class="Game:Start" pos="-4230,1550,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="898" Class="Logic:Any" pos="-3950,1260,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="900" Class="Logic:Any" pos="-3200,-1440,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="901" Class="Logic:Any" pos="-3200,-1780,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="902" Class="Logic:Any" pos="-3200,-730,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="903" Class="Logic:Any" pos="-3210,-1050,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="904" Class="Logic:Any" pos="-3210,-300,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="905" Class="Logic:Any" pos="-3200,40,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="906" Class="Logic:Any" pos="-3420,1240,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="907" Class="Logic:Any" pos="-3400,1560,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="908" Class="Logic:Any" pos="-3380,1980,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="909" Class="Logic:Any" pos="-3380,2320,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="910" Class="Logic:Any" pos="310,2490,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="911" Class="Logic:Any" pos="310,2170,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="912" Class="Debug:DisplayMessage" pos="970,-1340,0" flags="0">
+       <Inputs entityId="0" message="Ctrl + Left/Right : Offset Horizontal " DisplayTime="0" posX="100" posY="150" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="913" Name="X" Class="_commentbox" pos="-4410,-2154.4744,0" flags="0">
+       <Inputs TextSize="1" Color="0.964686,0.00699541,0.00699541" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2540" Height="660"/>
+       <NodeSize Width="2540" Height="899.83374"/>
+      </Node>
+      <Node Id="914" Name="Y" Class="_commentbox" pos="-4410,-1424.4722,0" flags="0">
+       <Inputs TextSize="1" Color="0.0595112,0.760525,0.0423114" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2550" Height="660"/>
+       <NodeSize Width="2550" Height="899.83374"/>
+      </Node>
+      <Node Id="915" Name="Z" Class="_commentbox" pos="-4410,-694.47528,0" flags="0">
+       <Inputs TextSize="1" Color="0.012983,0.332452,0.871367" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2570" Height="660"/>
+       <NodeSize Width="2570" Height="899.83374"/>
+      </Node>
+      <Node Id="916" Name="reset_/_reload" Class="_commentbox" pos="-3780,-2765.0447,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1450" Height="470"/>
+       <NodeSize Width="1450" Height="709.83374"/>
+      </Node>
+      <Node Id="917" Name="Z" Class="_commentbox" pos="-4560,823.74207,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2460" Height="680"/>
+       <NodeSize Width="2460" Height="919.83374"/>
+      </Node>
+      <Node Id="918" Name="X" Class="_commentbox" pos="-4570,1606.5664,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2460" Height="690"/>
+       <NodeSize Width="2460" Height="929.83374"/>
+      </Node>
+      <Node Id="920" Class="Debug:DisplayMessage" pos="970,-1130,0" flags="0">
+       <Inputs entityId="0" message="Ctrl + Up/Down : Offset Distance" DisplayTime="0" posX="100" posY="170" fontSize="1.5" clr_Color="0.887923,0.887923,0.887923" centered="0"/>
+      </Node>
+      <Node Id="921" Class="Debug:DisplayMessage" pos="980,-2380,0" flags="0">
+       <Inputs entityId="0" message="Settings are saved on render. Image will be rendered to object folder" DisplayTime="0" posX="50" posY="0.95" fontSize="1.75" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="922" Class="Debug:DisplayMessage" pos="650,-930,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="190" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="923" Class="Debug:DisplayMessage" pos="650,-1130,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="170" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="924" Class="Mission:GameToken" pos="-190,-930,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_rotation" compare_Value=""/>
+      </Node>
+      <Node Id="925" Class="Vec3:FromVec3" pos="50,-820,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="926" Class="Mission:GameToken" pos="-180,-1140,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.current_offset" compare_Value=""/>
+      </Node>
+      <Node Id="927" Class="Vec3:FromVec3" pos="60,-1030,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="928" Class="Logic:Gate" pos="310,-1130,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="929" Class="Logic:Gate" pos="300,-920,0" flags="0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="930" Class="Logic:Any" pos="510,-920,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="931" Class="Logic:Any" pos="520,-1130,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="934" Name="Step_Size" Class="_comment" pos="-2250,2000,0" flags="0"/>
+      <Node Id="935" Name="Step_Size" Class="_comment" pos="-2250,1260,0" flags="0"/>
+      <Node Id="936" Name="Step_Size" Class="_comment" pos="-1820,-1100,0" flags="0"/>
+      <Node Id="937" Name="Step_Size" Class="_comment" pos="-2660,-2500,0" flags="0"/>
+      <Node Id="938" Class="Mission:GameToken" pos="1020,-3120,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" compare_Value="true"/>
+      </Node>
+      <Node Id="939" Name="force_token_update" Class="_comment" pos="-130,-3040,0" flags="0"/>
+      <Node Id="940" Name="force_token_update" Class="_comment" pos="2150,-3000,0" flags="0"/>
+      <Node Id="948" Name="set_max_BBox_size_here" Class="_comment" pos="4120,2000,0" flags="0"/>
+      <Node Id="972" Name="find_largest_bbox_axis" Class="_commentbox" pos="2950,1032.437,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="950" Height="840"/>
+       <NodeSize Width="1745.8923" Height="1079.8337"/>
+      </Node>
+      <Node Id="973" Name="scale_asset_based_on_bbox" Class="_commentbox" pos="4060,1182.4365,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1570" Height="690"/>
+       <NodeSize Width="2130.6448" Height="929.83374"/>
+      </Node>
+      <Node Id="974" Name="center_asset_based_on_bbox" Class="_commentbox" pos="5720,1182.4365,0" flags="0">
+       <Inputs TextSize="1" Color="0.0953075,0.0953075,0.0953075" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2720" Height="690"/>
+       <NodeSize Width="2720" Height="929.83374"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="19" nodeOut="14" portIn="A" portOut="Max" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="14" portIn="B" portOut="Min" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="19" portIn="vec3" portOut="out" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="23" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="23" portIn="B" portOut="y" enabled="1"/>
+      <Edge nodeIn="29" nodeOut="23" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="29" nodeOut="23" portIn="B" portOut="z" enabled="1"/>
+      <Edge nodeIn="30" nodeOut="23" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="30" nodeOut="23" portIn="B" portOut="z" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="23" portIn="in" portOut="x" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="23" portIn="in" portOut="y" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="23" portIn="in" portOut="z" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="28" portIn="in2" portOut="false" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="28" portIn="in2" portOut="true" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="28" portIn="in2" portOut="false" enabled="1"/>
+      <Edge nodeIn="89" nodeOut="28" portIn="in1" portOut="true" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="29" portIn="in3" portOut="true" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="29" portIn="in3" portOut="false" enabled="1"/>
+      <Edge nodeIn="87" nodeOut="29" portIn="in2" portOut="false" enabled="1"/>
+      <Edge nodeIn="87" nodeOut="29" portIn="in1" portOut="true" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="30" portIn="in2" portOut="true" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="30" portIn="in3" portOut="false" enabled="1"/>
+      <Edge nodeIn="88" nodeOut="30" portIn="in2" portOut="false" enabled="1"/>
+      <Edge nodeIn="88" nodeOut="30" portIn="in1" portOut="true" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="33" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="36" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="38" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="357" nodeOut="45" portIn="A" portOut="Scale" enabled="1"/>
+      <Edge nodeIn="357" nodeOut="45" portIn="DoCalc" portOut="Scale" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="49" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="50" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="56" nodeOut="51" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="56" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="56" portIn="DoCalc" portOut="out" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="57" portIn="x" portOut="out" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="57" portIn="y" portOut="out" enabled="1"/>
+      <Edge nodeIn="358" nodeOut="57" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="87" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="88" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="89" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="151" nodeOut="141" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="151" nodeOut="141" portIn="DoCalc" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="352" nodeOut="145" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="725" nodeOut="145" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="141" nodeOut="146" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="151" nodeOut="146" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="157" nodeOut="146" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="153" nodeOut="151" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="153" nodeOut="151" portIn="DoCalc" portOut="out" enabled="1"/>
+      <Edge nodeIn="569" nodeOut="153" portIn="true" portOut="out" enabled="0"/>
+      <Edge nodeIn="696" nodeOut="153" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="153" nodeOut="157" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="176" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="178" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="179" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="180" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="181" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="182" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="183" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="257" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="270" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="727" nodeOut="177" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="57" nodeOut="195" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="243" nodeOut="240" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="245" nodeOut="240" portIn="in1" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="258" nodeOut="240" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="261" nodeOut="240" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="261" nodeOut="240" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="297" nodeOut="240" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="297" nodeOut="240" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="240" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="298" nodeOut="240" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="328" nodeOut="240" portIn="Execute" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="497" nodeOut="240" portIn="Set" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="511" nodeOut="240" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="511" nodeOut="240" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="512" nodeOut="240" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="512" nodeOut="240" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="243" nodeOut="245" portIn="Stop" portOut="out" enabled="1"/>
+      <Edge nodeIn="245" nodeOut="250" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="251" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="251" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="259" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="259" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="262" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="262" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="296" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="296" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="489" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="489" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="490" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="490" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="912" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="920" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="920" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="921" nodeOut="256" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="921" nodeOut="256" portIn="Show" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="266" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="383" nodeOut="266" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="266" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="266" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="907" nodeOut="266" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="164" nodeOut="289" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="164" nodeOut="289" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="527" nodeOut="289" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="527" nodeOut="289" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="336" nodeOut="294" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="297" portIn="Dec" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="298" portIn="Inc" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="330" nodeOut="328" portIn="Show" portOut="Fail" enabled="1"/>
+      <Edge nodeIn="334" nodeOut="328" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="294" nodeOut="334" portIn="HighLimit" portOut="Count" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="336" portIn="Index" portOut="out" enabled="1"/>
+      <Edge nodeIn="346" nodeOut="336" portIn="Execute" portOut="out" enabled="1"/>
+      <Edge nodeIn="345" nodeOut="340" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="343" nodeOut="344" portIn="Show" portOut="Out" enabled="1"/>
+      <Edge nodeIn="343" nodeOut="344" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="344" nodeOut="345" portIn="Set" portOut="Value" enabled="1"/>
+      <Edge nodeIn="344" nodeOut="345" portIn="String2" portOut="Value" enabled="1"/>
+      <Edge nodeIn="348" nodeOut="345" portIn="Trigger" portOut="Value" enabled="1"/>
+      <Edge nodeIn="348" nodeOut="345" portIn="Value" portOut="Value" enabled="1"/>
+      <Edge nodeIn="340" nodeOut="346" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="347" nodeOut="348" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="347" nodeOut="348" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="538" nodeOut="348" portIn="AssetPath" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="538" nodeOut="348" portIn="Call" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="350" portIn="A" portOut="Max" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="350" portIn="B" portOut="Min" enabled="1"/>
+      <Edge nodeIn="145" nodeOut="350" portIn="DoCalc" portOut="Min" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="350" portIn="B" portOut="Min" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="352" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="146" nodeOut="352" portIn="DoCalc" portOut="out" enabled="1"/>
+      <Edge nodeIn="350" nodeOut="356" portIn="Get" portOut="Done" enabled="1"/>
+      <Edge nodeIn="356" nodeOut="357" portIn="Beam" portOut="out" enabled="1"/>
+      <Edge nodeIn="356" nodeOut="357" portIn="Scale" portOut="out" enabled="1"/>
+      <Edge nodeIn="45" nodeOut="358" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="357" nodeOut="358" portIn="B" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="148" nodeOut="359" portIn="MaxPos" portOut="Max" enabled="1"/>
+      <Edge nodeIn="148" nodeOut="359" portIn="Draw" portOut="Min" enabled="1"/>
+      <Edge nodeIn="148" nodeOut="359" portIn="MinPos" portOut="Min" enabled="1"/>
+      <Edge nodeIn="669" nodeOut="368" portIn="set" portOut="Done" enabled="1"/>
+      <Edge nodeIn="368" nodeOut="371" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="368" nodeOut="371" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="374" nodeOut="372" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="567" nodeOut="374" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="374" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="379" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="383" nodeOut="381" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="372" nodeOut="383" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="385" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="387" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="385" nodeOut="389" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="391" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="397" nodeOut="391" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="393" nodeOut="392" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="395" nodeOut="392" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="397" nodeOut="392" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="392" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="392" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="393" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="395" nodeOut="394" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="372" nodeOut="395" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="394" nodeOut="396" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="397" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="398" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="690" nodeOut="401" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="405" nodeOut="404" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="809" nodeOut="404" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="406" nodeOut="405" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="502" nodeOut="406" portIn="in1" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="415" nodeOut="408" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="417" nodeOut="408" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="408" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="420" nodeOut="408" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="910" nodeOut="408" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="413" nodeOut="412" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="435" nodeOut="413" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="435" nodeOut="413" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="667" nodeOut="413" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="420" nodeOut="415" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="417" nodeOut="416" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="412" nodeOut="417" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="416" nodeOut="418" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="418" nodeOut="419" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="418" nodeOut="420" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="421" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="427" nodeOut="421" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="423" nodeOut="422" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="425" nodeOut="422" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="427" nodeOut="422" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="428" nodeOut="422" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="911" nodeOut="422" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="428" nodeOut="423" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="425" nodeOut="424" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="412" nodeOut="425" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="424" nodeOut="426" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="426" nodeOut="427" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="426" nodeOut="428" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="691" nodeOut="430" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="637" nodeOut="440" portIn="In" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="442" nodeOut="441" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="442" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="639" nodeOut="442" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="444" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="446" nodeOut="445" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="446" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="445" nodeOut="447" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="447" nodeOut="448" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="447" nodeOut="449" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="448" nodeOut="450" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="456" nodeOut="450" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="457" nodeOut="452" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="454" nodeOut="453" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="454" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="453" nodeOut="455" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="455" nodeOut="456" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="455" nodeOut="457" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="689" nodeOut="459" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="461" nodeOut="460" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="602" nodeOut="460" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="887" nodeOut="460" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="507" nodeOut="461" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="476" nodeOut="474" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="478" nodeOut="476" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="412" nodeOut="478" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="504" nodeOut="500" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="372" nodeOut="502" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="502" nodeOut="504" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="813" nodeOut="504" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="508" nodeOut="506" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="608" nodeOut="506" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="890" nodeOut="506" portIn="set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="507" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="507" nodeOut="508" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="706" nodeOut="511" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="522" nodeOut="512" portIn="generate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="515" nodeOut="519" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="515" nodeOut="519" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="521" nodeOut="522" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="521" nodeOut="522" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="532" portIn="AssetPath" portOut="Out" enabled="1"/>
+      <Edge nodeIn="729" nodeOut="532" portIn="NamePrefix" portOut="Out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="533" portIn="Offset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="534" portIn="Rotation" portOut="Out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="535" portIn="Scale" portOut="Out" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="537" portIn="Call" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="729" nodeOut="537" portIn="Call" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="560" nodeOut="538" portIn="Value" portOut="Offset" enabled="1"/>
+      <Edge nodeIn="563" nodeOut="538" portIn="Value" portOut="Rotation" enabled="1"/>
+      <Edge nodeIn="564" nodeOut="538" portIn="Value" portOut="Scale" enabled="1"/>
+      <Edge nodeIn="662" nodeOut="538" portIn="B" portOut="AssetNotInList" enabled="1"/>
+      <Edge nodeIn="662" nodeOut="538" portIn="A" portOut="FileNotFound" enabled="1"/>
+      <Edge nodeIn="663" nodeOut="538" portIn="B" portOut="AssetNotInList" enabled="1"/>
+      <Edge nodeIn="663" nodeOut="538" portIn="A" portOut="FileNotFound" enabled="1"/>
+      <Edge nodeIn="705" nodeOut="538" portIn="Value" portOut="PivotAlign" enabled="1"/>
+      <Edge nodeIn="686" nodeOut="560" portIn="generate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="687" nodeOut="563" portIn="generate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="688" nodeOut="564" portIn="generate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="566" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="566" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="567" portIn="Trigger" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="567" portIn="Value" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="359" nodeOut="569" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="669" nodeOut="572" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="478" nodeOut="581" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="586" nodeOut="582" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="588" nodeOut="582" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="590" nodeOut="582" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="591" nodeOut="582" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="582" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="641" nodeOut="584" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="591" nodeOut="586" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="588" nodeOut="587" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="588" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="587" nodeOut="589" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="590" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="589" nodeOut="591" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="590" nodeOut="592" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="598" nodeOut="592" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="594" nodeOut="593" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="596" nodeOut="593" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="598" nodeOut="593" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="599" nodeOut="593" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="903" nodeOut="593" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="599" nodeOut="594" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="596" nodeOut="595" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="596" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="595" nodeOut="597" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="597" nodeOut="598" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="597" nodeOut="599" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="607" nodeOut="602" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="584" nodeOut="607" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="607" nodeOut="608" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="614" nodeOut="612" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="614" nodeOut="612" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="620" nodeOut="612" portIn="in2" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="582" nodeOut="614" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="593" nodeOut="614" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="620" nodeOut="614" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="582" nodeOut="620" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="590" nodeOut="620" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="593" nodeOut="620" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="598" nodeOut="620" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="620" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="903" nodeOut="620" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="620" nodeOut="622" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="626" nodeOut="625" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="626" nodeOut="625" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="627" nodeOut="625" portIn="in2" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="629" nodeOut="625" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="627" nodeOut="626" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="629" nodeOut="626" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="408" nodeOut="627" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="627" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="422" nodeOut="627" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="427" nodeOut="627" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="910" nodeOut="627" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="911" nodeOut="627" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="627" nodeOut="628" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="408" nodeOut="629" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="422" nodeOut="629" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="637" portIn="Destination" portOut="Out" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="637" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="486" nodeOut="637" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="486" nodeOut="637" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="637" nodeOut="639" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="641" portIn="y" portOut="out" enabled="1"/>
+      <Edge nodeIn="639" nodeOut="641" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="560" nodeOut="663" portIn="Trigger" portOut="false" enabled="1"/>
+      <Edge nodeIn="563" nodeOut="663" portIn="Trigger" portOut="false" enabled="1"/>
+      <Edge nodeIn="564" nodeOut="663" portIn="Trigger" portOut="false" enabled="1"/>
+      <Edge nodeIn="566" nodeOut="663" portIn="generate" portOut="true" enabled="1"/>
+      <Edge nodeIn="705" nodeOut="663" portIn="Trigger" portOut="false" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="665" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="665" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="665" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="665" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="195" nodeOut="665" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="665" nodeOut="667" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="838" nodeOut="669" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="667" nodeOut="680" portIn="in1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="682" nodeOut="680" portIn="in1" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="581" nodeOut="682" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="686" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="685" nodeOut="686" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="684" nodeOut="687" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="684" nodeOut="687" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="683" nodeOut="688" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="683" nodeOut="688" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="460" nodeOut="689" portIn="vec3" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="404" nodeOut="690" portIn="vec3" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="682" nodeOut="691" portIn="in2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="701" nodeOut="696" portIn="in1" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="702" nodeOut="696" portIn="vec3" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="696" nodeOut="697" portIn="Condition" portOut="Out" enabled="1"/>
+      <Edge nodeIn="140" nodeOut="701" portIn="pos" portOut="out" enabled="1"/>
+      <Edge nodeIn="703" nodeOut="702" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="703" nodeOut="702" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="701" nodeOut="703" portIn="in2" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="519" nodeOut="706" portIn="generate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="530" nodeOut="707" portIn="AlignPivot" portOut="Out" enabled="1"/>
+      <Edge nodeIn="720" nodeOut="708" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="711" nodeOut="709" portIn="generate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="710" nodeOut="711" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="710" nodeOut="711" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="708" nodeOut="713" portIn="Inc" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="720" nodeOut="713" portIn="set" portOut="Released" enabled="1"/>
+      <Edge nodeIn="708" nodeOut="716" portIn="Preset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="709" nodeOut="720" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="709" nodeOut="720" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="703" nodeOut="723" portIn="z" portOut="z" enabled="1"/>
+      <Edge nodeIn="723" nodeOut="725" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="730" nodeOut="729" portIn="Call" portOut="Done" enabled="1"/>
+      <Edge nodeIn="549" nodeOut="730" portIn="Show" portOut="Done" enabled="1"/>
+      <Edge nodeIn="748" nodeOut="738" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="742" nodeOut="739" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="740" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="731" nodeOut="742" portIn="message" portOut="z" enabled="1"/>
+      <Edge nodeIn="765" nodeOut="742" portIn="In" portOut="z" enabled="1"/>
+      <Edge nodeIn="732" nodeOut="747" portIn="message" portOut="out" enabled="1"/>
+      <Edge nodeIn="764" nodeOut="747" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="748" portIn="message" portOut="z" enabled="1"/>
+      <Edge nodeIn="763" nodeOut="748" portIn="In" portOut="z" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="734" nodeOut="751" portIn="message" portOut="x" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="751" portIn="In" portOut="x" enabled="1"/>
+      <Edge nodeIn="865" nodeOut="755" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="771" nodeOut="760" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="731" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="732" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="734" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="760" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="760" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="763" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="763" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="764" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="764" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="765" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="765" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="767" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="768" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="769" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="859" nodeOut="761" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="761" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="928" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="928" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="929" nodeOut="761" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="929" nodeOut="761" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="930" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="931" nodeOut="761" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="762" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="769" nodeOut="763" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="768" nodeOut="764" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="767" nodeOut="765" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="731" nodeOut="767" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="732" nodeOut="768" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="733" nodeOut="769" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="734" nodeOut="770" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="771" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="771" portIn="message" portOut="out" enabled="1"/>
+      <Edge nodeIn="537" nodeOut="772" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="537" nodeOut="772" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="444" nodeOut="773" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="446" nodeOut="773" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="448" nodeOut="773" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="773" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="773" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="452" nodeOut="774" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="454" nodeOut="774" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="456" nodeOut="774" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="457" nodeOut="774" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="774" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="790" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="791" portIn="x" portOut="out" enabled="1"/>
+      <Edge nodeIn="567" nodeOut="791" portIn="x" portOut="out" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="793" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="794" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="795" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="794" nodeOut="796" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="797" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="798" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="799" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="805" nodeOut="799" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="806" nodeOut="801" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="802" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="803" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="804" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="804" nodeOut="805" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="804" nodeOut="806" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="810" nodeOut="809" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="813" nodeOut="810" portIn="in1" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="813" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="371" nodeOut="828" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="680" nodeOut="838" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="839" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="839" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="839" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="839" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="839" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="801" nodeOut="840" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="840" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="805" nodeOut="840" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="806" nodeOut="840" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="840" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="842" nodeOut="841" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="842" nodeOut="841" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="843" nodeOut="841" portIn="in2" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="839" nodeOut="842" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="842" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="843" nodeOut="842" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="843" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="805" nodeOut="843" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="839" nodeOut="843" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="840" nodeOut="843" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="908" nodeOut="843" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="909" nodeOut="843" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="843" nodeOut="844" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="849" nodeOut="848" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="849" nodeOut="848" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="850" nodeOut="848" portIn="in2" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="852" nodeOut="848" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="850" nodeOut="849" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="852" nodeOut="849" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="448" nodeOut="850" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="456" nodeOut="850" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="850" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="850" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="904" nodeOut="850" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="905" nodeOut="850" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="850" nodeOut="851" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="852" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="852" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="857" nodeOut="854" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="857" nodeOut="855" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="760" nodeOut="857" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="771" nodeOut="859" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="865" nodeOut="859" portIn="in2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="854" nodeOut="863" portIn="Set" portOut="True" enabled="1"/>
+      <Edge nodeIn="855" nodeOut="863" portIn="Set" portOut="False" enabled="1"/>
+      <Edge nodeIn="863" nodeOut="865" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="868" nodeOut="866" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="870" nodeOut="866" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="872" nodeOut="866" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="873" nodeOut="866" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="866" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="886" nodeOut="867" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="873" nodeOut="868" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="870" nodeOut="869" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="870" portIn="Inc" portOut="out" enabled="1"/>
+      <Edge nodeIn="869" nodeOut="871" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="871" nodeOut="872" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="871" nodeOut="873" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="872" nodeOut="874" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="880" nodeOut="874" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="876" nodeOut="875" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="875" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="880" nodeOut="875" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="881" nodeOut="875" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="901" nodeOut="875" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="881" nodeOut="876" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="878" nodeOut="877" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="878" portIn="Dec" portOut="out" enabled="1"/>
+      <Edge nodeIn="877" nodeOut="879" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="880" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="879" nodeOut="881" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="882" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="883" nodeOut="882" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="884" nodeOut="882" portIn="in2" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="866" nodeOut="883" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="883" portIn="Enable" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="884" nodeOut="883" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="866" nodeOut="884" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="872" nodeOut="884" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="884" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="880" nodeOut="884" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="900" nodeOut="884" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="901" nodeOut="884" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="884" nodeOut="885" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="886" portIn="x" portOut="out" enabled="1"/>
+      <Edge nodeIn="639" nodeOut="886" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="889" nodeOut="887" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="867" nodeOut="889" portIn="Preset" portOut="out" enabled="1"/>
+      <Edge nodeIn="889" nodeOut="890" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="895" nodeOut="894" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="895" nodeOut="894" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="896" nodeOut="894" portIn="in2" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="898" nodeOut="894" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="896" nodeOut="895" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="898" nodeOut="895" portIn="in2" portOut="Released" enabled="1"/>
+      <Edge nodeIn="266" nodeOut="896" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="896" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="392" nodeOut="896" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="397" nodeOut="896" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="906" nodeOut="896" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="907" nodeOut="896" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="896" nodeOut="897" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="266" nodeOut="898" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="392" nodeOut="898" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="873" nodeOut="900" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="881" nodeOut="901" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="591" nodeOut="902" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="599" nodeOut="903" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="457" nodeOut="904" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="449" nodeOut="905" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="906" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="907" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="806" nodeOut="908" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="909" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="420" nodeOut="910" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="428" nodeOut="911" portIn="Close" portOut="out" enabled="1"/>
+      <Edge nodeIn="925" nodeOut="924" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="925" portIn="message" portOut="x" enabled="1"/>
+      <Edge nodeIn="929" nodeOut="925" portIn="In" portOut="x" enabled="1"/>
+      <Edge nodeIn="927" nodeOut="926" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="927" portIn="message" portOut="y" enabled="1"/>
+      <Edge nodeIn="928" nodeOut="927" portIn="In" portOut="y" enabled="1"/>
+      <Edge nodeIn="931" nodeOut="928" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="930" nodeOut="929" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="930" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="923" nodeOut="931" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="713" nodeOut="938" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="713" nodeOut="938" portIn="Enable" portOut="Equal True" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{E6082747-FC7E-4F14-9B80-F378092CF4CD}" Name="Main_Logic" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="Main" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="166" Class="Game:Start" pos="950,240,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="168" Class="Debug:DisplayMessage" pos="1570,-110,0" flags="0">
+       <Inputs entityId="0" message="Press [ L ] to start Light Testing" DisplayTime="25" posX="50" posY="50" fontSize="2" clr_Color="0.0908417,0.527115,0.991102" centered="0"/>
+      </Node>
+      <Node Id="170" Class="Debug:InputKey" pos="950,310,0" flags="0">
+       <Inputs entityId="0" Key="k" NonDevMode="0"/>
+      </Node>
+      <Node Id="172" Class="Mission:GameTokenSet" pos="1310,490,0" flags="0">
+       <Inputs gametoken_Token="asset_render.render.render_running" Value="true"/>
+      </Node>
+      <Node Id="174" Name="Start" Class="_commentbox" pos="200,-219.70496,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1880" Height="1320"/>
+       <NodeSize Width="1880" Height="1347.6406"/>
+      </Node>
+      <Node Id="175" Class="Debug:DisplayMessage" pos="1570,100,0" flags="0">
+       <Inputs entityId="0" message="Press [ K ] to start Asset Renderer" DisplayTime="25" posX="50" posY="75" fontSize="2" clr_Color="0.0908417,0.527115,0.991102" centered="0"/>
+      </Node>
+      <Node Id="177" Class="Logic:Any" pos="1310,380,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1594" Class="Mission:GameTokenSet" pos="1310,570,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" Value="true"/>
+      </Node>
+      <Node Id="1595" Class="Debug:InputKey" pos="950,430,0" flags="0">
+       <Inputs entityId="0" Key="L" NonDevMode="0"/>
+      </Node>
+      <Node Id="1597" Class="Logic:Any" pos="680,420,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="168" nodeOut="166" portIn="Show" portOut="output" enabled="0"/>
+      <Edge nodeIn="175" nodeOut="166" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="1595" nodeOut="166" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="172" nodeOut="170" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="177" nodeOut="170" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="168" nodeOut="177" portIn="Hide" portOut="out" enabled="0"/>
+      <Edge nodeIn="175" nodeOut="177" portIn="Hide" portOut="out" enabled="1"/>
+      <Edge nodeIn="177" nodeOut="1595" portIn="in2" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="1594" nodeOut="1595" portIn="Trigger" portOut="Pressed" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{3E39C963-D005-4939-B4DE-F6135A34F911}" Name="static_shadow_max" Pos="173.75,211.5,208.75" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="TagPoint" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{0BA19F66-0C6F-40A8-9DEA-840A771A1531}" Name="static_shadow_min" Pos="64,48,64" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint" HasEntity="1"/>
+   <Object Type="Entity" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{78316185-15AF-4543-A933-4B87DAC71193}" Name="Lighting_debug_menu_Trigger" Pos="125,108,114" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="AreaTrigger" HasEntity="1">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="Lighting_debug_menu_Trigger" enabled="0" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="6" Name="Menu_Logic" Class="_commentbox" pos="920,1670.4364,0" flags="0">
+       <Inputs TextSize="1" Color="0.271577,0.348865,0.701169" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="570" Height="150"/>
+       <NodeSize Width="1071.3718" Height="417.38992"/>
+      </Node>
+      <Node Id="24" Name="Time_of_Day_Display" Class="_commentbox" pos="3013.0334,405.88708,0" flags="0">
+       <Inputs TextSize="1" Color="0.280124,0.659224,0.297653" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1120" Height="800"/>
+       <NodeSize Width="1833.849" Height="1067.3899"/>
+      </Node>
+      <Node Id="26" Name="Menu_Action" Class="_commentbox" pos="2230,1340.3353,0" flags="0">
+       <Inputs TextSize="1" Color="0.737205,0.2468,0.2468" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="380" Height="180"/>
+       <NodeSize Width="1159.2593" Height="447.38992"/>
+      </Node>
+      <Node Id="31" Class="Mission:GameTokenGet" pos="3030.2126,911.28149,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday"/>
+      </Node>
+      <Node Id="34" Class="Debug:DisplayMessage" pos="3880,710,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Insert] - Time of Day" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="36" Class="Debug:DisplayMessage" pos="3880,820,0" flags="0">
+       <Inputs entityId="0" message="[Insert] - Time of Day" DisplayTime="0" posX="300" posY="50" fontSize="2" clr_Color="0.124741,0.781751,0.0962661" centered="0"/>
+      </Node>
+      <Node Id="37" Class="Debug:DisplayMessage" pos="3880,980,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Afternoon] ~2:30pm, strong sun, harsh shadows" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="39" Class="Math:Add" pos="3650,910,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="40" Class="Debug:DisplayMessage" pos="3880,1100,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Evening] ~4:30pm, low tinted sun, long shadows" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="41" Class="Debug:DisplayMessage" pos="3880,1210,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Night] ~12am, full moon, bluer light" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="42" Class="Math:Add" pos="3650,1080,0" flags="0">
+       <Inputs A="0" B="20"/>
+      </Node>
+      <Node Id="43" Class="Math:Add" pos="3650,1200,0" flags="0">
+       <Inputs A="0" B="20"/>
+      </Node>
+      <Node Id="73" Class="Mission:GameTokenGet" pos="3020,2870,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.clipping"/>
+      </Node>
+      <Node Id="74" Class="Debug:DisplayMessage" pos="3860,2810,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Numlock] - Clipping" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="76" Class="Debug:DisplayMessage" pos="3860,2940,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Insert] - Time of Day" DisplayTime="0" posX="300" posY="50" fontSize="2" clr_Color="0.124741,0.781751,0.0962661" centered="0"/>
+      </Node>
+      <Node Id="77" Class="Debug:DisplayMessage" pos="3860,3090,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Green for Blacks, Pink for Whites" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="78" Class="Math:Add" pos="3670,3090,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="79" Name="Clipping_Display_(Not_Displayed)" Class="_commentbox" pos="3000,2495.7761,0" flags="0">
+       <Inputs TextSize="1" Color="0.396755,0.496933,0.401978" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1130" Height="450"/>
+       <NodeSize Width="2890.7627" Height="717.38989"/>
+      </Node>
+      <Node Id="88" Class="Debug:DisplayMessage" pos="3860,2150,0" flags="0">
+       <Inputs entityId="0" message="[Backspace] - Panic button" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="0.932277,0.415148,0.173439" centered="0"/>
+      </Node>
+      <Node Id="91" Name="Reset_Display" Class="_commentbox" pos="3000,1827.3937,0" flags="0">
+       <Inputs TextSize="1" Color="0.280124,0.659224,0.297653" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1170" Height="490"/>
+       <NodeSize Width="1253.849" Height="757.38989"/>
+      </Node>
+      <Node Id="92" Class="Math:Add" pos="3520,2940,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="97" Class="Math:Add" pos="3530,2240,0" flags="0">
+       <Inputs A="0" B="50"/>
+      </Node>
+      <Node Id="98" Class="Debug:DisplayMessage" pos="3860,2360,0" flags="0">
+       <Inputs entityId="0" message="Reset Settings" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="99" Class="Math:Add" pos="3690,2290,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="100" Name="Panic_Logic_(backspace)" Class="_commentbox" pos="4353.0449,1611.0343,0" flags="0">
+       <Inputs TextSize="1" Color="0.271577,0.348865,0.701169" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="710" Height="700"/>
+       <NodeSize Width="2174.259" Height="967.38989"/>
+      </Node>
+      <Node Id="101" Class="Debug:InputKey" pos="4360.2129,2061.2815,0" flags="0">
+       <Inputs entityId="0" Key="backspace" NonDevMode="0"/>
+      </Node>
+      <Node Id="103" Class="Mission:GameTokenSet" pos="4640,1930,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday" Value="Afternoon"/>
+      </Node>
+      <Node Id="104" Class="Mission:GameTokenSet" pos="4640,2010,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.lighting" Value="Standard"/>
+      </Node>
+      <Node Id="105" Class="Mission:GameTokenSet" pos="4640,2090,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.saturation" Value="100"/>
+      </Node>
+      <Node Id="106" Class="Mission:GameTokenSet" pos="4640,2170,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.contrast" Value="Standard"/>
+      </Node>
+      <Node Id="107" Class="Mission:GameTokenSet" pos="4640,2250,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.clipping" Value="Off"/>
+      </Node>
+      <Node Id="108" Class="Mission:GameTokenSet" pos="4640,2330,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.colorgrading" Value="Off"/>
+      </Node>
+      <Node Id="109" Name="Time_of_Day_Logic_(Insert)" Class="_commentbox" pos="5680,-69.748779,0" flags="0">
+       <Inputs TextSize="1" Color="0.271577,0.348865,0.701169" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="960" Height="470"/>
+       <NodeSize Width="2391.8533" Height="737.38989"/>
+      </Node>
+      <Node Id="110" Class="Debug:InputKey" pos="5790.2129,321.28149,0" flags="0">
+       <Inputs entityId="0" Key="insert" NonDevMode="0"/>
+      </Node>
+      <Node Id="114" Class="Logic:Sequentializer" pos="6060.2129,321.28149,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="115" Class="Mission:GameTokenSet" pos="6300.2129,571.28149,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday" Value="Afternoon"/>
+      </Node>
+      <Node Id="116" Class="Mission:GameTokenSet" pos="6300.2129,321.28149,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday" Value="Evening"/>
+      </Node>
+      <Node Id="117" Class="Mission:GameTokenSet" pos="6300.2129,411.28149,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday" Value="Night"/>
+      </Node>
+      <Node Id="119" Name="Time_of_Day_Action/Cubemap_Switching" Class="_commentbox" pos="6764.4048,-658.7146,0" flags="0">
+       <Inputs TextSize="1" Color="0.867136,0.45908,0.183549" DisplayFilled="1" DisplayBox="1" SortPriority="0"/>
+       <ResizeBorder X="0" Y="0" Width="1090" Height="1850"/>
+       <NodeSize Width="3553.6467" Height="2117.3899"/>
+      </Node>
+      <Node Id="121" Class="Logic:Any" pos="5790.2129,461.28149,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="122" Class="Logic:Any" pos="6790,-220,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="123" Class="Logic:Any" pos="6790.2129,261.28149,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="124" Class="Logic:Any" pos="6790,700,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="125" Class="Time:TimeOfDay" pos="6980,-350,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="16.5" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="126" Class="Time:TimeOfDay" pos="6980,220,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="0" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="127" Class="Time:TimeOfDay" pos="6980,770,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="12" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="207" Name="Clipping_Logic_(Numlock)" Class="_commentbox" pos="5760,2128.79,0" flags="0">
+       <Inputs TextSize="1" Color="0.267358,0.348865,0.694081" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1080" Height="280"/>
+       <NodeSize Width="2259.1255" Height="547.38989"/>
+      </Node>
+      <Node Id="208" Class="Debug:InputKey" pos="5790,2550,0" flags="0">
+       <Inputs entityId="0" Key="numlock" NonDevMode="0"/>
+      </Node>
+      <Node Id="209" Class="Logic:Sequentializer" pos="6300,2430,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="211" Class="Mission:GameTokenSet" pos="6530,2430,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.clipping" Value="On"/>
+      </Node>
+      <Node Id="212" Class="Mission:GameTokenSet" pos="6530,2520,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.clipping" Value="Off"/>
+      </Node>
+      <Node Id="213" Name="Clipping_Action" Class="_commentbox" pos="6920,2138.7896,0" flags="0">
+       <Inputs TextSize="1" Color="0.867136,0.45908,0.183549" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="560" Height="220"/>
+       <NodeSize Width="1376.3816" Height="487.38989"/>
+      </Node>
+      <Node Id="214" Class="Logic:Any" pos="6130,2430,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="219" Class="Image:ColorGradient" pos="6930,2440,0" flags="0">
+       <Inputs tex_TexturePath="textures/colorcharts/generic/debug_clipping_cch.dds" TransitionTime="0"/>
+      </Node>
+      <Node Id="220" Class="Image:ColorGradient" pos="6930,2530,0" flags="0">
+       <Inputs tex_TexturePath="textures/colorcharts/generic/default_cch.dds" TransitionTime="0"/>
+      </Node>
+      <Node Id="235" Class="Logic:Any" pos="5780,2050,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="236" Name="Reset_Sequencers" Class="_comment" pos="5780,2020,0" flags="0"/>
+      <Node Id="237" Name="Panic_Action" Class="_commentbox" pos="4400,268.27722,0" flags="0">
+       <Inputs TextSize="1" Color="0.867136,0.45908,0.183549" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1150" Height="1020"/>
+       <NodeSize Width="1150" Height="1287.3899"/>
+      </Node>
+      <Node Id="238" Class="Logic:Any" pos="4420,880,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="239" Class="Image:ColorGradient" pos="4820,880,0" flags="0" InHideMask="4">
+       <Inputs tex_TexturePath="textures/colorcharts/generic/default_cch.dds" TransitionTime="0"/>
+      </Node>
+      <Node Id="246" Class="Time:TimeOfDay" pos="4900,550,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="14.5" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="249" Class="Game:Start" pos="940,2280,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="250" Class="Debug:ConsoleVariable" pos="1130,2230,0" flags="0">
+       <Inputs CVar="r_colorgrading" Value="1"/>
+      </Node>
+      <Node Id="266" Class="Debug:InputKey" pos="5710,3880,0" flags="0">
+       <Inputs entityId="0" Key="right" NonDevMode="0"/>
+      </Node>
+      <Node Id="269" Class="Logic:Any" pos="4430,1250,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="270" Name="Initial_Setup" Class="_commentbox" pos="920,1940.4341,0" flags="0">
+       <Inputs TextSize="1" Color="0.68002,0.20471,0.819964" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="490" Height="310"/>
+       <NodeSize Width="1132.9214" Height="577.38989"/>
+      </Node>
+      <Node Id="271" Class="Time:TimeOfDay" pos="1130,2330,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="14.5" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="307" Class="Debug:InputKey" pos="700,1470,0" flags="0">
+       <Inputs entityId="0" Key="l" NonDevMode="0"/>
+      </Node>
+      <Node Id="308" Class="Mission:GameTokenSet" pos="1550,1230,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" Value="True"/>
+      </Node>
+      <Node Id="309" Class="Logic:Sequentializer" pos="1170,1510,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="310" Class="Mission:GameTokenSet" pos="1550,1440,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" Value="false"/>
+      </Node>
+      <Node Id="323" Name="Debug_Show/hide_info" Class="_commentbox" pos="660,940.25317,0" flags="0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1330" Height="680"/>
+       <NodeSize Width="2023.123" Height="947.38989"/>
+      </Node>
+      <Node Id="324" Class="Debug:DisplayMessage" pos="1550,1660,0" flags="0">
+       <Inputs entityId="0" message="Press &quot;L&quot; to hide/show debug menu" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="325" Class="Mission:GameTokenSet" pos="6300.2129,491.28149,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.timeofday" Value="Neutral"/>
+      </Node>
+      <Node Id="326" Class="Logic:Any" pos="6790,1090,0" flags="0" InHideMask="62">
+       <Inputs />
+      </Node>
+      <Node Id="327" Class="Time:TimeOfDay" pos="6980,1360,0" flags="0" InHideMask="124" OutHideMask="3">
+       <Inputs Time="14.5" ForceUpdate="1" Speed="1"/>
+      </Node>
+      <Node Id="379" Class="Time:Delay" pos="5990,3840,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="381" Class="Time:Timer" pos="6590,3930,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="383" Name="Evening" Class="_commentbox" pos="6950,-629.56311,0" flags="0">
+       <Inputs TextSize="1" Color="0.560499,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="430" Height="120"/>
+       <NodeSize Width="767.58936" Height="387.38992"/>
+      </Node>
+      <Node Id="384" Name="Night" Class="_commentbox" pos="6950,-49.564728,0" flags="0">
+       <Inputs TextSize="1" Color="0.560499,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="430" Height="100"/>
+       <NodeSize Width="540.46057" Height="367.38992"/>
+      </Node>
+      <Node Id="385" Name="Neutral" Class="_commentbox" pos="6950,500.43527,0" flags="0">
+       <Inputs TextSize="1" Color="0.560499,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="430" Height="90"/>
+       <NodeSize Width="711.42078" Height="357.38992"/>
+      </Node>
+      <Node Id="386" Name="Afternoon" Class="_commentbox" pos="6950,1070.4366,0" flags="0">
+       <Inputs TextSize="1" Color="0.560499,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="430" Height="110"/>
+       <NodeSize Width="938.54962" Height="377.38992"/>
+      </Node>
+      <Node Id="387" Class="Logic:Any" pos="6250,4000,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="388" Class="Math:Add" pos="7510,3300,0" flags="0">
+       <Inputs A="0" B="10"/>
+      </Node>
+      <Node Id="389" Class="Logic:Gate" pos="6240,3890,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="391" Class="Game:Start" pos="5960,3630,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="392" Class="Debug:InputKey" pos="5690,3310,0" flags="0">
+       <Inputs entityId="0" Key="left" NonDevMode="0"/>
+      </Node>
+      <Node Id="393" Class="Mission:GameTokenGet" pos="7310,3230,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos"/>
+      </Node>
+      <Node Id="394" Name="Afternoon" Class="_commentbox" pos="4630,870.00317,0" flags="0">
+       <Inputs TextSize="1" Color="0.554227,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="100"/>
+       <NodeSize Width="938.54962" Height="367.38992"/>
+      </Node>
+      <Node Id="395" Class="Logic:Any" pos="6750,3330,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="396" Class="Math:BooleanTo" pos="6390,3400,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="397" Class="Logic:Any" pos="6230,3430,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="398" Class="Logic:Gate" pos="6220,3320,0" flags="0">
+       <Inputs Closed="1"/>
+      </Node>
+      <Node Id="402" Class="Mission:GameTokenSet" pos="4640,2410,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" Value="240"/>
+      </Node>
+      <Node Id="408" Name="SunPos_Display" Class="_commentbox" pos="3010,1297.3971,0" flags="0">
+       <Inputs TextSize="1" Color="0.280124,0.659224,0.297653" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1120" Height="430"/>
+       <NodeSize Width="1404.8907" Height="697.38989"/>
+      </Node>
+      <Node Id="409" Class="Mission:GameTokenGet" pos="3050,1610,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos"/>
+      </Node>
+      <Node Id="410" Class="Debug:DisplayMessage" pos="3880,1600,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Left/Right] - Sun Position" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="416" Class="Math:Add" pos="3650,1650,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="419" Class="Debug:DisplayMessage" pos="3880,1720,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Arrowkeys Left/Right to shift the sun/moon position" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="420" Class="Math:Add" pos="3650,1820,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="424" Class="Mission:GameTokenSet" pos="8330,3260,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" Value=""/>
+      </Node>
+      <Node Id="425" Class="Mission:GameTokenSet" pos="8330,3830,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" Value=""/>
+      </Node>
+      <Node Id="426" Class="Logic:Any" pos="4680,3130,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="427" Name="Reset_Sun/Moon_Pos" Class="_comment" pos="4680,3100,0" flags="0"/>
+      <Node Id="439" Class="Math:Round" pos="8140,3260,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="440" Class="Math:Round" pos="8140,3830,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="443" Class="Mission:GameTokenSet" pos="8330,3380,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" Value=""/>
+      </Node>
+      <Node Id="444" Class="Mission:GameTokenSet" pos="8330,3950,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" Value=""/>
+      </Node>
+      <Node Id="445" Class="Math:Round" pos="8140,3950,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="446" Class="Math:Round" pos="8140,3380,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="449" Name="Sun/Moon_Position_Action" Class="_commentbox" pos="5600,2819.5481,0" flags="0">
+       <Inputs TextSize="1" Color="0.867136,0.45908,0.183549" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2520" Height="1130"/>
+       <NodeSize Width="2520" Height="1397.3899"/>
+      </Node>
+      <Node Id="450" Class="Mission:GameTokenSet" pos="4640,2490,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" Value="240"/>
+      </Node>
+      <Node Id="460" Class="Mission:GameTokenCheck" pos="6940,3270,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" CheckValue="350"/>
+      </Node>
+      <Node Id="463" Class="Mission:GameTokenSet" pos="7310,3140,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" Value="0"/>
+      </Node>
+      <Node Id="464" Class="Mission:GameTokenCheck" pos="6940,3950,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" CheckValue="0"/>
+      </Node>
+      <Node Id="465" Class="Mission:GameTokenCheck" pos="6940,3380,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" CheckValue="350"/>
+      </Node>
+      <Node Id="466" Class="Mission:GameTokenGet" pos="7310,3460,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos"/>
+      </Node>
+      <Node Id="467" Class="Mission:GameTokenSet" pos="7310,3530,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" Value="0"/>
+      </Node>
+      <Node Id="468" Class="Math:Add" pos="7510,3380,0" flags="0">
+       <Inputs A="0" B="10"/>
+      </Node>
+      <Node Id="469" Class="Math:Add" pos="7510,3870,0" flags="0">
+       <Inputs A="0" B="-10"/>
+      </Node>
+      <Node Id="470" Class="Mission:GameTokenGet" pos="7310,3800,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos"/>
+      </Node>
+      <Node Id="471" Class="Mission:GameTokenSet" pos="7310,3710,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" Value="350"/>
+      </Node>
+      <Node Id="472" Class="Mission:GameTokenGet" pos="7310,4030,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos"/>
+      </Node>
+      <Node Id="473" Class="Mission:GameTokenSet" pos="7310,4100,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.moonpos" Value="350"/>
+      </Node>
+      <Node Id="474" Class="Math:Add" pos="7510,3950,0" flags="0">
+       <Inputs A="0" B="-10"/>
+      </Node>
+      <Node Id="475" Class="Mission:GameTokenCheck" pos="6940,3850,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.sunpos" CheckValue="0"/>
+      </Node>
+      <Node Id="476" Name="Positive" Class="_commentbox" pos="5630,2859.5447,0" flags="0">
+       <Inputs TextSize="1" Color="0.554227,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2490" Height="480"/>
+       <NodeSize Width="2490" Height="747.38989"/>
+      </Node>
+      <Node Id="477" Name="Negative" Class="_commentbox" pos="5630,3429.5447,0" flags="0">
+       <Inputs TextSize="1" Color="0.554227,0.0289912,0.0289912" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2480" Height="480"/>
+       <NodeSize Width="2480" Height="747.38989"/>
+      </Node>
+      <Node Id="546" Class="Debug:DisplayMessage" pos="3880,1320,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Neutral] 12 Noon, full grey lighting, low contrast" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="547" Class="Math:Add" pos="3650,1300,0" flags="0">
+       <Inputs A="0" B="20"/>
+      </Node>
+      <Node Id="548" Class="Debug:ConsoleVariable" pos="1550,1520,0" flags="0">
+       <Inputs CVar="r_DisplayInfo" Value="0"/>
+      </Node>
+      <Node Id="549" Class="Debug:ConsoleVariable" pos="1550,1310,0" flags="0">
+       <Inputs CVar="r_DisplayInfo" Value="1"/>
+      </Node>
+      <Node Id="1370" Class="Mission:GameTokenGet" pos="1040,3310,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.stage"/>
+      </Node>
+      <Node Id="1371" Class="Debug:DisplayMessage" pos="1800,3110,0" flags="0">
+       <Inputs entityId="0" message="[Home] - Stage Lights" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1372" Class="Debug:DisplayMessage" pos="1800,3330,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="[Insert] - Time of Day" DisplayTime="0" posX="300" posY="50" fontSize="2" clr_Color="0.124741,0.781751,0.0962661" centered="0"/>
+      </Node>
+      <Node Id="1373" Name="Stage_Lights_Display" Class="_commentbox" pos="970,2804.8137,0" flags="0">
+       <Inputs TextSize="1" Color="0.267358,0.43134,0.666117" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1150" Height="530"/>
+       <NodeSize Width="1845.5547" Height="797.38989"/>
+      </Node>
+      <Node Id="1374" Class="Math:Add" pos="1460,3240,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="1377" Class="Math:Add" pos="1590,3330,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="1378" Class="Debug:DisplayMessage" pos="1800,3470,0" flags="0" InHideMask="1023" OutHideMask="3">
+       <Inputs entityId="0" message="Cycles through stage light presets" DisplayTime="0" posX="80" posY="50" fontSize="1.5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1381" Class="Debug:DisplayMessage" pos="3870,10,0" flags="0">
+       <Inputs entityId="0" message="[Shift+F1] - Exterior Camera" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1382" Class="Math:SetNumber" pos="3500,60,0" flags="0">
+       <Inputs in="100"/>
+      </Node>
+      <Node Id="1383" Class="Logic:Any" pos="3050,50,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1384" Class="Math:Add" pos="3510,250,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="1385" Class="Debug:DisplayMessage" pos="3870,270,0" flags="0">
+       <Inputs entityId="0" message="[Shift+F2] - Interior Camera" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1386" Class="Math:Add" pos="3510,520,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="1445" Class="Environment:RecomputeStaticShadows" pos="1130,2410,0" flags="0">
+       <Inputs Min="100,100,0" Max="600,600,400" NextCascadesScale="2"/>
+      </Node>
+      <Node Id="1446" Class="Environment:Sun" pos="4870,3130,0" flags="0">
+       <Inputs Latitude="240" Longitude="140" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1447" Class="Environment:MoonDirection" pos="4870,3250,0" flags="0">
+       <Inputs Latitude="240" Longitude="45" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1451" Class="Environment:Sun" pos="7910,3260,0" flags="0">
+       <Inputs Latitude="240" Longitude="140" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1452" Class="Environment:MoonDirection" pos="7910,3380,0" flags="0">
+       <Inputs Latitude="240" Longitude="45" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1453" Class="Environment:Sun" pos="7910,3830,0" flags="0">
+       <Inputs Latitude="240" Longitude="140" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1454" Class="Environment:MoonDirection" pos="7910,3950,0" flags="0">
+       <Inputs Latitude="240" Longitude="45" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1470" Class="Environment:Sun" pos="7700,3140,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs Latitude="240" Longitude="140" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1471" Class="Environment:MoonDirection" pos="7700,3500,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs Latitude="240" Longitude="45" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1472" Class="Environment:Sun" pos="7700,3730,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs Latitude="240" Longitude="140" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1473" Class="Environment:MoonDirection" pos="7690,4090,0" flags="0" InHideMask="31" OutHideMask="3">
+       <Inputs Latitude="240" Longitude="45" ForceUpdate="1"/>
+      </Node>
+      <Node Id="1475" Class="Debug:DisplayMessage" pos="8950,3600,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="300" posY="300" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1476" Class="Logic:Any" pos="8790,3600,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1478" Class="Environment:RecomputeStaticShadows" pos="1460,2540,0" flags="0">
+       <Inputs Min="0,0,0" Max="0,0,0" NextCascadesScale="2"/>
+      </Node>
+      <Node Id="1481" Class="Entity:GetPos" pos="1230,2630,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{0BA19F66-0C6F-40A8-9DEA-840A771A1531}" EntityGUID_64="40A80C6F0BA19F66">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1482" Class="Entity:GetPos" pos="1230,2710,0" flags="0" InHideMask="7" OutHideMask="63" EntityGUID="{3E39C963-D005-4939-B4DE-F6135A34F911}" EntityGUID_64="4939D0053E39C963">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1485" Class="Logic:Any" pos="930,2540,0" flags="0" InHideMask="1021" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1486" Class="Time:Delay" pos="1230,2540,0" flags="0">
+       <Inputs delay="0.1" resetOnInput="0"/>
+      </Node>
+      <Node Id="1488" Name="Camera_Display" Class="_commentbox" pos="3020,-291.73532,0" flags="0">
+       <Inputs TextSize="1" Color="0.280124,0.659224,0.297653" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1190" Height="620"/>
+       <NodeSize Width="1437.6478" Height="887.38989"/>
+      </Node>
+      <Node Id="1525" Class="entity:EnvironmentLight" pos="4650,1240,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1526" Class="entity:EnvironmentLight" pos="4650,1450,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1527" Class="entity:EnvironmentLight" pos="4650,1350,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1528" Class="entity:EnvironmentLight" pos="4650,1140,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1529" Class="entity:GeomEntity" pos="4880,1240,0" flags="0" InHideMask="61" OutHideMask="127">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="1530" Class="entity:GeomEntity" pos="4880,1140,0" flags="0" InHideMask="61" OutHideMask="127">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="1532" Class="Time:TimeOfDayTransitionTrigger" pos="7440,680,0" flags="0">
+       <Inputs Time="-1" Duration="0" SunLatitude="-1" SunLongitude="90" SunPositionUpdateInterval="0" ForceUpdateInterval="0"/>
+      </Node>
+      <Node Id="1533" Class="Time:TimeOfDayTransitionTrigger" pos="7440,-260,0" flags="0">
+       <Inputs Time="-1" Duration="0" SunLatitude="-1" SunLongitude="140" SunPositionUpdateInterval="0" ForceUpdateInterval="0"/>
+      </Node>
+      <Node Id="1534" Class="Time:TimeOfDayTransitionTrigger" pos="7440,1140,0" flags="0">
+       <Inputs Time="-1" Duration="0" SunLatitude="-1" SunLongitude="140" SunPositionUpdateInterval="0" ForceUpdateInterval="0"/>
+      </Node>
+      <Node Id="1537" Class="Entity:EntityPos" pos="5250,1150,0" flags="0" InHideMask="31" OutHideMask="63">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="1540" Class="Vec3:SetVec3" pos="5060,1170,0" flags="0">
+       <Inputs In="0,0,-70"/>
+      </Node>
+      <Node Id="1541" Class="Entity:EntityPos" pos="5250,1250,0" flags="0" InHideMask="27" OutHideMask="63">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="1542" Class="Vec3:SetVec3" pos="5060,1250,0" flags="0">
+       <Inputs In="0,0,-47.28"/>
+      </Node>
+      <Node Id="1569" Class="Game:Start" pos="6520,1090,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1571" Class="Logic:Any" pos="990,1510,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1573" Class="Mission:GameToken" pos="3160,360,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1574" Class="Mission:GameToken" pos="3210,1030,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1575" Class="Mission:GameToken" pos="3220,1710,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1576" Class="Mission:GameToken" pos="3210,2340,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1577" Class="Mission:GameToken" pos="3140,3050,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1578" Class="Mission:GameToken" pos="2260,1650,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1579" Class="Mission:GameToken" pos="1200,3450,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.menu_visible" compare_Value="true"/>
+      </Node>
+      <Node Id="1580" Class="Logic:Any" pos="6770,3900,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1581" Class="Math:BooleanTo" pos="6410,3970,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="1582" Class="Time:Delay" pos="5960,3280,0" flags="0">
+       <Inputs delay="0.15" resetOnInput="1"/>
+      </Node>
+      <Node Id="1583" Class="Time:Timer" pos="6570,3360,0" flags="0">
+       <Inputs period="0.03" min="0" max="0" paused="1"/>
+      </Node>
+      <Node Id="1584" Class="Mission:GameToken" pos="4270,1950,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1585" Class="Mission:GameToken" pos="5790,220,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1586" Class="Mission:GameToken" pos="5790,2440,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1587" Class="Mission:GameToken" pos="5690,3180,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1588" Class="Mission:GameToken" pos="5710,3740,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1589" Class="Mission:GameToken" pos="700,1330,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1590" Class="Mission:GameToken" pos="700,1220,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" compare_Value="true"/>
+      </Node>
+      <Node Id="1591" Class="Mission:GameTokenSet" pos="1090,550,0" flags="0">
+       <Inputs gametoken_Token="Lighting_debug.active" Value="false"/>
+      </Node>
+      <Node Id="1593" Class="Game:Start" pos="880.9115,547.42358,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1597" Class="Logic:Any" pos="1390,1390,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1599" Class="entity:EnvironmentLight" pos="7870,1030,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1601" Class="entity:EnvironmentLight" pos="8190,750,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1603" Class="entity:EnvironmentLight" pos="8190,840,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1605" Class="entity:EnvironmentLight" pos="8190,1020,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1607" Class="entity:EnvironmentLight" pos="8190,930,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1608" Class="entity:EnvironmentLight" pos="7170,-350,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1609" Class="entity:EnvironmentLight" pos="7170,-260,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1610" Class="entity:EnvironmentLight" pos="7170,-80,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1611" Class="entity:EnvironmentLight" pos="7170,-170,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1612" Class="entity:EnvironmentLight" pos="7170,140,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1613" Class="entity:EnvironmentLight" pos="7170,230,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1614" Class="entity:EnvironmentLight" pos="7170,410,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1615" Class="entity:EnvironmentLight" pos="7170,320,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1616" Class="entity:EnvironmentLight" pos="7170,590,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1617" Class="entity:EnvironmentLight" pos="7170,680,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1618" Class="entity:EnvironmentLight" pos="7170,860,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1619" Class="entity:EnvironmentLight" pos="7170,770,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1620" Class="entity:EnvironmentLight" pos="7180,1070,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1621" Class="entity:EnvironmentLight" pos="7180,1160,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1622" Class="entity:EnvironmentLight" pos="7180,1340,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1623" Class="entity:EnvironmentLight" pos="7180,1250,0" flags="0">
+       <Inputs entityId="0" Active="0" Disable="0" Enable="0"/>
+      </Node>
+      <Node Id="1624" Name="Disabled_for_now" Class="_commentbox" pos="350,-1260.001,0" flags="0">
+       <Inputs TextSize="1" Color="0,0,0" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="9900" Height="5660"/>
+       <NodeSize Width="9900" Height="5927.3896"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="36" nodeOut="31" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="39" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="39" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="42" nodeOut="39" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="42" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="42" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="42" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="43" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="43" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="547" nodeOut="43" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="73" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="78" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="78" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="92" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="92" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="92" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="92" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="78" nodeOut="92" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="88" nodeOut="97" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="88" nodeOut="97" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="99" nodeOut="97" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="98" nodeOut="99" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="98" nodeOut="99" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="103" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="106" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="107" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="121" nodeOut="101" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="235" nodeOut="101" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="402" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="426" nodeOut="101" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="450" nodeOut="101" portIn="Trigger" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="238" nodeOut="104" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="114" nodeOut="110" portIn="In" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="115" nodeOut="114" portIn="Trigger" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="116" nodeOut="114" portIn="Trigger" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="117" nodeOut="114" portIn="Trigger" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="325" nodeOut="114" portIn="Trigger" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="326" nodeOut="115" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="122" nodeOut="116" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="123" nodeOut="117" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="114" nodeOut="121" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="122" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1533" nodeOut="122" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="1608" nodeOut="122" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1609" nodeOut="122" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1610" nodeOut="122" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1611" nodeOut="122" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="126" nodeOut="123" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1612" nodeOut="123" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1613" nodeOut="123" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1614" nodeOut="123" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1615" nodeOut="123" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="127" nodeOut="124" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1532" nodeOut="124" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="1616" nodeOut="124" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1617" nodeOut="124" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1618" nodeOut="124" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1619" nodeOut="124" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="209" nodeOut="208" portIn="In" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="211" nodeOut="209" portIn="Trigger" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="212" nodeOut="209" portIn="Trigger" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="219" nodeOut="211" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="220" nodeOut="212" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="209" nodeOut="214" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="214" nodeOut="235" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="239" nodeOut="238" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="246" nodeOut="238" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="269" nodeOut="238" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="250" nodeOut="249" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="271" nodeOut="249" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="1445" nodeOut="249" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="1485" nodeOut="249" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="379" nodeOut="266" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="266" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="266" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="266" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="1580" nodeOut="266" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="1525" nodeOut="269" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1526" nodeOut="269" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1527" nodeOut="269" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1528" nodeOut="269" portIn="Active" portOut="out" enabled="1"/>
+      <Edge nodeIn="1528" nodeOut="269" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1529" nodeOut="269" portIn="Hide" portOut="out" enabled="1"/>
+      <Edge nodeIn="1530" nodeOut="269" portIn="UnHide" portOut="out" enabled="1"/>
+      <Edge nodeIn="1540" nodeOut="269" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1542" nodeOut="269" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1571" nodeOut="307" portIn="in2" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="310" nodeOut="309" portIn="Trigger" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="324" nodeOut="309" portIn="Hide" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="548" nodeOut="309" portIn="Set" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="1597" nodeOut="309" portIn="in2" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="325" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="327" nodeOut="326" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1534" nodeOut="326" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="1620" nodeOut="326" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1621" nodeOut="326" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1622" nodeOut="326" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="1623" nodeOut="326" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="389" nodeOut="379" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="1580" nodeOut="381" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="1581" nodeOut="387" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="1451" nodeOut="388" portIn="Latitude" portOut="out" enabled="1"/>
+      <Edge nodeIn="1451" nodeOut="388" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1581" nodeOut="389" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="387" nodeOut="391" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="397" nodeOut="391" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="395" nodeOut="392" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="397" nodeOut="392" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="392" portIn="Open" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="392" portIn="Close" portOut="Released" enabled="1"/>
+      <Edge nodeIn="1582" nodeOut="392" portIn="in" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="388" nodeOut="393" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1470" nodeOut="393" portIn="Get" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="460" nodeOut="395" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="465" nodeOut="395" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="1583" nodeOut="396" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="397" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="398" portIn="false" portOut="Out" enabled="1"/>
+      <Edge nodeIn="410" nodeOut="416" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="410" nodeOut="416" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="420" nodeOut="416" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="97" nodeOut="420" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="420" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="420" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1476" nodeOut="424" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1476" nodeOut="425" portIn="in3" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1446" nodeOut="426" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1447" nodeOut="426" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="424" nodeOut="439" portIn="Trigger" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="424" nodeOut="439" portIn="Value" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="425" nodeOut="440" portIn="Trigger" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="425" nodeOut="440" portIn="Value" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="1476" nodeOut="443" portIn="in2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1476" nodeOut="444" portIn="in4" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="444" nodeOut="445" portIn="Trigger" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="444" nodeOut="445" portIn="Value" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="446" portIn="Trigger" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="446" portIn="Value" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="393" nodeOut="460" portIn="Trigger" portOut="False" enabled="1"/>
+      <Edge nodeIn="463" nodeOut="460" portIn="Trigger" portOut="True" enabled="1"/>
+      <Edge nodeIn="472" nodeOut="464" portIn="Trigger" portOut="False" enabled="1"/>
+      <Edge nodeIn="473" nodeOut="464" portIn="Trigger" portOut="True" enabled="1"/>
+      <Edge nodeIn="466" nodeOut="465" portIn="Trigger" portOut="False" enabled="1"/>
+      <Edge nodeIn="467" nodeOut="465" portIn="Trigger" portOut="True" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="466" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1471" nodeOut="466" portIn="Get" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1452" nodeOut="468" portIn="Latitude" portOut="out" enabled="1"/>
+      <Edge nodeIn="1452" nodeOut="468" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1453" nodeOut="469" portIn="Latitude" portOut="out" enabled="1"/>
+      <Edge nodeIn="1453" nodeOut="469" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="469" nodeOut="470" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1472" nodeOut="470" portIn="Get" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="474" nodeOut="472" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1473" nodeOut="472" portIn="Get" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1454" nodeOut="474" portIn="Latitude" portOut="out" enabled="1"/>
+      <Edge nodeIn="1454" nodeOut="474" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="470" nodeOut="475" portIn="Trigger" portOut="False" enabled="1"/>
+      <Edge nodeIn="471" nodeOut="475" portIn="Trigger" portOut="True" enabled="1"/>
+      <Edge nodeIn="416" nodeOut="547" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="546" nodeOut="547" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="546" nodeOut="547" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1372" nodeOut="1370" portIn="message" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1371" nodeOut="1374" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="1371" nodeOut="1374" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1372" nodeOut="1374" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="1372" nodeOut="1374" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1377" nodeOut="1374" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="1378" nodeOut="1377" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="1378" nodeOut="1377" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1381" nodeOut="1382" portIn="Show" portOut="out" enabled="0"/>
+      <Edge nodeIn="1381" nodeOut="1382" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1384" nodeOut="1382" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="1382" nodeOut="1383" portIn="set" portOut="out" enabled="1"/>
+      <Edge nodeIn="1385" nodeOut="1384" portIn="Show" portOut="out" enabled="0"/>
+      <Edge nodeIn="1385" nodeOut="1384" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="1386" nodeOut="1384" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="1386" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="1386" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="1386" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="1386" portIn="posY" portOut="out" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="1386" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="439" nodeOut="1451" portIn="In" portOut="Latitude" enabled="1"/>
+      <Edge nodeIn="446" nodeOut="1452" portIn="In" portOut="Latitude" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="1453" portIn="In" portOut="Latitude" enabled="1"/>
+      <Edge nodeIn="445" nodeOut="1454" portIn="In" portOut="Latitude" enabled="1"/>
+      <Edge nodeIn="1451" nodeOut="1470" portIn="Longitude" portOut="Longitude" enabled="1"/>
+      <Edge nodeIn="1452" nodeOut="1471" portIn="Longitude" portOut="Longitude" enabled="1"/>
+      <Edge nodeIn="1453" nodeOut="1472" portIn="Longitude" portOut="Longitude" enabled="1"/>
+      <Edge nodeIn="1454" nodeOut="1473" portIn="Longitude" portOut="Longitude" enabled="1"/>
+      <Edge nodeIn="1475" nodeOut="1476" portIn="Show" portOut="out" enabled="0"/>
+      <Edge nodeIn="1475" nodeOut="1476" portIn="message" portOut="out" enabled="0"/>
+      <Edge nodeIn="1478" nodeOut="1481" portIn="Min" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="1478" nodeOut="1482" portIn="Max" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="1481" nodeOut="1485" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="1482" nodeOut="1485" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="1486" nodeOut="1485" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="1478" nodeOut="1486" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="1537" nodeOut="1540" portIn="rotate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1541" nodeOut="1542" portIn="rotate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="326" nodeOut="1569" portIn="in7" portOut="output" enabled="1"/>
+      <Edge nodeIn="309" nodeOut="1571" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="1381" nodeOut="1573" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1385" nodeOut="1573" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="36" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="37" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="546" nodeOut="1574" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="410" nodeOut="1575" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="419" nodeOut="1575" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="88" nodeOut="1576" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="98" nodeOut="1576" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="74" nodeOut="1577" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="76" nodeOut="1577" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="77" nodeOut="1577" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="1578" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="73" nodeOut="1578" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="409" nodeOut="1578" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1383" nodeOut="1578" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1371" nodeOut="1579" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1372" nodeOut="1579" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1378" nodeOut="1579" portIn="Hide" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="1580" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="475" nodeOut="1580" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="381" nodeOut="1581" portIn="paused" portOut="out" enabled="1"/>
+      <Edge nodeIn="398" nodeOut="1582" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="395" nodeOut="1583" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="1584" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="1584" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="1585" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="1585" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="208" nodeOut="1586" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="208" nodeOut="1586" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="392" nodeOut="1587" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="392" nodeOut="1587" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="266" nodeOut="1588" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="266" nodeOut="1588" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="1589" portIn="Disable" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="1589" portIn="Enable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="309" nodeOut="1590" portIn="Reset" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1597" nodeOut="1590" portIn="in1" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1591" nodeOut="1593" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="1597" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="324" nodeOut="1597" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="549" nodeOut="1597" portIn="Set" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="LOGIC" LayerGUID="{76457624-C860-47FF-8CEA-F76413513695}" Id="{6DB815D8-B9C0-4EDC-B22B-5C9930CF38B8}" Name="SpawnPoint1" Pos="124,98,109" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint" HasEntity="1">
+    <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

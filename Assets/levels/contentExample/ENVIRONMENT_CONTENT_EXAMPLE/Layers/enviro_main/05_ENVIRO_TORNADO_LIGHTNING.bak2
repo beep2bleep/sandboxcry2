@@ -1,0 +1,18 @@
+<ObjectLayer>
+ <Layer Name="05_ENVIRO_TORNADO_LIGHTNING" GUID="{0534BD11-8A25-4765-B86C-50F9EE927B16}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="Brush" Layer="05_ENVIRO_TORNADO_LIGHTNING" LayerGUID="{0534BD11-8A25-4765-B86C-50F9EE927B16}" Id="{5BBDD48B-4DF0-4596-98FB-79C826AACAFB}" Name="05_ENVIRO_TEXT_HYPHEN" Pos="541.90759,305.52557,40.668022" FloorNumber="-1" Rotate="0.70710683,-0.70710671,1.4189484e-07,2.669254e-08" Scale="0.55000001,0.54999995,0.54999995" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/i.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="05_ENVIRO_TORNADO_LIGHTNING" LayerGUID="{0534BD11-8A25-4765-B86C-50F9EE927B16}" Id="{44D240E6-D3C0-49E7-98A9-538BB9F3ACF1}" Name="05_ENVIRO_TRIGGER" Pos="538.75,305.5,38.832863" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="05_ENVIRO_TORNADO_LIGHTNING" LayerGUID="{0534BD11-8A25-4765-B86C-50F9EE927B16}" Id="{FFB5D0E6-AA14-4409-B8B6-13E66DAD39A3}" Name="05_ENVIRO_TORNADO_FG" Pos="535.5,305.5,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,24 @@
+<ObjectLayer>
+ <Layer Name="08_ENVIRO_SPLINE_DISTRO" GUID="{E8DE6C39-C0A2-404D-B1E5-789C061C9DE0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="08_ENVIRO_SPLINE_DISTRO" LayerGUID="{E8DE6C39-C0A2-404D-B1E5-789C061C9DE0}" Id="{302AD61B-3FC7-4201-AA42-BA8621690D40}" Name="08_ENVIRO_LIGHT" Pos="519,219.04047,62.509445" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="50" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="80.5" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="SplineDistributor" Layer="08_ENVIRO_SPLINE_DISTRO" LayerGUID="{E8DE6C39-C0A2-404D-B1E5-789C061C9DE0}" Id="{1515988E-8C5E-459D-A9B3-DEB969AD363C}" Name="08_ENVIRO_SPLINE_DISTRO_ENT" Pos="533,219,41.099998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="6717286" Material="materials/references/matref_grey_max" Geometry="objects/default/primitive_sphere.cgf" StepSize="4" Follow="1" ZAngle="0" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoStaticDecals="0" RecvWind="0" Occluder="0">
+    <Points>
+     <Point Pos="0,0,0" Back="0,0,0" Forw="-1.7688841,-1.449797,0.0183667" Angle="0" Width="0" IsDefaultWidth="1"/>
+     <Point Pos="-6.2302246,-2.874527,0.046848297" Back="-3.9754858,-3.2583523,0.041278318" Forw="-11.643514,-1.9530203,0.060220979" Angle="0" Width="0" IsDefaultWidth="1"/>
+     <Point Pos="-21.362427,3.6365356,0.052772522" Back="-15.889772,3.1859982,0.064032383" Forw="-24.330685,3.8808982,0.046665397" Angle="0" Width="0" IsDefaultWidth="1"/>
+     <Point Pos="-29,-1,0" Back="-26.941231,1.1520586,0.020575447" Forw="-29,-1,0" Angle="0" Width="0" IsDefaultWidth="1"/>
+    </Points>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

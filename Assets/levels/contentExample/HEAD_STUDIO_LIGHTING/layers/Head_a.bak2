@@ -1,0 +1,21 @@
+<ObjectLayer>
+ <Layer Name="Head_a" GUID="{5D297970-4881-4D1B-9170-E73901AB7B89}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Head_a" LayerGUID="{5D297970-4881-4D1B-9170-E73901AB7B89}" Id="{2CB231BA-645D-4E9D-80B9-F01BF550B04C}" Name="AnimObject1" Pos="65.999992,55.625,103.13042" FloorNumber="-1" Rotate="6.3220277e-08,6.3220277e-08,0.70710677,0.70710677" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="AnimObject" HasEntity="1">
+    <Properties ActivatePhysicsDist="50" ActivatePhysicsThreshold="0" bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/characters/human/heads/nero/nero_head_base.cdf" bNoFriendlyFire="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Animation bAlwaysUpdate="0" Animation="Default" bLoop="1" bPhysicalizeAfterAnimation="0" playerAnimationState="" bPlaying="1" Speed="1"/>
+     <Cinematic bOnDemandModelLoad="0" bRenderAlways="0"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bArticulated="0" bBulletCollisionEnabled="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="0" bRigidBody="0">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+     <Rendering bWrinkleMap="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

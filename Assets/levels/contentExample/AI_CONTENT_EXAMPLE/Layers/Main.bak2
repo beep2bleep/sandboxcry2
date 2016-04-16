@@ -1,0 +1,31 @@
+<ObjectLayer>
+ <Layer Name="Main" GUID="{418A41CB-2DAE-4B45-9880-2A6764415613}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{418A41CB-2DAE-4B45-9880-2A6764415613}" Id="{8DAEB94B-DC7A-4B3E-AEFC-BC81FD45CEE4}" Name="_LEVEL_SETTINGS" Pos="519.9129,309.34894,40.677395" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="_LEVEL_SETTINGS" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-50,-20,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="3" Class="Debug:ConsoleVariable" pos="280,-90,0" flags="0">
+       <Inputs CVar="e_terrain" Value="0"/>
+      </Node>
+      <Node Id="4" Class="Debug:ConsoleVariable" pos="280,20,0" flags="0">
+       <Inputs CVar="e_WaterOcean" Value="0"/>
+      </Node>
+      <Node Id="6" Name="LEVEL_SETTINGS" Class="_commentbox" pos="-80,-140,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="620" Height="250"/>
+       <NodeSize Width="620" Height="277.64063"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

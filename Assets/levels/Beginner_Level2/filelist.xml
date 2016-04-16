@@ -1,0 +1,6 @@
+<download name="Beginner_Level2" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="137889" md5="ad390216e55722ae36309c432596f1c4"/>
+ </files>
+</download>

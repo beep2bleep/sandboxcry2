@@ -1,0 +1,7 @@
+<Cvars>
+ <Cvar name="r_DisplayInfo" value="1"/>
+ <Cvar name="e_ShadowsMaxTexRes" value="1024"/>
+ <Cvar name="e_lods" value="1"/>
+ <Cvar name="cl_DisableHUDText" value="0"/>
+ <Cvar name="Capture_file_format" value="jpg"/>
+</Cvars>

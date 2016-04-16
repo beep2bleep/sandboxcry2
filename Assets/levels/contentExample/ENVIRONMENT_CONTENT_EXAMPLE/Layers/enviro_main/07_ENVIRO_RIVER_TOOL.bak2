@@ -1,0 +1,22 @@
+<ObjectLayer>
+ <Layer Name="07_ENVIRO_RIVER_TOOL" GUID="{14FA99AD-107D-4896-BAC6-493420B7C2A7}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="07_ENVIRO_RIVER_TOOL" LayerGUID="{14FA99AD-107D-4896-BAC6-493420B7C2A7}" Id="{D1529A43-112B-4EF0-B34B-9630A4F2A661}" Name="07_ENVIRO_" Pos="519,247.24759,62.690948" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="50" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="80.5" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object VolumeDepth="10" StreamSpeed="0" FogDensity="0.5" FogColor="0.005,0.01,0.02" FogColorMultiplier="0.5" FogColorAffectedBySun="1" FogShadowing="0.5" UScale="1" VScale="1" CapFogAtVolumeDepth="0" Caustics="1" CausticIntensity="1" CausticTiling="1" CausticHeight="0.5" Type="River" Layer="07_ENVIRO_RIVER_TOOL" LayerGUID="{14FA99AD-107D-4896-BAC6-493420B7C2A7}" Id="{F7ABED54-00FF-4C2F-9FAB-CFE7DE09BB40}" Name="07_ENVIRO_RIVER_ENT" Pos="534.5,247.5,39.099998" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.86000001,0.86000001,0.86000001" ColorRGB="16711680" Material="Materials/water/watervolumes/water_rough" Width="25" BorderWidth="6" EraseVegWidth="3" EraseVegWidthVar="0" StepSize="6" ViewDistRatio="100" TileLength="21.9">
+    <Points>
+     <Point Pos="0,0,0" Back="0,0,0" Forw="-12.131897,-6.1035156e-05,3.0517578e-05" Angle="0" Width="0" IsDefaultWidth="1"/>
+     <Point Pos="-36.395691,-0.00018310547,9.1552734e-05" Back="-24.263794,-0.00012207031,6.1035156e-05" Forw="-36.395691,-0.00018310547,9.1552734e-05" Angle="0" Width="0" IsDefaultWidth="1"/>
+    </Points>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

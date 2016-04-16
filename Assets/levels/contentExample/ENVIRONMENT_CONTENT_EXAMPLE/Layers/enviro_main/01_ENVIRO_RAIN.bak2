@@ -1,0 +1,87 @@
+<ObjectLayer>
+ <Layer Name="01_ENVIRO_RAIN" GUID="{186714C2-EA7F-4B7C-87DE-FEE7E240C78E}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{6384EBED-12A0-4D21-B332-C2B09CED026B}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="01_ENVIRO_RAIN" LayerGUID="{186714C2-EA7F-4B7C-87DE-FEE7E240C78E}" Id="{C558895E-DE43-4D76-955E-6EC4A289F542}" Name="Rain1" Pos="517.5,422.23972,46.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Rain" HasEntity="1">
+    <Properties fAmount="1" clrColor="1,1,1" fDiffuseDarkening="0.5" bDisableOcclusion="0" bEnabled="1" fFakeGlossiness="0.5" fFakeReflectionsAmount="1.5" bIgnoreVisareas="0" fMistAmount="3" fMistHeight="8" fPuddlesAmount="1.5" fPuddlesMaskAmount="1" fPuddlesRippleAmount="2" fRadius="10000" fRainDropsAmount="0.5" fRainDropsLighting="1" fRainDropsSpeed="1" fSplashesAmount="1.3"/>
+   </Object>
+   <Object Type="Entity" Layer="01_ENVIRO_RAIN" LayerGUID="{186714C2-EA7F-4B7C-87DE-FEE7E240C78E}" Id="{4499CF73-0F7D-4601-8C65-E27510F1FEDE}" Name="02_ENVIRO_SNOW_ENTITY_FG" Pos="535,393.14432,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="02_SNOW_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-340,-40,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="7" Class="Debug:ConsoleVariable" pos="210,70,0" flags="0">
+       <Inputs CVar="r_snow" Value="0"/>
+      </Node>
+      <Node Id="8" Class="Debug:ConsoleVariable" pos="210,-50,0" flags="0">
+       <Inputs CVar="r_snow" Value="1"/>
+      </Node>
+      <Node Id="9" Name="SNOW_TOGGLE" Class="_comment" pos="-340,-90,0" flags="0"/>
+      <Node Id="10" Name="____" Class="_commentbox" pos="-380,-150.69283,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="440"/>
+       <NodeSize Width="800" Height="467.64063"/>
+      </Node>
+      <Node Id="11" Class="Debug:ConsoleVariable" pos="210,190,0" flags="0">
+       <Inputs CVar="r_snow" Value="0"/>
+      </Node>
+      <Node Id="13" Class="entity:ProximityTrigger" pos="-110,-40,0" flags="0" EntityGUID="{F707054D-A3E9-498E-B16D-27597924948F}" EntityGUID_64="498EA3E9F707054D">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="11" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Set" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="13" portIn="Set" portOut="Enter" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="01_ENVIRO_RAIN" LayerGUID="{186714C2-EA7F-4B7C-87DE-FEE7E240C78E}" Id="{9C0D4EBF-53FA-431A-A1D8-A179B8FE915B}" Name="01_ENVIRO_RAIN_ENTITY_FG" Pos="535,422,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="01_RAIN_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-340,-40,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="-120,-40,0" flags="0" EntityGUID="{F1B9010B-CCAD-4729-A808-784FDD408746}" EntityGUID_64="4729CCADF1B9010B">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="7" Class="Debug:ConsoleVariable" pos="210,70,0" flags="0">
+       <Inputs CVar="r_rain" Value="0"/>
+      </Node>
+      <Node Id="8" Class="Debug:ConsoleVariable" pos="210,-50,0" flags="0">
+       <Inputs CVar="r_rain" Value="1"/>
+      </Node>
+      <Node Id="9" Name="RAIN_TOGGLE" Class="_comment" pos="-340,-90,0" flags="0"/>
+      <Node Id="10" Name="____" Class="_commentbox" pos="-380,-150.69283,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="800" Height="440"/>
+       <NodeSize Width="800" Height="467.64063"/>
+      </Node>
+      <Node Id="11" Class="Debug:ConsoleVariable" pos="210,190,0" flags="0">
+       <Inputs CVar="r_rain" Value="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="3" portIn="Set" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="3" portIn="Set" portOut="Enter" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="01_ENVIRO_RAIN" LayerGUID="{186714C2-EA7F-4B7C-87DE-FEE7E240C78E}" Id="{DDCAB6E8-6CA3-4695-A85F-C804306BDD0F}" Name="01_ENVIRO_LIGHT" Pos="519,421.5,56" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="170.6" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="74.6" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

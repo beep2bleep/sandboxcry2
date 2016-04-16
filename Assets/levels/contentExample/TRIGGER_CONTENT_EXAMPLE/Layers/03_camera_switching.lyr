@@ -1,0 +1,89 @@
+<ObjectLayer>
+ <Layer Name="03_CAMERA_SWITCHING" GUID="{68F02320-211B-4CDF-820F-81607111365F}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{625EDB21-FE6B-40DD-AEA3-E1FFF8FD2CE9}" Name="03_CAMERA_SWITCHING_FG" Pos="535.99994,364,40.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="03_CAMERA_SWITCHING_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-450,40,0" flags="0" EntityGUID="{F84FD636-F086-4824-946B-3FAFC8144C33}" EntityGUID_64="4824F086F84FD636">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Game:Start" pos="-650,70,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="6" Class="Camera:View" pos="430,240,0" flags="0" InHideMask="2047" EntityGUID="{1B985A62-F596-4B35-84F8-2C79D78CDC03}" EntityGUID_64="4B35F5961B985A62">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="Camera:View" pos="430,20,0" flags="0" InHideMask="2047" EntityGUID="{B097C0E7-D681-4FF3-9049-9D05968C08D3}" EntityGUID_64="4FF3D681B097C0E7">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="8" Class="Camera:View" pos="430,130,0" flags="0" InHideMask="2047" EntityGUID="{EA1AA163-B1CD-4B09-86D8-1D410A08936E}" EntityGUID_64="4B09B1CDEA1AA163">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="9" Class="Logic:Sequentializer" pos="140,60,0" flags="0">
+       <Inputs Closed="0" Reverse="0"/>
+      </Node>
+      <Node Id="10" Class="Debug:InputKey" pos="-130,-30,0" flags="0">
+       <Inputs entityId="0" Key="p" NonDevMode="0"/>
+      </Node>
+      <Node Id="22" Name="CAMERA_SWITCHING" Class="_commentbox" pos="-700,-101.67867,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1270" Height="430"/>
+       <NodeSize Width="1270" Height="457.78296"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="9" nodeOut="2" portIn="Open" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="2" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="3" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="9" portIn="Enable" portOut="Out3" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="9" portIn="Disable" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="Enable" portOut="Out1" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="Disable" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="9" portIn="Enable" portOut="Out2" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="9" portIn="Disable" portOut="Out4" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="10" portIn="In" portOut="Pressed" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Designer" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{F6D5E922-C3BA-46CD-B1F7-FFD283568D67}" Name="Designer40" Pos="527.99994,361,39.404476" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Material="Materials/references/base_colors/white" RndFlags="1073741832" StaticObjFlags="0" ViewDistRatio="100">
+    <Brush DesignerModeFlags="0" SubdivisionLevel="0" SubdivisionSmoothingGroup="0" MirrorPlaneNormal="0,0,0" MirrorPlaneDistance="0">
+     <Polygon GUID="{2DF86428-76F2-4A31-A56C-94D887B9054B}" BinaryData="BAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUwAAAAAAAAAAAAADAQAAAAAAAAMBAAACAvwAAAAAAAIC/"/>
+     <Polygon GUID="{8D411F9E-B30E-4F51-AEE5-9ADFFCE3508A}" BinaryData="BAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAGEAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAGEAAAAAAAADwPwAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAYwAAAoMAAAAAAAACAPwAAAAAAAIA/AACAvwAAoMAAAIC/"/>
+     <Polygon GUID="{D809B0E5-CF52-4EDC-AE89-8F8ABAB406DD}" BinaryData="BAAAAAAAAAAAAPC/AAAAAAAAGEAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAADwPwAAAAAAAPC/AAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAwMAAAAAAAAAAAAAAAAAAAAAAAACAvwAAwMAAAIC/"/>
+     <Polygon GUID="{6F37CC05-C800-4A59-91E5-08EB0A5BD353}" BinaryData="BAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAGEAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAA8L8AAAAAAADQPgAAgD8AAAAAAACAPwAAwEAAAKDAAADAQAAAoMAAAAAA"/>
+     <Polygon GUID="{69C4BB45-6B86-42DB-AD0B-FCB1CC4AC015}" BinaryData="BAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAADwPwAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwAAAAAAABRAAAAAAAAAGEAAAAAAAADwPwAAAAAAAPC/AAAAAAAAGEAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8AAAAABADwvwAAgL8AAAAAAACgQAAAAAAAAKBAAADAwAAAgL8AAMDA"/>
+     <Polygon GUID="{6A077DF1-25E8-4672-A98D-7623EA4C5966}" BinaryData="BAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwAAAAAAAPC/AAAAAAAAAAAAAAAAAADwPwQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAAAAAAAAAAAAAAAgAAAgL8AAAAAAACgQAAAAAAAAKBAAACAvwAAgL8AAIC/"/>
+     <SmoothingGroups />
+     <SemiSharpCrease />
+     <UVIslands />
+    </Brush>
+    <Mesh Version="2" BinaryData="AAAAAAAAAAAYAAAAGAAAACQAAAAYAAAAAQAAAAAAoEAAAAAAAAAAAAAAoEAAAMBAAAAAAAAAoEAAAMBAAACAPwAAoEAAAAAAAACAPwAAoEAAAMBAAAAAAAAAgL8AAMBAAAAAAAAAgL8AAMBAAACAPwAAoEAAAMBAAACAPwAAgL8AAMBAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAACAPwAAgL8AAMBAAACAPwAAgL8AAAAAAAAAAAAAgL8AAMBAAAAAAAAAoEAAAMBAAAAAAAAAoEAAAAAAAAAAAAAAgL8AAAAAAACAPwAAoEAAAAAAAACAPwAAoEAAAMBAAACAPwAAgL8AAMBAAACAPwAAgL8AAAAAAAAAAAAAoEAAAAAAAAAAAAAAoEAAAAAAAACAPwAAgL8AAAAAAACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAIAAAACAAACAvwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAADAQAAAAAAAAMBAAACAvwAAAAAAAIC/AACgwAAAAAAAAIA/AAAAAAAAgD8AAIC/AACgwAAAgL8AAMDAAAAAAAAAAAAAAAAAAAAAAAAAgL8AAMDAAACAvwAAgD8AAAAAAACAPwAAwEAAAKDAAADAQAAAoMAAAAAAAACAvwAAAAAAAKBAAAAAAAAAoEAAAMDAAACAvwAAwMAAAIC/AAAAAAAAoEAAAAAAAACgQAAAgL8AAIC/AACAvwAAAQACAAAAAgADAAQABQAGAAQABgAHAAgACQAKAAgACgALAAwADQAOAAwADgAPABAAEQASABAAEgATABQAFQAWABQAFgAXAAAA/n8AAAGAAAAAAAKAAYAAAP5/AAABgAAAAAACgAGAAAD+fwAAAYAAAAAAAoABgAAA/n8AAAGAAAAAAAKAAYACgAAAAAABgAAAAAACgAGAAoAAAAAAAYAAAAAAAoABgAKAAAAAAAGAAAAAAAKAAYACgAAAAAABgAAAAAACgAGAAAACgAAAAYAAAAAAAoABgAAAAoAAAAGAAAAAAAKAAYAAAAKAAAABgAAAAAACgAGAAAACgAAAAYAAAAAAAoABgAGAAAAAAP9/AAD/fwAA/38BgAAAAAD/fwAA/38AAP9/AYAAAAAA/38AAP9/AAD/fwGAAAAAAP9/AAD/fwAA/3//fwAAAAABgAAAAYAAAAGA/38AAAAAAYAAAAGAAAABgP9/AAAAAAGAAAABgAAAAYD/fwAAAAABgAAAAYAAAAGA/n8AAAAAAYAAAAAAAoABgP5/AAAAAAGAAAAAAAKAAYD+fwAAAAABgAAAAAACgAGA/n8AAAAAAYAAAAAAAoABgAAAAEAAAEBAAAAAPz20iEAAAAAAAAAAACQAAAAAAAAAGAAAAAAAAAAAAAAAABAAAA=="/>
+   </Object>
+   <Object Type="Entity" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{F84FD636-F086-4824-946B-3FAFC8144C33}" Name="ProximityTrigger5" Pos="530.78394,364,37.767323" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="3" DimY="4.25" DimZ="6" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Camera" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{1B985A62-F596-4B35-84F8-2C79D78CDC03}" Name="Camera3" Pos="517,364,52" FloorNumber="-1" Rotate="7.94663e-09,0,0,1" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource" HasEntity="1">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Camera" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{EA1AA163-B1CD-4B09-86D8-1D410A08936E}" Name="Camera2" Pos="517,364,49" FloorNumber="-1" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource" HasEntity="1">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="Entity" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{ACF17FDA-DCB0-4E3C-89B1-5824695AD33B}" Name="Light16" Pos="530,363.5,56" FloorNumber="-1" Rotate="0.70710677,0,0.70710683,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light" HasEntity="1">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="32.53" _nVersion="0">
+     <Color clrDiffuse="0.991102,0.701102,0.571125" fDiffuseMultiplier="73.1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="32.2" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows eiCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Camera" Layer="03_CAMERA_SWITCHING" LayerGUID="{68F02320-211B-4CDF-820F-81607111365F}" Id="{B097C0E7-D681-4FF3-9049-9D05968C08D3}" Name="Camera1" Pos="517,364,46" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" FOV="1.0472" NearZ="0.25" FarZ="1024" EntityClass="CameraSource" HasEntity="1">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

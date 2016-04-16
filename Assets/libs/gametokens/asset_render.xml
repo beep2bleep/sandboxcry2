@@ -1,0 +1,20 @@
+<GameTokensLibrary Name="asset_render">
+   <GameToken Name="render.current_ID" Type="Int" Value="0" LocalOnly="0"/>
+   <GameToken Name="render.current_distance" Type="Float" Value="0.000000" LocalOnly="0"/>
+   <GameToken Name="render.current_model" Type="String" Value="none" LocalOnly="1"/>
+   <GameToken Name="render.current_offset" Type="Vec3" Value="0,0,0" LocalOnly="1"/>
+   <GameToken Name="render.current_rotation" Type="Vec3" Value="0,0,0" LocalOnly="1"/>
+   <GameToken Name="render.current_scale" Type="Float" Value="0.000000" LocalOnly="0"/>
+   <GameToken Name="render.render_running" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="render.render_saveImage" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="render.render_text" Type="Bool" Value="false" LocalOnly="0"/>
+   <GameToken Name="render.trigger_distance" Type="Float" Value="0.000000" LocalOnly="0"/>
+   <GameToken Name="render.trigger_modelChange" Type="String" Value="none" LocalOnly="1"/>
+   <GameToken Name="render.trigger_offset" Type="Float" Value="0.000000" LocalOnly="0"/>
+   <GameToken Name="render.trigger_render" Type="Bool" Value="false" LocalOnly="0"/>
+   <GameToken Name="render.trigger_resetModifiers" Type="Float" Value="0.000000" LocalOnly="0"/>
+   <GameToken Name="render.trigger_resize" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="render.trigger_rotate" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="render.trigger_scale" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="render.current_align" Type="Bool" Value="false" LocalOnly="1"/>
+</GameTokensLibrary>

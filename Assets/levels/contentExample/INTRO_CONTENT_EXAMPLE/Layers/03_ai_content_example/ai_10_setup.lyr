@@ -1,0 +1,23 @@
+<ObjectLayer>
+ <Layer Name="AI_10_SETUP" GUID="{DA8D03F5-23CD-4303-94FD-833237DBCA32}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{4930E66C-D463-49FA-83E0-8F42AF1A7910}">
+  <LayerObjects>
+   <Object Type="Group" Layer="AI_10_SETUP" LayerGUID="{DA8D03F5-23CD-4303-94FD-833237DBCA32}" Id="{B89C5D20-C37F-4A38-8E74-193CB230C5F7}" Name="AI_010_TEXT_AI" Pos="383.47458,587.06061,40.668018" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Brush" Layer="AI_10_SETUP" LayerGUID="{DA8D03F5-23CD-4303-94FD-833237DBCA32}" Id="{C46CBF06-9F42-4526-9329-E607A2481BD6}" Name="a123" Parent="{B89C5D20-C37F-4A38-8E74-193CB230C5F7}" Pos="0,0.24127197,0" FloorNumber="-1" Rotate="-0.49999994,0.49999994,-0.5,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/a.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="AI_10_SETUP" LayerGUID="{DA8D03F5-23CD-4303-94FD-833237DBCA32}" Id="{A3E05D83-D442-4D5D-AE32-0B75B4029A39}" Name="a133" Parent="{B89C5D20-C37F-4A38-8E74-193CB230C5F7}" Pos="0,-0.24127197,0" FloorNumber="-1" Rotate="-0.49999994,0.49999994,-0.5,0.50000012" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/misc/3dtext/i.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Entity" Layer="AI_10_SETUP" LayerGUID="{DA8D03F5-23CD-4303-94FD-833237DBCA32}" Id="{EA260FE3-3FF1-4C89-8DA5-ED88477ADF2F}" Name="AI_010_AWARENESS_FG" Pos="389.5,587.07037,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,17 @@
+<anim_event_list>
+ <animation name="animations/animals/elephant/elph_com_enrage_into_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_enrage_outof_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_enrage_to_death_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_enrage_to_idle_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_idle_to_walk_fwd_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_walk_death_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_walk_fwd_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_walk_hit_lft_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_walk_swipe_01.caf"/>
+ <animation name="animations/animals/elephant/elph_com_walk_swipe_to_idle_01.caf"/>
+ <animation name="animations/animals/elephant/idle_jump.caf"/>
+ <animation name="animations/animals/elephant/idle_shake_head_01.caf"/>
+ <animation name="animations/animals/elephant/idle_shake_head_02.caf"/>
+ <animation name="animations/animals/elephant/walk_fast.caf"/>
+ <animation name="animations/animals/elephant/walk_labour.caf"/>
+</anim_event_list>

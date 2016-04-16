@@ -1,0 +1,7 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level"/>
+  <Library Name="Lighting_debug"/>
+  <Library Name="asset_render"/>
+ </GameTokensLibrary>
+</GameTokens>

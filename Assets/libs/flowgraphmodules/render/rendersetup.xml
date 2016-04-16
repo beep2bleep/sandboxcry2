@@ -1,0 +1,398 @@
+<Graph isModule="1" moduleName="RenderSetup" Description="" Group="render" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="On-Off" Type="6" Input="1"/>
+  <Port Name="FolderName" Type="5" Input="1"/>
+  <Port Name="NamePrefix" Type="5" Input="1"/>
+  <Port Name="fourK" Type="6" Input="1"/>
+  <Port Name="renderSettings" Type="5" Input="1"/>
+  <Port Name="Framerate" Type="2" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_RenderSetup" pos="-570,0,0" flags="0"/>
+  <Node Id="2" Class="Module:End_RenderSetup" pos="2960,20,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="10" Class="Logic:Any" pos="2010,240,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="13" Class="Debug:ConsoleVariable" pos="1360,2410,0" flags="0">
+   <Inputs CVar="t_FixedStep" Value="0.0333333333"/>
+  </Node>
+  <Node Id="15" Class="Debug:ConsoleVariable" pos="1410,1000,0" flags="0">
+   <Inputs CVar="Capture_folder" Value=""/>
+  </Node>
+  <Node Id="16" Class="Debug:ConsoleVariable" pos="1360,2510,0" flags="0">
+   <Inputs CVar="Capture_frames" Value="1"/>
+  </Node>
+  <Node Id="17" Class="Debug:ConsoleVariable" pos="1410,1100,0" flags="0">
+   <Inputs CVar="capture_file_prefix" Value="frame_"/>
+  </Node>
+  <Node Id="20" Name="load_render_cvars" Class="_commentbox" pos="-170,585.49988,0" flags="0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1530" Height="670"/>
+   <NodeSize Width="1530" Height="808.22693"/>
+  </Node>
+  <Node Id="21" Name="start_render_animation" Class="_commentbox" pos="1340,2248.1326,0" flags="0">
+   <Inputs TextSize="1" Color="1,0,0" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="300" Height="240"/>
+   <NodeSize Width="1052.6637" Height="378.22696"/>
+  </Node>
+  <Node Id="22" Class="Debug:ConsoleVariable" pos="420,-630,0" flags="0">
+   <Inputs CVar="Capture_frames" Value="0"/>
+  </Node>
+  <Node Id="23" Name="stop_rendering" Class="_commentbox" pos="390,-791.29688,0" flags="0">
+   <Inputs TextSize="1" Color="1,0,0" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="310" Height="240"/>
+   <NodeSize Width="698.65979" Height="378.22696"/>
+  </Node>
+  <Node Id="29" Class="Math:BooleanFrom" pos="-80,-630,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="87" Class="Xml:GetChildCount" pos="-70,920,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="88" Class="Xml:GetRoot" pos="-70,840,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="92" Class="Math:Counter" pos="280,1020,0" flags="0">
+   <Inputs max="0"/>
+  </Node>
+  <Node Id="93" Class="Debug:ConsoleVariable" pos="1080,1180,0" flags="0">
+   <Inputs CVar="" Value=""/>
+  </Node>
+  <Node Id="98" Class="Xml:GetAttribute" pos="810,1120,0" flags="0">
+   <Inputs Name="name"/>
+  </Node>
+  <Node Id="99" Class="Xml:GetAttribute" pos="810,1220,0" flags="0">
+   <Inputs Name="value"/>
+  </Node>
+  <Node Id="100" Class="Xml:OpenDocument" pos="-70,760,0" flags="0">
+   <Inputs File="Default" Location="0"/>
+  </Node>
+  <Node Id="101" Class="Xml:GetChildAt" pos="580,1040,0" flags="0">
+   <Inputs Name="Cvar" Index="1"/>
+  </Node>
+  <Node Id="105" Class="Math:Less" pos="450,980,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="107" Class="Xml:GetRoot" pos="-100,1210,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="109" Class="Logic:Any" pos="130,1020,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="113" Class="String:Concat" pos="1080,1280,0" flags="0">
+   <Inputs String1="" String2=""/>
+  </Node>
+  <Node Id="115" Class="Debug:Log" pos="1230,1280,0" flags="0">
+   <Inputs message=""/>
+  </Node>
+  <Node Id="123" Name="save_current_cvars" Class="_commentbox" pos="-2530,375.50223,0" flags="0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2290" Height="730"/>
+   <NodeSize Width="2290" Height="868.22693"/>
+  </Node>
+  <Node Id="125" Class="Xml:GetChildCount" pos="-1490,680,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="126" Class="Xml:GetRoot" pos="-1680,680,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="127" Class="Math:Counter" pos="-1140,780,0" flags="0">
+   <Inputs max="0"/>
+  </Node>
+  <Node Id="129" Class="Xml:GetAttribute" pos="-540,800,0" flags="0">
+   <Inputs Name="name"/>
+  </Node>
+  <Node Id="131" Class="Xml:OpenDocument" pos="-2480,600,0" flags="0">
+   <Inputs File="rendersetup/render_orignial.xml" Location="0"/>
+  </Node>
+  <Node Id="132" Class="Xml:GetChildAt" pos="-810,800,0" flags="0">
+   <Inputs Name="Cvar" Index="1"/>
+  </Node>
+  <Node Id="133" Class="Math:Less" pos="-970,740,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="134" Class="Xml:GetRoot" pos="-1460,1000,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="135" Class="Logic:Any" pos="-1270,780,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="138" Class="Debug:ConsoleVariable" pos="-540,900,0" flags="0">
+   <Inputs CVar="" Value=""/>
+  </Node>
+  <Node Id="139" Class="Xml:SetAttribute" pos="-540,1000,0" flags="0">
+   <Inputs Name="value"/>
+  </Node>
+  <Node Id="142" Class="Xml:SaveDocument" pos="-650,670,0" flags="0">
+   <Inputs File="rendersetup/render_restore.xml" Location="0" Overwrite="1"/>
+  </Node>
+  <Node Id="144" Class="Logic:Gate" pos="-810,570,0" flags="0">
+   <Inputs Closed="0"/>
+  </Node>
+  <Node Id="145" Class="Xml:SaveDocument" pos="-650,570,0" flags="0">
+   <Inputs File="rendersetup/render_orignial.xml" Location="0" Overwrite="1"/>
+  </Node>
+  <Node Id="147" Class="Logic:Any" pos="-1790,680,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="148" Class="Xml:OpenDocument" pos="-2060,700,0" flags="0">
+   <Inputs File="Default" Location="0"/>
+  </Node>
+  <Node Id="149" Class="Debug:ConsoleVariable" pos="420,-530,0" flags="0">
+   <Inputs CVar="t_FixedStep" Value="0"/>
+  </Node>
+  <Node Id="154" Name="restore_default_cvars" Class="_commentbox" pos="350,-855.26917,0" flags="0">
+   <Inputs TextSize="1" Color="0.913099,0.964686,0.921582" DisplayFilled="0" DisplayBox="1" SortPriority="8"/>
+   <ResizeBorder X="0" Y="0" Width="2200" Height="730"/>
+   <NodeSize Width="2200" Height="868.22693"/>
+  </Node>
+  <Node Id="156" Class="Xml:GetChildCount" pos="850,-510,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="157" Class="Xml:GetRoot" pos="600,-300,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="158" Class="Math:Counter" pos="1170,-410,0" flags="0">
+   <Inputs max="0"/>
+  </Node>
+  <Node Id="159" Class="Debug:ConsoleVariable" pos="1960,-260,0" flags="0">
+   <Inputs CVar="" Value=""/>
+  </Node>
+  <Node Id="160" Class="Xml:GetAttribute" pos="1690,-320,0" flags="0">
+   <Inputs Name="name"/>
+  </Node>
+  <Node Id="161" Class="Xml:GetAttribute" pos="1690,-220,0" flags="0">
+   <Inputs Name="value"/>
+  </Node>
+  <Node Id="162" Class="Xml:OpenDocument" pos="400,-380,0" flags="0">
+   <Inputs File="rendersetup/render_restore.xml" Location="0"/>
+  </Node>
+  <Node Id="163" Class="Xml:GetChildAt" pos="1490,-400,0" flags="0">
+   <Inputs Name="Cvar" Index="1"/>
+  </Node>
+  <Node Id="164" Class="Math:Less" pos="1340,-450,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="165" Class="Xml:GetRoot" pos="820,-220,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="166" Class="Logic:Any" pos="1050,-410,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="167" Class="String:Concat" pos="1960,-160,0" flags="0">
+   <Inputs String1="" String2=""/>
+  </Node>
+  <Node Id="168" Class="Debug:Log" pos="2110,-160,0" flags="0">
+   <Inputs message=""/>
+  </Node>
+  <Node Id="172" Class="Logic:Any" pos="1390,270,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="174" Class="Debug:DisplayMessage" pos="1140,320,0" flags="0" InHideMask="1023" OutHideMask="3">
+   <Inputs entityId="0" message="NO RENDER SETTING FILE FOUND" DisplayTime="3" posX="0.5" posY="0.5" fontSize="4" clr_Color="0.921582,0,0" centered="1"/>
+  </Node>
+  <Node Id="175" Class="Debug:DisplayMessage" pos="1140,240,0" flags="0" InHideMask="1023" OutHideMask="3">
+   <Inputs entityId="0" message="NO RESTORE FILE FOUND" DisplayTime="1" posX="0.5" posY="0.5" fontSize="4" clr_Color="0.921582,0,0" centered="1"/>
+  </Node>
+  <Node Id="176" Class="Xml:OpenDocument" pos="960,160,0" flags="0">
+   <Inputs File="rendersetup/render_orignial.xml" Location="0"/>
+  </Node>
+  <Node Id="178" Class="Math:Div" pos="650,1760,0" flags="0">
+   <Inputs A="1" B="0"/>
+  </Node>
+  <Node Id="490" Class="Math:Equal" pos="210,1710,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="492" Class="Math:SetNumber" pos="370,1730,0" flags="0">
+   <Inputs in="30"/>
+  </Node>
+  <Node Id="493" Class="Math:SetNumber" pos="370,1790,0" flags="0">
+   <Inputs in="0"/>
+  </Node>
+  <Node Id="495" Class="Logic:Any" pos="540,1760,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="496" Class="Math:Equal" pos="-80,1590,0" flags="0">
+   <Inputs A="0" B="-1"/>
+  </Node>
+  <Node Id="497" Class="Debug:ConsoleVariable" pos="1370,1570,0" flags="0">
+   <Inputs CVar="capture_frame_once" Value="0"/>
+  </Node>
+  <Node Id="499" Class="Time:FrameDelay" pos="1370,1770,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="500" Name="render_one_frame_only" Class="_commentbox" pos="1340,1418.1324,0" flags="0">
+   <Inputs TextSize="1" Color="1,0,0" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="310" Height="770"/>
+   <NodeSize Width="1052.2731" Height="908.22693"/>
+  </Node>
+  <Node Id="501" Class="Debug:ConsoleVariable" pos="1370,1820,0" flags="0">
+   <Inputs CVar="capture_frame_once" Value="1"/>
+  </Node>
+  <Node Id="502" Class="Time:FrameDelay" pos="1370,1920,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="503" Class="Debug:ConsoleVariable" pos="1370,1670,0" flags="0">
+   <Inputs CVar="Capture_frames" Value="0"/>
+  </Node>
+  <Node Id="504" Class="Debug:ConsoleVariable" pos="1370,1970,0" flags="0">
+   <Inputs CVar="Capture_frames" Value="1"/>
+  </Node>
+  <Node Id="505" Class="Time:FrameDelay" pos="1370,2070,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="506" Class="Debug:ConsoleVariable" pos="1370,2220,0" flags="0">
+   <Inputs CVar="capture_frame_once" Value="0"/>
+  </Node>
+  <Node Id="507" Class="Debug:ConsoleVariable" pos="1370,2120,0" flags="0">
+   <Inputs CVar="Capture_frames" Value="0"/>
+  </Node>
+  <Node Id="508" Name="renders_one_frame_only_if_framerate_set_to_-1" Class="_comment" pos="-80,1560,0" flags="0"/>
+  <Node Id="516" Class="String:Concat" pos="-570,340,0" flags="0">
+   <Inputs String1="rendersetup/" String2=""/>
+  </Node>
+  <Node Id="518" Class="Logic:Condition" pos="530,1570,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="520" Class="Debug:DisplayMessage" pos="-2060,810,0" flags="0" InHideMask="1023" OutHideMask="3">
+   <Inputs entityId="0" message="NO RENDER SETTING FILE FOUND" DisplayTime="3" posX="0.5" posY="0.5" fontSize="4" clr_Color="0.921582,0,0" centered="1"/>
+  </Node>
+  <Node Id="521" Name="default_framerate_is_30fps_if_set_to_0" Class="_comment" pos="210,1680,0" flags="0"/>
+  <Node Id="522" Name="render_paths" Class="_commentbox" pos="1380,838.09851,0" flags="0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="320" Height="250"/>
+   <NodeSize Width="616.33557" Height="388.22696"/>
+  </Node>
+  <Node Id="523" Name="framerate" Class="_commentbox" pos="-170,1365.5326,0" flags="0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="950" Height="400"/>
+   <NodeSize Width="950" Height="538.22693"/>
+  </Node>
+  <Node Id="524" Name="levelfolder/rendersetup/cvars.xml" Class="_commentbox" pos="-2359.9978,-603.55066,0" flags="0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="350" Height="160"/>
+   <NodeSize Width="1558.4742" Height="298.22696"/>
+  </Node>
+  <Node Id="526" Name="&lt;Cvars&gt;" Class="_comment" pos="-2340,-440,0" flags="0"/>
+  <Node Id="527" Name="&lt;/Cvars&gt;" Class="_comment" pos="-2340,-350,0" flags="0"/>
+  <Node Id="528" Name="&lt;Cvar_name=&quot;r_DisplayInfo&quot;_value=&quot;0&quot;/&gt;" Class="_comment" pos="-2320,-410,0" flags="0"/>
+  <Node Id="529" Name="&lt;Cvar_name=&quot;e_lods&quot;_value=&quot;0&quot;/&gt;" Class="_comment" pos="-2320,-380,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Cancel" portOut="Cancel" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="1" portIn="Value" portOut="FolderName" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="1" portIn="Value" portOut="NamePrefix" enabled="1"/>
+  <Edge nodeIn="29" nodeOut="1" portIn="Value" portOut="On-Off" enabled="1"/>
+  <Edge nodeIn="496" nodeOut="1" portIn="A" portOut="Framerate" enabled="1"/>
+  <Edge nodeIn="516" nodeOut="1" portIn="Set" portOut="renderSettings" enabled="1"/>
+  <Edge nodeIn="516" nodeOut="1" portIn="String2" portOut="renderSettings" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="10" portIn="Success" portOut="out" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="13" portIn="Set" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="15" portIn="Set" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="16" portIn="in10" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="518" nodeOut="17" portIn="In" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="149" nodeOut="22" portIn="Set" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="22" nodeOut="29" portIn="Set" portOut="False" enabled="1"/>
+  <Edge nodeIn="131" nodeOut="29" portIn="Execute" portOut="True" enabled="1"/>
+  <Edge nodeIn="105" nodeOut="87" portIn="A" portOut="Count" enabled="1"/>
+  <Edge nodeIn="109" nodeOut="87" portIn="in1" portOut="Count" enabled="1"/>
+  <Edge nodeIn="87" nodeOut="88" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="101" nodeOut="92" portIn="Index" portOut="count" enabled="1"/>
+  <Edge nodeIn="105" nodeOut="92" portIn="B" portOut="count" enabled="1"/>
+  <Edge nodeIn="93" nodeOut="98" portIn="CVar" portOut="Value" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="98" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="98" portIn="String1" portOut="Value" enabled="1"/>
+  <Edge nodeIn="93" nodeOut="99" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="93" nodeOut="99" portIn="Value" portOut="Value" enabled="1"/>
+  <Edge nodeIn="107" nodeOut="99" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="99" portIn="Set" portOut="Value" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="99" portIn="String2" portOut="Value" enabled="1"/>
+  <Edge nodeIn="88" nodeOut="100" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="174" nodeOut="100" portIn="Show" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="98" nodeOut="101" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="105" portIn="Set" portOut="true" enabled="1"/>
+  <Edge nodeIn="101" nodeOut="105" portIn="Execute" portOut="false" enabled="1"/>
+  <Edge nodeIn="109" nodeOut="107" portIn="in2" portOut="Success" enabled="1"/>
+  <Edge nodeIn="92" nodeOut="109" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="113" portIn="input" portOut="Out" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="113" portIn="message" portOut="Out" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="125" portIn="A" portOut="Count" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="125" portIn="in1" portOut="Count" enabled="1"/>
+  <Edge nodeIn="125" nodeOut="126" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="127" portIn="Index" portOut="count" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="127" portIn="B" portOut="count" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="129" portIn="CVar" portOut="Value" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="129" portIn="Get" portOut="Value" enabled="1"/>
+  <Edge nodeIn="144" nodeOut="131" portIn="Open" portOut="Success" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="131" portIn="in1" portOut="Success" enabled="1"/>
+  <Edge nodeIn="148" nodeOut="131" portIn="Execute" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="129" nodeOut="132" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="133" portIn="Execute" portOut="true" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="133" portIn="Execute" portOut="false" enabled="1"/>
+  <Edge nodeIn="142" nodeOut="133" portIn="Execute" portOut="true" enabled="1"/>
+  <Edge nodeIn="144" nodeOut="133" portIn="In" portOut="true" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="134" portIn="in2" portOut="Success" enabled="1"/>
+  <Edge nodeIn="127" nodeOut="135" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="139" nodeOut="138" portIn="Execute" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="139" nodeOut="138" portIn="Value" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="134" nodeOut="139" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="144" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="126" nodeOut="147" portIn="Execute" portOut="out" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="148" portIn="in2" portOut="Success" enabled="1"/>
+  <Edge nodeIn="520" nodeOut="148" portIn="Show" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="162" nodeOut="149" portIn="Execute" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="164" nodeOut="156" portIn="A" portOut="Count" enabled="1"/>
+  <Edge nodeIn="166" nodeOut="156" portIn="in1" portOut="Count" enabled="1"/>
+  <Edge nodeIn="156" nodeOut="157" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="163" nodeOut="158" portIn="Index" portOut="count" enabled="1"/>
+  <Edge nodeIn="164" nodeOut="158" portIn="B" portOut="count" enabled="1"/>
+  <Edge nodeIn="159" nodeOut="160" portIn="CVar" portOut="Value" enabled="1"/>
+  <Edge nodeIn="161" nodeOut="160" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="167" nodeOut="160" portIn="String1" portOut="Value" enabled="1"/>
+  <Edge nodeIn="159" nodeOut="161" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="159" nodeOut="161" portIn="Value" portOut="Value" enabled="1"/>
+  <Edge nodeIn="165" nodeOut="161" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="167" nodeOut="161" portIn="Set" portOut="Value" enabled="1"/>
+  <Edge nodeIn="167" nodeOut="161" portIn="String2" portOut="Value" enabled="1"/>
+  <Edge nodeIn="157" nodeOut="162" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="176" nodeOut="162" portIn="Execute" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="160" nodeOut="163" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="164" portIn="in1" portOut="true" enabled="1"/>
+  <Edge nodeIn="163" nodeOut="164" portIn="Execute" portOut="false" enabled="1"/>
+  <Edge nodeIn="166" nodeOut="165" portIn="in2" portOut="Success" enabled="1"/>
+  <Edge nodeIn="158" nodeOut="166" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="168" nodeOut="167" portIn="input" portOut="Out" enabled="1"/>
+  <Edge nodeIn="168" nodeOut="167" portIn="message" portOut="Out" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="172" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="172" nodeOut="174" portIn="in2" portOut="Hide" enabled="1"/>
+  <Edge nodeIn="172" nodeOut="175" portIn="in1" portOut="Hide" enabled="1"/>
+  <Edge nodeIn="172" nodeOut="176" portIn="in3" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="175" nodeOut="176" portIn="Show" portOut="Success" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="178" portIn="Value" portOut="out" enabled="1"/>
+  <Edge nodeIn="492" nodeOut="490" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="493" nodeOut="490" portIn="set" portOut="false" enabled="1"/>
+  <Edge nodeIn="495" nodeOut="492" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="495" nodeOut="493" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="178" nodeOut="495" portIn="B" portOut="out" enabled="1"/>
+  <Edge nodeIn="490" nodeOut="496" portIn="A" portOut="false" enabled="1"/>
+  <Edge nodeIn="493" nodeOut="496" portIn="in" portOut="false" enabled="1"/>
+  <Edge nodeIn="518" nodeOut="496" portIn="CondTrue" portOut="false" enabled="1"/>
+  <Edge nodeIn="518" nodeOut="496" portIn="CondFalse" portOut="true" enabled="1"/>
+  <Edge nodeIn="503" nodeOut="497" portIn="Set" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="501" nodeOut="499" portIn="Set" portOut="out" enabled="1"/>
+  <Edge nodeIn="502" nodeOut="501" portIn="in" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="504" nodeOut="502" portIn="Set" portOut="out" enabled="1"/>
+  <Edge nodeIn="499" nodeOut="503" portIn="in" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="505" nodeOut="504" portIn="in" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="507" nodeOut="505" portIn="Set" portOut="out" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="506" portIn="in9" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="506" nodeOut="507" portIn="Set" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="516" portIn="File" portOut="Out" enabled="1"/>
+  <Edge nodeIn="148" nodeOut="516" portIn="File" portOut="Out" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="518" portIn="Set" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="497" nodeOut="518" portIn="Set" portOut="OnFalse" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

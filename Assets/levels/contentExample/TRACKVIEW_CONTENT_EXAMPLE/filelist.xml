@@ -1,0 +1,6 @@
+<download name="GDC_2016_001" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="378366" md5="e5ce7a31be1481ca3c52053357fb92ae"/>
+ </files>
+</download>

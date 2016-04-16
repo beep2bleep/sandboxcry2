@@ -1,0 +1,32 @@
+<ObjectLayer>
+ <Layer Name="SEQ_02_ANIMOBJECT" GUID="{5C4CFF6D-85AB-4B0E-98D4-A3C4358A2440}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="32768" ParentGUID="{F42B5365-F342-472E-B7EB-2A938A9129B7}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="SEQ_02_ANIMOBJECT" LayerGUID="{5C4CFF6D-85AB-4B0E-98D4-A3C4358A2440}" Id="{66CA2A13-320B-487C-82D4-AD4F450FD48B}" Name="SEQ_02_ANIMOBJECT_FG" Pos="309.5,584.25,41" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="TRACKVIEW_SEQ_2_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Animations:PlaySequence" pos="10,-150,0" flags="0">
+       <Inputs seq_Sequence_File="SEQUENCE_2" BreakOnStop="0" BlendPosSpeed="0" BlendRotSpeed="0" PerformBlendOut="0" StartTime="0" PlaySpeed="1" JumpToTime="0" seqid_SequenceId="0"/>
+      </Node>
+      <Node Id="2" Class="Game:Start" pos="-510,-150,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="4" Class="entity:ProximityTrigger" pos="-280,-150,0" flags="0" EntityGUID="{F707054D-A3E9-498E-B16D-27597924948F}" EntityGUID_64="498EA3E9F707054D">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="5" Name="SEQUENCE_2_ANIMOBJECT_TRIGGER" Class="_commentbox" pos="-560,-239.70868,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="940" Height="400"/>
+       <NodeSize Width="940" Height="427.64063"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="4" portIn="Trigger" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="4" portIn="Stop" portOut="Leave" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

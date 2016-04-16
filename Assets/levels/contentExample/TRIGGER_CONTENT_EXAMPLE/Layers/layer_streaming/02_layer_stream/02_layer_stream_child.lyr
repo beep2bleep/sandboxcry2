@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="02_LAYER_STREAM_CHILD" GUID="{B88F4635-4174-4C1F-A87B-154F77C41F93}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{3BB88FDE-7420-49C3-A3F4-9FEA40F7F916}"/>
+</ObjectLayer>

@@ -1,0 +1,6 @@
+<download name="Character_Head_Showcase" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="163315" md5="48c0075c95372d742c378be79f8beeb2"/>
+ </files>
+</download>

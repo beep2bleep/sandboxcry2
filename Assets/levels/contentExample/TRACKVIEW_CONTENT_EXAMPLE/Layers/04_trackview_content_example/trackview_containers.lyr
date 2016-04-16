@@ -1,0 +1,589 @@
+<ObjectLayer>
+ <Layer Name="TRACKVIEW_CONTAINERS" GUID="{9444031E-912B-4627-BB63-145757E930EE}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="0" ParentGUID="{A453BA82-C60C-4B9E-B4CD-821921F67C56}">
+  <LayerObjects>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{4202E403-7FFA-43D4-B703-160BC97C0328}" Name="SEQUENCE_7" Pos="528.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_7" Flags="8" endTimeTicks="60000" GUIDLo="2EB3F8CEAC130BEB" GUIDHi="E524DB1A0000462B" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="EBC517C3CBB90D26" GUIDHi="EA8C6A5F77054D0C" Type="Group" Name="Rumble" Flags="4" paramIdVersion="9"/>
+      <Node Id="2" GUIDLo="9410B805B9A5E55" GUIDHi="43D7A031DE4C3581" Type="ScriptVar" Name="Cinematic_RumbleA" Flags="4" ParentNode="1" paramIdVersion="9">
+       <Track paramType="Float" Flags="0" endTimeTicks="60000" GUIDLo="C7DB0639DBB87410" GUIDHi="51E1A0E04DCB66AA" defaultValue="0,0" ValueType="0">
+        <Key value="0" flags="73" ds="1,0" dd="0.56666672,0"/>
+        <Key timeTicks="10200" value="0.59940743" flags="73" ds="0.56666666,0.27829632" dd="0.43333325,0.21281478"/>
+        <Key timeTicks="18000" value="1" flags="73" ds="0.43333328,0" dd="0.33333334,0"/>
+        <Key timeTicks="24000" value="0.5" flags="73" ds="0.33333334,0.022657927" dd="0.23333326,0.015860543"/>
+        <Key timeTicks="28200" value="1" flags="73" ds="0.23333326,-0.11459255" dd="0.4333334,-0.21281485"/>
+        <Key timeTicks="37020" value="0" flags="73" ds="0.4333334,0" dd="1,0"/>
+       </Track>
+      </Node>
+      <Node Id="3" GUIDLo="2BB275DA34C2FF61" GUIDHi="FE17F82E8C43903" Type="ScriptVar" Name="Cinematic_RumbleB" Flags="4" ParentNode="1" paramIdVersion="9">
+       <Track paramType="Float" Flags="0" endTimeTicks="60000" GUIDLo="DAC0F956361012A9" GUIDHi="E9FCEC6845C51FA1" defaultValue="0,0" ValueType="0">
+        <Key value="0" flags="73" ds="0.31333333,0" dd="0.31333333,0"/>
+        <Key timeTicks="5640" value="0.60000002" flags="73" ds="0.36666667,0" dd="0.36666667,0"/>
+        <Key timeTicks="13020" value="0" flags="73" ds="1,0" dd="1,0"/>
+        <Key timeTicks="23400" value="1" flags="73" ds="0.73333335,0" dd="0.73333335,0"/>
+        <Key timeTicks="31200" value="0.5" flags="73" ds="0.43333325,0" dd="0.43333325,0"/>
+        <Key timeTicks="60000" value="0" flags="9" ds="1,0" dd="1,0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{4F1E5634-4F4B-461B-B3CD-6F95E7B1DC19}" Name="SEQUENCE_2" Pos="533.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_2" Flags="0" endTimeTicks="60000" GUIDLo="485151398A50D001" GUIDHi="101110B12C658992" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="4ED14882BC32AEFA" GUIDHi="7F414B519DF9FB76" Type="Entity" Name="SEQ_02_PLATFORM" Flags="0" paramIdVersion="9" EntityGUID="47619D843143E493">
+       <Track paramType="Position" GUIDLo="BD3CCE2A1D68C0C1" GUIDHi="DA2FF9DD8457B3D1" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="67FBA85F12B74FA8" GUIDHi="7CB0DA45598CB824" defaultValue="0,528">
+         <Key value="528" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="528" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="528" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="1B7B030ED0E8E5BA" GUIDHi="8074764899E34F0A" defaultValue="0,393">
+         <Key value="393" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="393" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="393" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="F92A00D7422371C8" GUIDHi="F5F94E696389D688" defaultValue="0,33.5">
+         <Key value="33.5" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="39.5" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="33.5" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="85FDA61BEAB0290C" GUIDHi="66C629573F405993" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="E8907A5719192C0D" GUIDHi="8B3D77ADC07A1ED3" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="AA3AD3B1762DF2C2" GUIDHi="95F41FDB15D514A7" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="-0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="73CD00D1C410C3FA" GUIDHi="F5F046641CA03E69" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Event" Flags="0" endTimeTicks="60000" GUIDLo="9FB4C4F2C764BBFC" GUIDHi="BAE2E64B1B4586F3"/>
+      </Node>
+      <Node Id="2" GUIDLo="A8BDA39A24D266A" GUIDHi="4A914DC7740A9C62" Type="Entity" Name="SEQ_02_ANIMOBJECT" Flags="0" paramIdVersion="9" EntityGUID="4C38A357CDDF6057">
+       <Track paramType="Position" GUIDLo="EE956E45C96C2F6B" GUIDHi="5979D33E94FFB91A" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="68CCCD07A6B03008" GUIDHi="F2895671305A7E0A" defaultValue="0,528">
+         <Key value="528" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="528" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="528" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="5517ADD4AFC419D7" GUIDHi="36B561F593264231" defaultValue="0,393">
+         <Key value="393" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="393" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="393" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="BD32D6B86DA0C5D7" GUIDHi="9DC100E254627B60" defaultValue="0,35.5">
+         <Key value="35.5" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="41.5" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="35.5" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="19480A0EB34A2A9C" GUIDHi="39989CCFCD9B2442" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="408724D1274BDAC" GUIDHi="75CB77FDF4FE439B" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="E4E70025C8E48428" GUIDHi="40F797D2892CF8CD" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="3E26ECBB81096AF" GUIDHi="8EBF3389ADC5B1A0" defaultValue="0,-89.999992">
+         <Key value="-89.999992" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="-89.999992" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Event" Flags="0" endTimeTicks="60000" GUIDLo="C176E2910D331C7F" GUIDHi="D254FB2966286D42"/>
+       <Track paramType="Animation" AnimationLayer="-1" Flags="0" endTimeTicks="60000" GUIDLo="850B55B9A9AF01DD" GUIDHi="EC16CAB3F77D308D">
+        <Key anim="swim_tac_underwater_nw_fwd_3p_01" loop="1"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{61D9A139-AB22-440C-9CE0-E17B260FC1FB}" Name="SEQUENCE_10" Pos="525.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_10" Flags="0" endTimeTicks="60000" GUIDLo="21751E318DA0B38C" GUIDHi="A73A085CB44D1889" ID="0">
+     <Nodes />
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{49D2B943-A75A-488B-A3DC-8917ACFB1465}" Name="SEQUENCE_1" Pos="534.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_1" Flags="0" endTimeTicks="60000" GUIDLo="9AFA449424EE8EA1" GUIDHi="2B00CF990822FD5E" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="550DEFDE7292460D" GUIDHi="B4BBE2D65B4747D4" Type="Camera" Name="SEQ_01_CAMERA" Flags="0" paramIdVersion="9" EntityGUID="4B72FF23B3B1E800" EntityGUIDTarget="46FDE2D5F75EB505" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="CADB96D6AA0B43AB" GUIDHi="77893208428E77C" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="DCC0CA49C1B77765" GUIDHi="5F2F1E65B801B15D" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="2E585421D21E8347" GUIDHi="37DD069FE55BD65" defaultValue="0,532">
+         <Key value="532" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="30000" value="532" flags="73" ds="3.0566669,0" dd="3.0566669,0"/>
+         <Key timeTicks="60000" value="532" flags="73" ds="1.6666667,0" dd="1.6666667,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="B2E36B8F20B9E69A" GUIDHi="A8BDE381E7B3DDA8" defaultValue="0,422">
+         <Key value="422" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="30000" value="422" flags="73" ds="3.0566669,0" dd="3.0566669,0"/>
+         <Key timeTicks="60000" value="422" flags="73" ds="1.6666667,0" dd="1.6666667,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="CDAA2FA300F0050B" GUIDHi="31E6C39092978D5F" defaultValue="0,45">
+         <Key value="45" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="30000" value="39" flags="73" ds="3.0566669,0" dd="3.0566669,0"/>
+         <Key timeTicks="60000" value="45" flags="73" ds="1.6666667,0" dd="1.6666667,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="943CB01AA698A90A" GUIDHi="636E7D355A92D131" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="E6F4F87760458571" GUIDHi="47D92D43725F6CB2" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="227ED15567127A66" GUIDHi="FC7B84724686112A" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="CEE22BFB282EA182" GUIDHi="D87AB354BC1D6997" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+       </Track>
+      </Node>
+      <Node Id="2" GUIDLo="2FD96C3188E06533" GUIDHi="698E528A2AFA27F5" Type="Director" Name="Director" Flags="4" paramIdVersion="9">
+       <Track paramType="Camera" Flags="0" endTimeTicks="60000" GUIDLo="755D045253BC275E" GUIDHi="35B71B3775C477BC">
+        <Key node="SEQ_01_CAMERA" BlendTime="0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{0B90EF53-7DC5-409C-BEDF-550DBD05D4DD}" Name="SEQUENCE_9_FADE" Pos="526.5,435.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_9_FADE" Flags="0" endTimeTicks="60000" GUIDLo="4B07673DF5B50765" GUIDHi="2CF659991238C517" ID="0">
+     <Nodes>
+      <Node Id="2" GUIDLo="CABF478BF5D9EDB8" GUIDHi="144C9DA074D00F89" Type="ScreenFader" Name="ScreenFader" Flags="0" paramIdVersion="9">
+       <Track paramType="ScreenFader" Flags="0" endTimeTicks="60000" GUIDLo="712161A5F2023A89" GUIDHi="7233D68A45657032">
+        <Key fadeTime="7" fadeColor="0,0,0" fadeType="1" fadeChangeType="0" texture="" useCurColor="1"/>
+        <Key timeTicks="42000" fadeTime="3" fadeColor="0,0,0" fadeType="0" fadeChangeType="0" texture="" useCurColor="1"/>
+       </Track>
+      </Node>
+      <Node Id="3" GUIDLo="965007933635F67D" GUIDHi="3D452F2AAF7C6A7B" Type="Director" Name="Director" Flags="4" paramIdVersion="9">
+       <Track paramType="Camera" Flags="0" endTimeTicks="60000" GUIDLo="8491049F48212ED6" GUIDHi="C75DE48295CC6992">
+        <Key node="SEQ_09_CAMERA_ATTR_FADE" BlendTime="0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{8C7A3859-83BD-404F-AF5A-13248322C4F7}" Name="SEQUENCE_3" Pos="532.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_3" Flags="56" endTimeTicks="60000" GUIDLo="E25B8B5AAF5D60E7" GUIDHi="ACDD9D624C0FCA6D" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="1ECDCBEAAA8F0A8E" GUIDHi="7D62F35B05667266" Type="Director" Name="Director" Flags="4" paramIdVersion="9">
+       <Track paramType="Camera" Flags="0" endTimeTicks="60000" GUIDLo="1FD5FEBC3AF2783E" GUIDHi="795778F2B181B367">
+        <Key node="SEQ_03_DIRECTOR_CAMERA_01" BlendTime="0"/>
+        <Key timeTicks="15000" node="SEQ_03_DIRECTOR_CAMERA_02" BlendTime="0"/>
+        <Key timeTicks="30000" node="SEQ_03_DIRECTOR_CAMERA_01" BlendTime="0"/>
+        <Key timeTicks="45000" node="SEQ_03_DIRECTOR_CAMERA_02" BlendTime="0"/>
+       </Track>
+      </Node>
+      <Node Id="2" GUIDLo="3A122D198A18733F" GUIDHi="70F58BEF745E418C" Type="Camera" Name="SEQ_03_DIRECTOR_CAMERA_02" Flags="0" paramIdVersion="9" EntityGUID="4DABE429D214566F" EntityGUIDTarget="4D443D54A786A5FA" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="92AD04959507240F" GUIDHi="B6E32196AD10269B" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="4169616995525FF6" GUIDHi="56DAD3414AF024A5" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="EF9FF5C50C174BE9" GUIDHi="8ED2980E5DDED2CF" defaultValue="0,531">
+         <Key value="531" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="531" flags="73" ds="2.3210003,-1.1659936e-05" dd="1.7288396,-8.6851169e-06"/>
+         <Key timeTicks="60000" value="531" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="9B777B68F39E26AE" GUIDHi="9C90C6D58FB9F759" defaultValue="0,355">
+         <Key value="355" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="370.54755" flags="73" ds="2.3210003,-5.8299679e-06" dd="1.7288396,-4.3425584e-06"/>
+         <Key timeTicks="60000" value="355" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="1296A36F70927E41" GUIDHi="F079F45D5C9B42D8" defaultValue="0,44.5">
+         <Key value="44.5" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="36.468697" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="44.5" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="478F386AF8175477" GUIDHi="CFF081CFB5F2D0C6" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="95626B5BAF5F6E1" GUIDHi="9BA0EF6ADD8F113D" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="62845F0613038DF3" GUIDHi="ACCC47793A670000" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="-0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="7918C74285DAA765" GUIDHi="C84C35821EC2CCBB" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+      </Node>
+      <Node Id="3" GUIDLo="DD43AD95CA6B3FDA" GUIDHi="CAEA9DC17F6A588C" Type="Camera" Name="SEQ_03_DIRECTOR_CAMERA_01" Flags="0" paramIdVersion="9" EntityGUID="4F148781A42B8091" EntityGUIDTarget="45D83AE1EB997C99" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="F0A871C1BCED0FC0" GUIDHi="90F8C8D46B102CC1" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="45BA58B6B1AD1F77" GUIDHi="671877B84182CEE4" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="52A5BE648A40E6B5" GUIDHi="142373F4B88595F5" defaultValue="0,507">
+         <Key value="507" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="507" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="507" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="92D719CDFD1E7B29" GUIDHi="E04C701449CD64F6" defaultValue="0,370">
+         <Key value="370" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="356.86859" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+         <Key timeTicks="60000" value="370" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="A7E5875ED4B2925E" GUIDHi="D4364C59B7BCEEAD" defaultValue="0,38.5">
+         <Key value="38.5" flags="73" ds="1,0" dd="0.57310915,0"/>
+         <Key timeTicks="30000" value="38.5" flags="73" ds="2.3210003,-7.2874599e-07" dd="1.7288396,-5.4281981e-07"/>
+         <Key timeTicks="60000" value="38.5" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="5CAECD7F7C0A5AE3" GUIDHi="C81513AF965F66A5" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="B60F0F69F34870A9" GUIDHi="173644DFC107C376" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="CA0EA23778A170AC" GUIDHi="D3CC3C060C25F646" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="-0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="AAE4B84092C5EFD5" GUIDHi="E9CAD0466B92BB90" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{3C08365D-76C5-48E7-BDE6-E1FFEF88C824}" Name="SEQUENCE_6" Pos="529.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_6" Flags="0" endTimeTicks="60000" GUIDLo="FE1E6806DC106798" GUIDHi="6A9219A74C01EE6B" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="C505D6A53AACD91F" GUIDHi="924979BBE905E924" Type="Camera" Name="SEQ_06_CAMERA" Flags="0" paramIdVersion="9" EntityGUID="4F885C31E5CCE612" EntityGUIDTarget="42CE0CE80A3F83C2" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="8E149262BE276FA" GUIDHi="F37993B1C1E25D6F" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="B831083AAF15ABED" GUIDHi="880D8F14983DF3FD" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="C613C55ED1D61E7E" GUIDHi="7C302927F64B233C" defaultValue="0,508.45563"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="2ED111AD03935C56" GUIDHi="3A20FA793E4D2783" defaultValue="0,281.78107"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="3A63D2B1922E38A1" GUIDHi="DD75F2163146DF52" defaultValue="0,37.62278"/>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="31F77979DB12E9B4" GUIDHi="BE1F90FA4CDFBCDC" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="EA8AFEB181BA9F2" GUIDHi="1BDFF9CB92C970C2" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="2552705C1CA8DFF0" GUIDHi="9C2B28C7B2843222" defaultValue="0,-0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="DA3CBB5EC6AD11D7" GUIDHi="8FA0E7FBC6F6C7D0" defaultValue="0,0"/>
+       </Track>
+      </Node>
+      <Node Id="2" GUIDLo="36625FD94420280A" GUIDHi="2DBF53B5C52AB6E3" Type="Director" Name="Director" Flags="4" paramIdVersion="9">
+       <Track paramType="Camera" Flags="0" endTimeTicks="60000" GUIDLo="80F7895E06A6C309" GUIDHi="554F033D9DDC3A74">
+        <Key node="SEQ_06_CAMERA" BlendTime="0"/>
+       </Track>
+       <Track paramType="Capture" Flags="0" endTimeTicks="60000" GUIDLo="292308B78877A896" GUIDHi="2AA029C0D9B0E8A2">
+        <Key frameRate="30" timeStep="0.033" format="tga" folder="CaptureOutput" once="0" prefix="tutorial_" bufferToCapture="0" durationTicks="60000"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="Group" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Name="DEBUG_TEXT" Pos="518.5,436.12906,40.661053" FloorNumber="-1" Rotate="1,-5.9108601e-08,3.7252914e-08,-5.2650115e-08" ColorRGB="65280" Material="Materials/references/base_colors/white" Opened="0">
+    <Objects>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{E702899C-373B-45E6-BF5E-A097849B3609}" Name="a66" Parent="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Pos="-1.2706299,0,0" FloorNumber="-1" Rotate="-5.2683571e-08,-2.1073427e-08,0.70710677,-0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/g.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{2E5F6BEC-4B89-48EB-96B5-A003E4FDD0FD}" Name="a67" Parent="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Pos="-0.62200928,0,0" FloorNumber="-1" Rotate="-5.2683571e-08,-2.1073427e-08,0.70710677,-0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/u.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{1F3B55EB-F6FB-447C-AFB1-C225B671F0B5}" Name="a68" Parent="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Pos="0.010986328,0,0" FloorNumber="-1" Rotate="-5.2683571e-08,-2.1073427e-08,0.70710677,-0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/b.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{11B7185D-B977-43E2-923D-9E6D6BDFE7D7}" Name="a69" Parent="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Pos="0.62823486,0,0" FloorNumber="-1" Rotate="-5.2683571e-08,-2.1073427e-08,0.70710677,-0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/e.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{628B09BE-3F8F-47FE-B864-E945FBC15BE6}" Name="a70" Parent="{5709B068-AD3A-4C55-B6D4-8F14FFAEBFA1}" Pos="1.2532349,0,0" FloorNumber="-1" Rotate="-5.2683571e-08,-2.1073427e-08,0.70710677,-0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/d.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Group" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Name="TRIGGER_TEXT6" Pos="518.5,435.5,40.661053" FloorNumber="-1" Rotate="0.5,0.5,-0.5,0.49999997" ColorRGB="65280" Material="Materials/references/base_colors/white" Opened="0">
+    <Objects>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{B2B7C643-AEC3-4FFF-A4E0-79D0631E6EF7}" Name="a57" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,1.9549866,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/r.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{5F4D3FAC-9A88-491F-9929-93B940C73331}" Name="a58" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,1.25,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/e.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{E3C160C6-C5C9-46B7-80CC-96B488DE869E}" Name="a59" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,0.5,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/g.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{420B96DE-EE20-495F-8765-E8A7193A301C}" Name="a60" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,-0.25,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/g.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{99DB514A-BBCC-4C5F-BC3D-D5F9F97AD394}" Name="a61" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,-0.75,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/i.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{EB20A14F-0900-46AD-82F2-ADCE51E62BA2}" Name="a62" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,-1.25,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/r.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+     <Object Type="Brush" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{07598C8D-82D1-4D42-9F3D-EE08EED3613B}" Name="a63" Parent="{8558AD7F-E15E-4678-9830-51DDE80214B4}" Pos="0,-1.875,0" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" Material="Materials/references/base_colors/white" MatLayersMask="0" Prefab="objects/props/misc/3dtext/t.cgf" OutdoorOnly="0" CastShadowMaps="0" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="536870912">
+      <CollisionFiltering>
+       <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+       <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+      </CollisionFiltering>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{EF195D8F-F1CE-49C7-811A-9D23F1BDAFBB}" Name="SEQUENCE_8" Pos="527.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_8" Flags="0" endTimeTicks="60000" GUIDLo="C2D2F6982F25260C" GUIDHi="21B040FB515A5C66" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="AFB88AC315EA8C16" GUIDHi="BA3A438DED0F28D9" Type="Camera" Name="SEQ_08_CAMERA" Flags="0" paramIdVersion="9" EntityGUID="4B90CB4A2669AD62" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="6D72318121E0B639" GUIDHi="C35E238495FBDF55" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="9EC436A3FA14FDD" GUIDHi="F9EC74CAA152F1E1" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="F0BDE50476105430" GUIDHi="7F2904C26E6289E5" defaultValue="0,528">
+         <Key value="528" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="528" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="B6B610B405986E15" GUIDHi="6CAD69394DA8379F" defaultValue="0,218.5">
+         <Key value="218.5" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="218.5" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="FC440D3F6F544CA" GUIDHi="10EBD6E16A6A5AB1" defaultValue="0,42">
+         <Key value="42" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="36.75" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="A880056C84FBC7" GUIDHi="B9253C01B46773DC" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="646ED3C60D24E9E9" GUIDHi="7DEBF36A4018440B" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="A73635464E1ECBCF" GUIDHi="B576A3ADBE48DC93" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="EC138C777C90F585" GUIDHi="3E651E8B105804B9" defaultValue="0,-90"/>
+       </Track>
+      </Node>
+      <Node Id="2" GUIDLo="554561644D45475F" GUIDHi="666B54AD127B9875" Type="Event" Name="SEQ_8_SPHERE_ACTIVATE" Flags="4" paramIdVersion="9">
+       <Track paramType="TrackEvent" Flags="0" endTimeTicks="60000" GUIDLo="2AA537C44F57EA28" GUIDHi="76DCB196923BC475">
+        <Key timeTicks="30000" event="SPHERE_ACTIVATE" eventValue="1" noTriggerInScrubbing="0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events>
+      <Event Name="SPHERE_ACTIVATE"/>
+     </Events>
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{D1BEC8A8-0481-4CF3-9924-010F4C41122C}" Name="SEQUENCE_5" Pos="530.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_5" Flags="0" endTimeTicks="60000" GUIDLo="A1653D2BD58E207" GUIDHi="B0CA5A8EA4D01D29" ID="0">
+     <Nodes>
+      <Node Id="2" GUIDLo="6C8FC8CFC9A0167C" GUIDHi="F58C73D50A2E4365" Type="Entity" Name="SEQ_05_AUDIO_TRACK_FG" Flags="0" paramIdVersion="9" EntityGUID="41AAA0E5FE6C4563">
+       <Track paramType="Position" GUIDLo="7F9D8F5077C26B73" GUIDHi="725D57F4616006E" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="F9B959FCF96D9880" GUIDHi="894118DC092AC2FC" defaultValue="0,534.625"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="D9AAD80207BF5E98" GUIDHi="F250CD615CAFC7C5" defaultValue="0,305.5"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="314753E321712C96" GUIDHi="A44CE0DE5C676B07" defaultValue="0,41"/>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="566B10841170DADE" GUIDHi="90FF50F95A1D4810" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="49E1FC82BC334A40" GUIDHi="144890DB9EAF7204" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="23BEAFC5019BEA20" GUIDHi="15D7F7291EF2A9DB" defaultValue="0,-0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="E48AE758430569D4" GUIDHi="80EEC8364AC4B5A9" defaultValue="0,0"/>
+       </Track>
+       <Track paramType="Event" Flags="0" endTimeTicks="60000" GUIDLo="287CF3778A0D194E" GUIDHi="2A12B077EDDB3D22"/>
+       <Track paramType="Sound" Flags="0" endTimeTicks="60000" GUIDLo="77B1CBEA347BBCFB" GUIDHi="6056C337919CCF5D">
+        <Key StartTrigger="Play_l_global_sfx_bird_chirping" StopTrigger="" durationTicks="60000"/>
+       </Track>
+      </Node>
+      <Node Id="3" GUIDLo="9293BE92FF43D8EA" GUIDHi="CE58518B36D4F5D8" Type="Entity" Name="SEQ_05_AUDIO_TAGPOINT" Flags="0" paramIdVersion="9" EntityGUID="49E0BC7DE59FB978">
+       <Track paramType="Position" GUIDLo="5E51EC42E54EB731" GUIDHi="6E772D89C29B78BD" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="68DD07D061F6AD8D" GUIDHi="3A6F2DB56C923863" defaultValue="0,535.5">
+         <Key value="535.5" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="40820B6BA1D66648" GUIDHi="C88B04BC92EC4018" defaultValue="0,305.5">
+         <Key value="305.5" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="A733D82E2A423060" GUIDHi="2C6EC165EBC3F61E" defaultValue="0,41">
+         <Key value="41" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="8720F3F6A7919AE5" GUIDHi="77328AC4585D8CF3" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="3B92D9714F94DFA3" GUIDHi="F6746CB1074E19D5" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="70888E78876AE101" GUIDHi="846A4878DB5EF486" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="7346749FF5A9BF29" GUIDHi="A0133DD29FA8444D" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Event" Flags="0" endTimeTicks="60000" GUIDLo="2871880A92AD4869" GUIDHi="B4B22014BB04DE3D"/>
+       <Track paramType="Sound" Flags="0" endTimeTicks="60000" GUIDLo="77C80829C23C8D9" GUIDHi="9EF8CBA746ECD8B9">
+        <Key StartTrigger="Play_l_global_sfx_bird_chirping" StopTrigger="" durationTicks="0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="Entity" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{A6BF0CB4-6789-4ECE-9DB0-6021FAB8E74B}" Name="_LEVEL_SETTINGS_FG" Pos="518.5,434.57336,40.678078" FloorNumber="-1" Rotate="0.5,0.49999997,-0.49999997,0.49999997" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity" HasEntity="1">
+    <FlowGraph Description="" Group="_LEVEL_SETTINGS" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-290,0,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Debug:ConsoleVariable" pos="-10,-60,0" flags="0">
+       <Inputs CVar="es_DrawProximityTriggers" Value="1"/>
+      </Node>
+      <Node Id="3" Class="Debug:ConsoleVariable" pos="-10,50,0" flags="0">
+       <Inputs CVar="es_DrawAreas" Value="1"/>
+      </Node>
+      <Node Id="4" Name="LEVEL_SETTINGS" Class="_commentbox" pos="-320,-147.93842,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="470"/>
+       <NodeSize Width="640" Height="525.5791"/>
+      </Node>
+      <Node Id="5" Class="Debug:ConsoleVariable" pos="-10,160,0" flags="0">
+       <Inputs CVar="e_terrain" Value="0"/>
+      </Node>
+      <Node Id="6" Class="Debug:ConsoleVariable" pos="-10,260,0" flags="0">
+       <Inputs CVar="e_waterOcean" Value="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{E0E463F4-72D7-41A3-809E-D9702966A66A}" Name="SEQUENCE_4" Pos="531.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_4" Flags="0" endTimeTicks="60000" GUIDLo="E1F065B9D98FBFE2" GUIDHi="C790E65BCB795039" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="F97188C70DDAFD3F" GUIDHi="9CFE6FB87D337838" Type="Director" Name="Director" Flags="4" paramIdVersion="9">
+       <Track paramType="Console" Flags="0" endTimeTicks="60000" GUIDLo="BB8028AB9C2D2F" GUIDHi="812030D6585946">
+        <Key command="p_draw_helpers=0"/>
+        <Key command="r_wireframe=0"/>
+        <Key timeTicks="15000" command="r_wireframe=1"/>
+        <Key timeTicks="30000" command="r_wireframe=0"/>
+        <Key timeTicks="45120" command="r_wireframe=1"/>
+        <Key timeTicks="60000" command="r_wireframe=0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+   <Object Type="SequenceObject" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{A67A38F6-4BDF-49F8-946B-A440453678E4}" Name="SEQUENCE_9" Pos="526.5,434.5,40.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="4" Name="SEQUENCE_9" Flags="0" endTimeTicks="60000" GUIDLo="3B5693A43573B530" GUIDHi="54B691A266618A5E" ID="0">
+     <Nodes>
+      <Node Id="1" GUIDLo="4ABDFA5205D7B077" GUIDHi="194D43E74C52FBCC" Type="Camera" Name="SEQ_09_CAMERA_ATTR_POS" Flags="0" paramIdVersion="9" EntityGUID="47D24C979AB6E853" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="190B7166C03563BA" GUIDHi="5C33B314853B1390" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="A11D5E4ECD18D05A" GUIDHi="19F99A09132F41FF" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="1CDA2B501F050B9B" GUIDHi="8D63741D049F1D2B" defaultValue="0,529.75">
+         <Key value="529.75" flags="73" ds="1,0" dd="0.57393211,0"/>
+         <Key timeTicks="30060" value="529.75" flags="73" ds="2.3249493,1.1676679e-05" dd="1.7259641,8.668374e-06"/>
+         <Key timeTicks="60000" value="529.75" flags="73" ds="1.4202263,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="463134E357CD9106" GUIDHi="5826B2E91EE4A810" defaultValue="0,183.81554">
+         <Key value="183.81554" flags="73" ds="1,0" dd="0.57393211,0"/>
+         <Key timeTicks="30060" value="183.81552" flags="73" ds="2.3249493,2.9191697e-06" dd="1.7259641,2.1670935e-06"/>
+         <Key timeTicks="60000" value="183.81554" flags="73" ds="1.4202263,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="AE54CC258E69C0C" GUIDHi="6BE5B7DE24A01B" defaultValue="0,43.24308">
+         <Key value="43.24308" flags="73" ds="1,0" dd="0.57393211,0"/>
+         <Key timeTicks="30060" value="46.243076" flags="73" ds="2.3249493,-7.2979242e-07" dd="1.7259641,-5.4177337e-07"/>
+         <Key timeTicks="60000" value="43.24308" flags="73" ds="1.4202263,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="8D827340E730C4EC" GUIDHi="C3DD7537ADFC43ED" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="5BB3BADB3A88E4D7" GUIDHi="5645477457D6775C" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="EAFA8A13B5768551" GUIDHi="68B5E007DB1968BA" defaultValue="0,-0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="E968AF7DCEC85EDA" GUIDHi="3F69D08A69F91B5A" defaultValue="0,0"/>
+       </Track>
+      </Node>
+      <Node Id="2" GUIDLo="32B2FC139D07AACE" GUIDHi="18268D5020DA7B51" Type="Camera" Name="SEQ_09_CAMERA_ATTR_ROT" Flags="0" paramIdVersion="9" EntityGUID="4630D093C4ED55F1" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="68FA57CE65A84C8A" GUIDHi="B545FA53E715DE7A" defaultValue="0,60" ValueType="0"/>
+       <Track paramType="Position" GUIDLo="6645847706FD15D0" GUIDHi="62D4446E4BCF16BD" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="461602BA477CAA6D" GUIDHi="27ADDACDD1C47990" defaultValue="0,522.25"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="6806CD7CC60CC718" GUIDHi="4C7B9CA10EA580BD" defaultValue="0,183.81554"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="FB3BDF6EF916EF9E" GUIDHi="CA118F18FEF4E866" defaultValue="0,43.24308"/>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="C8D5B6E2E45AC83C" GUIDHi="B04EAF8C93F16E47" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="AFDC4BDEBB079E4C" GUIDHi="EA6AB5FB8EBB963C" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="A9692C6FD3DFE425" GUIDHi="7DE0DBB7582E1803" defaultValue="0,-0">
+         <Key value="-0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="360" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="FE80B3403B46A43C" GUIDHi="221CFA5E78E1DA42" defaultValue="0,0">
+         <Key value="0" flags="73" ds="1,0" dd="1,0"/>
+         <Key timeTicks="60000" value="0" flags="73" ds="3.3333335,0" dd="3.3333335,0"/>
+        </NewSubTrack>
+       </Track>
+      </Node>
+      <Node Id="3" GUIDLo="54468C6BE2582F8F" GUIDHi="D0FA970D4DDD9ECC" Type="Camera" Name="SEQ_09_CAMERA_ATTR_FOV" Flags="0" paramIdVersion="9" EntityGUID="472570FB6D47F6E9" FOV="60" NearZ="0.25" AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" ShakeSeed="0">
+       <Track paramType="FOV" Flags="0" endTimeTicks="60000" GUIDLo="4549FC8F45D48B43" GUIDHi="3F43ADD165BCC420" defaultValue="0,60" ValueType="0">
+        <Key value="60" flags="73" ds="1,0" dd="0.57310915,0"/>
+        <Key timeTicks="30000" value="10" flags="73" ds="2.3210003,0" dd="1.7288396,0"/>
+        <Key timeTicks="60000" value="60" flags="73" ds="1.4229696,0" dd="3.3333335,0"/>
+       </Track>
+       <Track paramType="Position" GUIDLo="C9CA9E234AEB618B" GUIDHi="68EF515ECCE7C033" ValueType="1">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="CB4E890A9E2679CD" GUIDHi="FB2673044F0C386F" defaultValue="0,515"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="F3EF1867C100FC00" GUIDHi="2E4F66DE1599DAFB" defaultValue="0,183.81554"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="55A1C2B2106F0359" GUIDHi="F0CEF84DEFE45D3D" defaultValue="0,43.24308"/>
+       </Track>
+       <Track paramType="Rotation" GUIDLo="9BB6B80CD8F24426" GUIDHi="481022A43EEA439D" ValueType="2">
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="7F0F3ACF3715C8FA" GUIDHi="CCF9C225DDE3568C" defaultValue="0,0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="8669E66A448C0B0A" GUIDHi="BB83D12D3EE0E8C5" defaultValue="0,-0"/>
+        <NewSubTrack Flags="0" endTimeTicks="60000" GUIDLo="45D3586C65EFE9D7" GUIDHi="5EDC05AB413552D3" defaultValue="0,0"/>
+       </Track>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ID value="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

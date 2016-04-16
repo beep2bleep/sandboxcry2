@@ -1,0 +1,3 @@
+<ObjectLayer>
+ <Layer Name="AI_02_SETUP" GUID="{F5D7ADAA-4D39-419F-80C7-D636BE3B5933}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{4930E66C-D463-49FA-83E0-8F42AF1A7910}"/>
+</ObjectLayer>

@@ -1,0 +1,20 @@
+<ObjectLayer>
+ <Layer Name="16.30__Evening" GUID="{81DA91BD-939C-4A23-9C85-5EE48704A661}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="3567522" ParentGUID="{B79C5263-34D5-44D8-884B-7C37A7099F70}">
+  <LayerObjects>
+   <Object Type="GeomEntity" Layer="16.30__Evening" LayerGUID="{81DA91BD-939C-4A23-9C85-5EE48704A661}" Id="{BEEA5050-9EF8-4BA9-8345-B790BFFB91D5}" Name="skydome_evening" Pos="125,108.06797,109" FloorNumber="-1" Rotate="0.91608304,0,0,-0.40098858" Scale="0.5,0.5,0.5" ColorRGB="65535" Material="Objects/sky/sky_evening" MatLayersMask="0" Geometry="objects/sky/skydome_halfsphere.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="1" CreatedThroughPool="0" EntityClass="GeomEntity" HasEntity="1">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="EnvironmentProbe" Layer="16.30__Evening" LayerGUID="{81DA91BD-939C-4A23-9C85-5EE48704A661}" Id="{1A192FA3-A518-49F7-9200-FC3DEAC6A1BE}" Name="l_global_evening_probe" Pos="125,123.25,112.22" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="1" CreatedThroughPool="0" EntityClass="EnvironmentLight" HasEntity="1">
+    <Properties bActive="1" BoxSizeX="90" BoxSizeY="150" BoxSizeZ="90" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" SortPriority="0" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="Textures/cubemaps/asset_zoo/l_global_evening_probe_cm.tif"/>
+     <Projection fBoxHeight="90" fBoxLength="90" bBoxProject="1" fBoxWidth="90"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,6 @@
+<download name="AI_CONTENT_EXAMPLE" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="675175" md5="3729ba40bc569831a15039a9e141b5d2"/>
+ </files>
+</download>

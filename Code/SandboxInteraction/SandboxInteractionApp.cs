@@ -36,8 +36,8 @@ namespace CryEngine.SandboxInteraction
             //	InitCamera (Camera.Current);
             //};
             //SystemHandler.EditorGameEnded += EditorGameEnded;
+            
 
-            var actor = Env.Game.GetIGameFramework().GetIActorSystem().GetActor(spawnedEntity.GetId());
 
             Program.OnSignal += OnFlowNodeSignal;
 		}

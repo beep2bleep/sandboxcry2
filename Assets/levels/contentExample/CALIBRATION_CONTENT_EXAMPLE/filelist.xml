@@ -1,0 +1,6 @@
+<download name="asset_zoo" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="2824008" md5="ea0b74487eba2488917d668c48dc6b5c"/>
+ </files>
+</download>

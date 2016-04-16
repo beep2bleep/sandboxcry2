@@ -1,0 +1,16 @@
+<ObjectLayer>
+ <Layer Name="05_TORNADO_HIDE" GUID="{2E16B4BD-B01E-4AA4-B907-A691E2B67F4C}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" ParentGUID="{57A38DCA-0638-41CD-99AB-362E242363E9}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="05_TORNADO_HIDE" LayerGUID="{2E16B4BD-B01E-4AA4-B907-A691E2B67F4C}" Id="{553CC70E-1928-43CD-8CDF-86E2B792551A}" Name="Tornado1" Pos="520.99304,305.94119,40.968803" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Tornado" HasEntity="1">
+    <Properties fAttractionImpulse="13" fCloudHeight="376" FunnelEffect="weather.tornado.large" Radius="30" fSpinImpulse="9" fUpImpulse="18" fWanderSpeed="10"/>
+   </Object>
+   <Object Type="Entity" Layer="05_TORNADO_HIDE" LayerGUID="{2E16B4BD-B01E-4AA4-B907-A691E2B67F4C}" Id="{F5F003FB-77EF-4D0E-9A3D-5462DB9B027D}" Name="05_ENVIRO_LIGHTNING_ENT" Pos="523.5,305.5,46.985832" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.50999999,0.50999999,0.50999999" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Lightning" HasEntity="1">
+    <Properties bActive="0" fDistance="0" fDistanceVariation="0.2" bRelativeToPlayer="1">
+     <Audio audioRTPCDistanceRtpc="" audioTriggerPlayTrigger="" fSpeedOfSoundScale="1" audioTriggerStopTrigger=""/>
+     <Effects LightIntensity="1" LightRadius="1000" ParticleEffect="weather.lightning.lightningbolt1" ParticleScale="1" ParticleScaleVariation="0.2" SkyHighlightAtten="10" color_SkyHighlightColor="0.8,0.8,1" SkyHighlightMultiplier="1" SkyHighlightVerticalOffset="0"/>
+     <Timing fDelay="5" fDelayVariation="0.5" fLightningDuration="0.2"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

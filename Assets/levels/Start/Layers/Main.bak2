@@ -1,7 +1,60 @@
 <ObjectLayer>
  <Layer Name="Main" GUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{0474F98B-06EC-4F30-A0AA-7F575CC0AA89}" Name="SpawnPoint1" Pos="846.63342,528.87585,16.552652" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint" HasEntity="1">
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{56754A26-5A94-42C0-A261-D76F831B81EF}" Name="cultist_broken_eyeball1" Pos="814.71606,514.97144,17.430946" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/cultist_head/cultist_broken_eyeball.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{2E702E2E-8D6C-4029-B0CA-BC03E041AA44}" Name="cultist_teeth1" Pos="814.27429,514.97144,17.495853" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/cultist_head/cultist_teeth.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{A347FB3A-3953-4CCC-B8D0-4D649C43685D}" Name="salamander1" Pos="849.15924,516.86798,16.325193" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" Geometry="Assets/objects/characters/animals/amphibians/salamander/salamander.chr" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="1" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity" HasEntity="1">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{DA8C1C3C-D595-4B3B-A3C8-4C0E0B776FBB}" Name="plasma_rifle1" Pos="813.53833,511.9881,17.732271" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/humanoid/plasma_rifle.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{300D2B49-990C-4AEA-9606-17181E2E4EC7}" Name="Chickens4" Pos="798.01447,539.21118,17.558537" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Chickens" HasEntity="1">
+    <Properties>
+     <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/birds/rooster/rooster.cdf"/>
+     <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+     <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="0.1" HeightMax="1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="5" SpeedMin="1"/>
+     <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" PickableMessage="" bPickableWhenAlive="1" bPickableWhenDead="1" Radius="10" VisibilityDist="50"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{FF216A4A-C062-4F26-B490-54B7EB844363}" Name="head_a1" Pos="813.84155,514.97144,16.97378" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/head_a/head_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{5857014D-F727-4078-B645-35FB68F08869}" Name="broken_wheel1" Pos="841.9353,516.71533,16.052032" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/effects/debris/broken_wheel.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{4383DF53-96F3-4CDE-BD28-A313A0DBC2C5}" Name="particle_rock_a1" Pos="823.66058,521.6015,16.388561" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/effects/natural/particle_rock_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{3E82275A-786C-4165-9C9A-48E78C80AD0D}" Name="dx_12_bending_grass_normal_grp_a1" Pos="841.01208,530.94043,16.811401" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" Geometry="Assets/levels/_testmaps/dx12_woodland/objects/dx_12_bending_grass_normal_grp_a.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity" HasEntity="1">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{08E53379-3A68-4D6A-A784-61EFD651FBC1}" Name="particle_green_leafs_a1" Pos="821.24237,523.17853,16.566929" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/effects/natural/particle_green_leafs_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{BABB017F-19C9-4973-9706-84548FC48AD2}" Name="HUD_MessagePlane1" Pos="816.05603,534.89478,16.835249" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="HUD_MessagePlane" HasEntity="1">
+    <Properties bEnabled="1"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{C452AC82-1204-40B1-9DF3-ADB7F1EADA2D}" Name="toad1" Pos="815.70496,523.13721,16.714424" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" Geometry="Assets/objects/characters/animals/amphibians/toad/toad.cdf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity" HasEntity="1">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{63036E86-B2FB-4BEA-8B87-90F394206D59}" Name="hmmwv_static1" Pos="824.50568,528.08502,16.324148" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/vehicles/hmmwv/hmmwv_static.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{0474F98B-06EC-4F30-A0AA-7F575CC0AA89}" Name="SpawnPoinnt" Pos="807.34546,528.87585,17.179842" FloorNumber="-1" Rotate="-0.058118936,0.057913065,0.025499361,0.99630219" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint" HasEntity="1">
     <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
     <FlowGraph Description="" Group="Spawn" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -17,6 +70,51 @@
      </Edges>
      <GraphTokens />
     </FlowGraph>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{E2EE688C-5872-4874-BD2C-7B6B41A42EAD}" Name="primitive_pyramid1" Pos="825.64935,513.25256,16.194984" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_pyramid.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{AC44BE8D-2F38-4D9C-8479-268F350C0954}" Name="primitive_cube1" Pos="808.70996,507.93008,18.401371" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_cube.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{3BDDF696-EF7F-47EE-94D4-C89886122597}" Name="cultist_head1" Pos="814.42407,514.97144,17.417362" FloorNumber="-1" Rotate="0.99864346,-0.043719616,0.028217817,-1.045062e-05" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/cultist_head/cultist_head.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{7457B997-2F98-4BAA-A7E8-0FB2E8B50FED}" Name="primitive_cube_noproxy1" Pos="824.41748,505.82968,16.232914" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_cube_noproxy.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{E06821A1-9B9A-4B8E-AB33-A043E3E47A14}" Name="primitive_sphere_small1" Pos="822.72607,521.36847,16.423954" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_sphere_small.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{0D0258B7-F4C1-4AA7-81F3-C9183DA9A5B8}" Name="primitive_sphere_noproxy1" Pos="804.33124,512.17065,18.724968" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_sphere_noproxy.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{C7822DBF-8F07-41AA-B050-2B8117833B92}" Name="bush_round_leaf_a1" Pos="846.21423,525.03741,16.491966" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/natural/bushes/bush_round_leaf/bush_round_leaf_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{1E56EDC7-6A51-413F-813D-E6C69032964A}" Name="psycho_head1" Pos="813.40656,514.97144,17.735281" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/psycho/psycho_head.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{8B4105CC-D698-4FB6-BAB9-76EF2D073931}" Name="forest_skydome1" Pos="773.06543,502.74783,19.152756" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/sky/forest_skydome.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{B95C9CCC-98E3-41BB-9FFC-4AF0E27FB1C0}" Name="Birds1" Pos="810.67053,519.70874,17.038128" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Birds" HasEntity="1">
+    <Properties>
+     <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.chr"/>
+     <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="1" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+     <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+     <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="1" FactorTakeOff="10" FlightTime="20" HeightMax="20" HeightMin="10" LandDecelerationHeight="5" MaxAnimSpeed="1" SpeedMax="3" SpeedMin="1"/>
+     <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" PickableMessage="" bPickableWhenAlive="0" bPickableWhenDead="1" Radius="4" bSpawnFromPoint="0" bStartOnGround="1" VisibilityDist="200"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{6D6F38E3-C1E5-4708-871D-8F8B96C9C9A4}" Name="primitive_cube_small1" Pos="813.92578,503.72018,17.692001" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_cube_small.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{B8A513EC-B0C9-4F01-B56B-99E6FCF683C3}" Name="cultist_head_angry1" Pos="814.08679,514.97144,17.449484" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/characters/human/heads/cultist_head/cultist_head_angry.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{16F886FA-20B3-490B-9E94-82D5C597CCF4}" Name="primitive_box1" Pos="817.63348,513.62573,19.121" FloorNumber="-1" Rotate="0.99848264,-0.030462917,0.045841962,-0.00060573925" ColorRGB="16777215" MatLayersMask="0" Prefab="Assets/objects/default/primitive_box.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering />
    </Object>
   </LayerObjects>
  </Layer>

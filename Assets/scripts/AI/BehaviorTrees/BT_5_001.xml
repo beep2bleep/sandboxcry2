@@ -1,0 +1,43 @@
+<BehaviorTree>
+
+	<!--
+	- show AI bubble text when getting a target
+	- show different AI bubble text when losing track of the target
+	-->
+
+	<Variables>
+		<!-- these variables are not used in this BT, but need to be present to prevent a warning caused by BasicAI:OnReset() -->
+		<Variable name="ExecuteSequence" />
+		<Variable name="ExecuteInterruptibleSequence" />
+	</Variables>
+
+	<SignalVariables>
+	</SignalVariables>
+
+	<Timestamps>
+	</Timestamps>
+
+	<Root>
+
+		<Loop>
+
+			<Parallel successMode="any">
+
+				<Sequence>
+					<WaitForEvent name="OnNewAttentionTarget"/>
+					<Bubble message="I have a new attention target now!" duration="2"/>
+				</Sequence>
+
+				<Sequence>
+					<WaitForEvent name="OnLostSightOfTarget"/>
+					<Bubble message="I just lost track of my target!" duration="2"/>
+				</Sequence>
+
+
+			</Parallel>
+
+		</Loop>
+
+	</Root>
+
+</BehaviorTree>

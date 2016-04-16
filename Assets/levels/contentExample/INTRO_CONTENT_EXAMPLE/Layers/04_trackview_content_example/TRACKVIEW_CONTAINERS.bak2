@@ -1,0 +1,31 @@
+<ObjectLayer>
+ <Layer Name="TRACKVIEW_CONTAINERS" GUID="{9444031E-912B-4627-BB63-145757E930EE}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="0" ParentGUID="{F42B5365-F342-472E-B7EB-2A938A9129B7}">
+  <LayerObjects>
+   <Object Type="Entity" Layer="TRACKVIEW_CONTAINERS" LayerGUID="{9444031E-912B-4627-BB63-145757E930EE}" Id="{A6BF0CB4-6789-4ECE-9DB0-6021FAB8E74B}" Name="TRIGGER_DEBUG_FG" Pos="292.5,625.82336,40.678078" FloorNumber="-1" Rotate="0.5,0.49999997,-0.49999997,0.49999997" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="TRIGGER_DEBUG_FG" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-290,0,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Debug:ConsoleVariable" pos="-10,-60,0" flags="0">
+       <Inputs CVar="es_DrawProximityTriggers" Value="1"/>
+      </Node>
+      <Node Id="3" Class="Debug:ConsoleVariable" pos="-10,50,0" flags="0">
+       <Inputs CVar="es_DrawAreas" Value="1"/>
+      </Node>
+      <Node Id="4" Name="TRIGGER_DISPLAY_DEBUG_TOGGLE" Class="_commentbox" pos="-320,-119.99995,0" flags="0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="640" Height="260"/>
+       <NodeSize Width="640" Height="287.64063"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
