@@ -1,0 +1,5 @@
+C:\Users\M\Documents\SandboxCry2\bin\win_x64\mono\AddIns\CryEngine.Core.dll
+C:\Users\M\Documents\SandboxCry2\bin\win_x64\mono\AddIns\CryEngine.Core.pdb
+C:\Users\M\Documents\SandboxCry2\Code\CESharp\Core\obj\x64\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\M\Documents\SandboxCry2\Code\CESharp\Core\obj\x64\Debug\CryEngine.Core.dll
+C:\Users\M\Documents\SandboxCry2\Code\CESharp\Core\obj\x64\Debug\CryEngine.Core.pdb

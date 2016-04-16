@@ -1,0 +1,31 @@
+<ObjectLayer>
+ <Layer Name="Main" GUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{BBE48E7F-1080-4A97-9DFD-8FEAFF9F6BC3}" Name="Chickens1" Pos="211.16667,389.81247,21.822235" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Chickens" HasEntity="1">
+    <Properties>
+     <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/birds/rooster/rooster.cdf"/>
+     <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+     <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="0.1" HeightMax="1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="5" SpeedMin="1"/>
+     <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" PickableMessage="" bPickableWhenAlive="1" bPickableWhenDead="1" Radius="10" VisibilityDist="50"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{5DC2B386-F01C-4DD9-B243-2B7B32C36C1E}" Id="{0474F98B-06EC-4F30-A0AA-7F575CC0AA89}" Name="SpawnPoint1" Pos="846.63342,528.87585,16.552652" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint" HasEntity="1">
+    <Properties bDoVisTest="1" bEnabled="1" groupName="" bInitialSpawn="0" teamName=""/>
+    <FlowGraph Description="" Group="Spawn" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:SpawnPoint" pos="-15,-50,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+      </Node>
+      <Node Id="3" Class="Start" pos="-328,-41,0" flags="1">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="3" portIn="Spawn" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

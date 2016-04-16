@@ -1,0 +1,5 @@
+C:\Users\M\Documents\SandboxCry2\bin\win_x64\mono\AddIns\CryEngine.Editor.dll
+C:\Users\M\Documents\SandboxCry2\bin\win_x64\mono\AddIns\CryEngine.Editor.pdb
+C:\Users\M\Documents\SandboxCry2\Code\EditorApp\obj\x64\Debug\Editor.csprojResolveAssemblyReference.cache
+C:\Users\M\Documents\SandboxCry2\Code\EditorApp\obj\x64\Debug\CryEngine.Editor.dll
+C:\Users\M\Documents\SandboxCry2\Code\EditorApp\obj\x64\Debug\CryEngine.Editor.pdb
